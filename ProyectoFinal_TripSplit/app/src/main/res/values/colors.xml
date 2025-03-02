@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#A0CDFE</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="blue">#0C64C1</color>
+    <color name="btn_home_blue">#C8D9FF</color>
+    <color name="letra_boton_menu">#666666</color>
+    <color name="dark_blue">#162F6E</color>
 </resources>

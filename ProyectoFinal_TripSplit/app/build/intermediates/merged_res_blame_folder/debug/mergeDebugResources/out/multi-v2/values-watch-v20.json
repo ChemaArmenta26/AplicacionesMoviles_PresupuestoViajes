@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-48:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\haloa\\.gradle\\caches\\8.10.2\\transforms\\72df0c6cb4b4b5631bc444dba980e3cf\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
