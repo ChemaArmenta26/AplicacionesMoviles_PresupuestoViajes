@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/fragment_dashboard.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/activity_home.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_home.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/activity_login.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/activity_registrar_gastos.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_registrar_gastos.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/fragment_notifications.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/fragment_home.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_home.xml"
+    }
+]

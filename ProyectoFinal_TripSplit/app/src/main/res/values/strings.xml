@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">ProyectoFinal_TripSplit</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="registrate">Regístrate</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="buscar">Buscar...</string>
+    <string name="crear_viaje_grupal">Crear viaje grupal</string>
+    <string name="title_activity_registrar_gastos">RegistrarGastos</string>
+    <string name="nombre_del_gasto">Nombre del Gasto</string>
+    <string name="registra_un_gasto">Regístra un Gasto</string>
+    <string name="monto_total">Monto total</string>
+    <string name="integrantes">Integrantes</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="guardar">Guardar</string>
 </resources>

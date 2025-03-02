@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_buscar"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:drawableEnd="@mipmap/lupita"
+        android:hint="@string/buscar"
+        android:inputType="text"
+        android:padding="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_menu"
+            android:textColor="@color/letra_boton_menu"
+            android:layout_marginEnd="10dp"
+            android:padding="15sp"
+            android:textAllCaps="false"
+            android:text="@string/crear_viaje_grupal"
+            android:drawableBottom="@mipmap/icon_crear_viaje">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_menu"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/letra_boton_menu"
+            android:padding="15sp"
+            android:textAllCaps="false"
+            android:text="@string/crear_viaje_grupal"
+            android:drawableBottom="@mipmap/icon_unirse_viaje">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/nav_host_fragment_activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation2" />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/light_blue"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
