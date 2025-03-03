@@ -19,4 +19,18 @@
     <string name="integrantes">Integrantes</string>
     <string name="cancelar">Cancelar</string>
     <string name="guardar">Guardar</string>
+    <string name="unete">Únete</string>
+    <string name="slogan">Gastos compartidos, viajes sin líos.</string>
+    <string name="textoPresentacion">Divide y organiza los gastos de tu viaje fácilmente.</string>
+    <string name="hintCodigo">EREE-2FSR-MSX7</string>
+    <string name="instruccionCodigo">Ingresa el código del viaje:</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="montoTotal">Monto Total del Gasto:</string>
+    <string name="nombreGasto">Nombre del Gasto</string>
+    <string name="ejemploMonto">$979.00 MXN</string>
+    <string name="categoriaDelGasto">Categoría:</string>
+    <string name="ejemploCategoria">Nombre Categoría</string>
+    <string name="deudaIndividual">Deuda Individual</string>
+
+
 </resources>
