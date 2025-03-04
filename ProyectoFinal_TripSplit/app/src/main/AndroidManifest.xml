@@ -19,7 +19,7 @@
             android:name=".CodigoGrupoActivity"
             android:exported="false" />
         <activity
-            android:name=".InicioActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrarGastos"
@@ -33,7 +33,10 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CrearCuentaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InicioActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

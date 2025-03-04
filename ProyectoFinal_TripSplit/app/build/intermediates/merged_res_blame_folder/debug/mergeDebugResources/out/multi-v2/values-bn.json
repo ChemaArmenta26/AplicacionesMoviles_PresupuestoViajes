@@ -4,7 +4,7 @@
             "outputFile": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-48:/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\haloa\\.gradle\\caches\\8.10.2\\transforms\\329119eccffb6dafd6122a6f9998709d\\transformed\\navigation-ui-2.6.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\Sergio\\.gradle\\caches\\8.10.2\\transforms\\c4a0b1663b9d396abddb2559d4f4c140\\transformed\\navigation-ui-2.6.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\haloa\\.gradle\\caches\\8.10.2\\transforms\\a3f82fdcf85cfd8795aeb53f578c6f86\\transformed\\material-1.12.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\Sergio\\.gradle\\caches\\8.10.2\\transforms\\1b0ec392eb94f6cd035b8314638f0822\\transformed\\material-1.12.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\haloa\\.gradle\\caches\\8.10.2\\transforms\\23e64db7a4d360f89a3cec0674308fbb\\transformed\\core-1.15.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\Sergio\\.gradle\\caches\\8.10.2\\transforms\\634563780bd17e4b632c629b286fd966\\transformed\\core-1.15.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\haloa\\.gradle\\caches\\8.10.2\\transforms\\72df0c6cb4b4b5631bc444dba980e3cf\\transformed\\appcompat-1.7.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\Sergio\\.gradle\\caches\\8.10.2\\transforms\\ab4a7756cd8678c10b4bd462798a580c\\transformed\\appcompat-1.7.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

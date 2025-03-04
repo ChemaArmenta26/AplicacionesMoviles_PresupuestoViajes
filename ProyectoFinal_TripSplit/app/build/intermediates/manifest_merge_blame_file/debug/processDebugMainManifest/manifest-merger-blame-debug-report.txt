@@ -9,156 +9,181 @@
 9        android:targetSdkVersion="35" />
 10
 11    <permission
-11-->[androidx.core:core:1.15.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\23e64db7a4d360f89a3cec0674308fbb\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.15.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\634563780bd17e4b632c629b286fd966\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
 12        android:name="armenta.jose.proyectofinal_tripsplit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.15.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\23e64db7a4d360f89a3cec0674308fbb\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.15.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\634563780bd17e4b632c629b286fd966\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.15.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\23e64db7a4d360f89a3cec0674308fbb\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.15.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\634563780bd17e4b632c629b286fd966\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="armenta.jose.proyectofinal_tripsplit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.15.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\23e64db7a4d360f89a3cec0674308fbb\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.15.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\23e64db7a4d360f89a3cec0674308fbb\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.15.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\634563780bd17e4b632c629b286fd966\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.15.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\634563780bd17e4b632c629b286fd966\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:5:5-35:19
+17-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:5:5-47:19
 18        android:allowBackup="true"
-18-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.15.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\23e64db7a4d360f89a3cec0674308fbb\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.15.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\634563780bd17e4b632c629b286fd966\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="true"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:12:9-35
-28        android:theme="@style/Theme.ProyectoFinal_TripSplit" >
-28-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:13:9-61
-29        <activity
-29-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:15:9-18:71
-30            android:name="armenta.jose.proyectofinal_tripsplit.RegistrarGastos"
-30-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:16:13-44
-31            android:exported="false"
-31-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:17:13-37
-32            android:label="@string/title_activity_registrar_gastos" />
-32-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:18:13-68
+27-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.ProyectoFinal_TripSplit" >
+29-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:13:9-61
+30        <activity
+30-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:15:9-17:40
+31            android:name="armenta.jose.proyectofinal_tripsplit.DetalleGastoActivity"
+31-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:16:13-49
+32            android:exported="false" />
+32-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:17:13-37
 33        <activity
-33-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:19:9-22:59
-34            android:name="armenta.jose.proyectofinal_tripsplit.Home"
-34-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:20:13-33
-35            android:exported="false"
-35-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:21:13-37
-36            android:label="@string/title_activity_home" />
-36-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:22:13-56
-37        <activity
-37-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:23:9-25:40
-38            android:name="armenta.jose.proyectofinal_tripsplit.Login"
-38-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:24:13-34
-39            android:exported="false" />
-39-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:25:13-37
-40        <activity
-40-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:26:9-34:20
-41            android:name="armenta.jose.proyectofinal_tripsplit.MainActivity"
-41-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:27:13-41
-42            android:exported="true" >
-42-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:28:13-36
-43            <intent-filter>
-43-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:29:13-33:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:30:17-69
-44-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:30:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:32:17-77
-46-->C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:32:27-74
-47            </intent-filter>
-48        </activity>
-49
-50        <provider
-50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-51            android:name="androidx.startup.InitializationProvider"
-51-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-52            android:authorities="armenta.jose.proyectofinal_tripsplit.androidx-startup"
-52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-53            android:exported="false" >
-53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-54            <meta-data
-54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-56                android:value="androidx.startup" />
-56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\40c6a4a62fd8851240d35de612bf172b\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-57            <meta-data
-57-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\haloa\.gradle\caches\8.10.2\transforms\e25cc063b66ff8c08be1428ed19c562a\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
-58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-58-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\haloa\.gradle\caches\8.10.2\transforms\e25cc063b66ff8c08be1428ed19c562a\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
-59                android:value="androidx.startup" />
-59-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\haloa\.gradle\caches\8.10.2\transforms\e25cc063b66ff8c08be1428ed19c562a\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
-60            <meta-data
-60-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-61                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-61-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-62                android:value="androidx.startup" />
-62-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-63        </provider>
-64
-65        <uses-library
-65-->[androidx.window:window:1.0.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\ab67d46fb64bd2d41333f11e604fa902\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-66            android:name="androidx.window.extensions"
-66-->[androidx.window:window:1.0.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\ab67d46fb64bd2d41333f11e604fa902\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-67            android:required="false" />
-67-->[androidx.window:window:1.0.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\ab67d46fb64bd2d41333f11e604fa902\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-68        <uses-library
-68-->[androidx.window:window:1.0.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\ab67d46fb64bd2d41333f11e604fa902\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-69            android:name="androidx.window.sidecar"
-69-->[androidx.window:window:1.0.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\ab67d46fb64bd2d41333f11e604fa902\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-70            android:required="false" />
-70-->[androidx.window:window:1.0.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\ab67d46fb64bd2d41333f11e604fa902\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-71
-72        <receiver
-72-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-74            android:directBootAware="false"
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-75            android:enabled="true"
-75-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-76            android:exported="true"
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-77            android:permission="android.permission.DUMP" >
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-80            </intent-filter>
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\haloa\.gradle\caches\8.10.2\transforms\717c74fff39d742c0377116dc87f40e6\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-89            </intent-filter>
-90        </receiver>
-91    </application>
-92
-93</manifest>
+33-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:18:9-20:40
+34            android:name="armenta.jose.proyectofinal_tripsplit.CodigoGrupoActivity"
+34-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:19:13-48
+35            android:exported="false" />
+35-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:20:13-37
+36        <activity
+36-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:21:9-23:40
+37            android:name="armenta.jose.proyectofinal_tripsplit.MainActivity"
+37-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:22:13-41
+38            android:exported="false" />
+38-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:23:13-37
+39        <activity
+39-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:24:9-27:71
+40            android:name="armenta.jose.proyectofinal_tripsplit.RegistrarGastos"
+40-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:25:13-44
+41            android:exported="false"
+41-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:26:13-37
+42            android:label="@string/title_activity_registrar_gastos" />
+42-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:27:13-68
+43        <activity
+43-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:28:9-31:59
+44            android:name="armenta.jose.proyectofinal_tripsplit.Home"
+44-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:29:13-33
+45            android:exported="false"
+45-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:30:13-37
+46            android:label="@string/title_activity_home" />
+46-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:31:13-56
+47        <activity
+47-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:32:9-34:40
+48            android:name="armenta.jose.proyectofinal_tripsplit.Login"
+48-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:33:13-34
+49            android:exported="false" />
+49-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:34:13-37
+50        <activity
+50-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:35:9-37:40
+51            android:name="armenta.jose.proyectofinal_tripsplit.CrearCuentaActivity"
+51-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:36:13-48
+52            android:exported="false" />
+52-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:37:13-37
+53        <activity
+53-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:38:9-46:20
+54            android:name="armenta.jose.proyectofinal_tripsplit.InicioActivity"
+54-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:39:13-43
+55            android:exported="true" >
+55-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:40:13-36
+56            <intent-filter>
+56-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:41:13-45:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:42:17-69
+57-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:42:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:44:17-77
+59-->C:\repos\PresupuestoViajes\ProyectoFinal_TripSplit\app\src\main\AndroidManifest.xml:44:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <provider
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+64            android:name="androidx.startup.InitializationProvider"
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+65            android:authorities="armenta.jose.proyectofinal_tripsplit.androidx-startup"
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+66            android:exported="false" >
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+67            <meta-data
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+69                android:value="androidx.startup" />
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\301f243c7113905b7880e42f209834a9\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\5ff4c1ad9b21e9f35e782754a4fd7d91\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+71-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\5ff4c1ad9b21e9f35e782754a4fd7d91\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+72                android:value="androidx.startup" />
+72-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\5ff4c1ad9b21e9f35e782754a4fd7d91\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+75                android:value="androidx.startup" />
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+76        </provider>
+77
+78        <uses-library
+78-->[androidx.window:window:1.0.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\3ec259ccd5cee2134c4b256fb6fb80ef\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+79            android:name="androidx.window.extensions"
+79-->[androidx.window:window:1.0.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\3ec259ccd5cee2134c4b256fb6fb80ef\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\3ec259ccd5cee2134c4b256fb6fb80ef\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+81        <uses-library
+81-->[androidx.window:window:1.0.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\3ec259ccd5cee2134c4b256fb6fb80ef\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+82            android:name="androidx.window.sidecar"
+82-->[androidx.window:window:1.0.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\3ec259ccd5cee2134c4b256fb6fb80ef\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\3ec259ccd5cee2134c4b256fb6fb80ef\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Sergio\.gradle\caches\8.10.2\transforms\0a57ae7bfd70e9126b520bd67d7ec5ed\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+102            </intent-filter>
+103        </receiver>
+104    </application>
+105
+106</manifest>
