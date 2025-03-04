@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="35dp"
+        android:text="@string/crarCuenta"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/nombre"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_apellido"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/apellido"
+        android:inputType="textPassword"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_correo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/correo_electronico"
+        android:inputType="textPassword"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_contrasena"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_conf_contrasena"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/confirmarContraseña"
+        android:inputType="textPassword"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ingresar"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/boton_redondo"
+        android:text="@string/crear"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yatienescuenta"
+            android:textColor="#6DA1D9"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_registrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:text="@string/iniciar_sesion"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:src="@mipmap/decoracion_fondo">
+
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>

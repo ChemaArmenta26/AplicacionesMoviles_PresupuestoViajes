@@ -31,6 +31,20 @@
     <string name="categoriaDelGasto">Categoría:</string>
     <string name="ejemploCategoria">Nombre Categoría</string>
     <string name="deudaIndividual">Deuda Individual</string>
+    <string name="crarCuenta">Crear Cuenta</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="confirmarContraseña">Confirmar Contraseña</string>
+    <string name="crear">Crear</string>
+    <string name="yatienescuenta">¿Ya tengo una cuenta?</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="crearGrupo">Crear nuevo grupo</string>
+    <string name="nombreGrupo">Nombre del Grupo</string>
+    <string name="desde">Desde: </string>
+    <string name="hacía">Hacía: </string>
+    <string name="Salida">Salida: </string>
+    <string name="llegada">Llegada</string>
+    <string name="cuantosSon">¿Cuantos son?</string>
 
 
 </resources>
