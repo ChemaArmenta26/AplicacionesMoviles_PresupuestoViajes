@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoFinal_TripSplit"
         tools:targetApi="31">
         <activity
+            android:name=".pantalla_principal"
+            android:exported="false" />
+        <activity
             android:name=".DetalleGastoActivity"
             android:exported="false" />
         <activity
