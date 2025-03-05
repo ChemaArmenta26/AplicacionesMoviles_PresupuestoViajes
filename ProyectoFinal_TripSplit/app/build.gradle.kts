@@ -54,4 +54,6 @@ dependencies {
 
     // Implementación de CardView usando Version Catalog
     implementation(libs.androidx.cardview)
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
+
