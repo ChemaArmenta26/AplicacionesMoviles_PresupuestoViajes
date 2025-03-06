@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,14 +22,23 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ListView listaGastos;
+
+  @NonNull
+  public final ListView listaMontoPagarPersona;
+
+  @NonNull
   public final BottomNavigationView navView;
 
   @NonNull
   public final TextView tvCodigoGrupo;
 
   private ActivityPantallaPrincipalBinding(@NonNull LinearLayout rootView,
+      @NonNull ListView listaGastos, @NonNull ListView listaMontoPagarPersona,
       @NonNull BottomNavigationView navView, @NonNull TextView tvCodigoGrupo) {
     this.rootView = rootView;
+    this.listaGastos = listaGastos;
+    this.listaMontoPagarPersona = listaMontoPagarPersona;
     this.navView = navView;
     this.tvCodigoGrupo = tvCodigoGrupo;
   }
@@ -60,6 +70,18 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.lista_gastos;
+      ListView listaGastos = ViewBindings.findChildViewById(rootView, id);
+      if (listaGastos == null) {
+        break missingId;
+      }
+
+      id = R.id.lista_monto_pagar_persona;
+      ListView listaMontoPagarPersona = ViewBindings.findChildViewById(rootView, id);
+      if (listaMontoPagarPersona == null) {
+        break missingId;
+      }
+
       id = R.id.nav_view;
       BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
       if (navView == null) {
@@ -72,7 +94,8 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPantallaPrincipalBinding((LinearLayout) rootView, navView, tvCodigoGrupo);
+      return new ActivityPantallaPrincipalBinding((LinearLayout) rootView, listaGastos,
+          listaMontoPagarPersona, navView, tvCodigoGrupo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

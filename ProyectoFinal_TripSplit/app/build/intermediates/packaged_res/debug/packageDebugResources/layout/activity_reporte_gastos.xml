@@ -82,9 +82,14 @@
                 android:textStyle="bold" />
 
             <!-- Lista de Integrantes -->
-            <include layout="@layout/item_total_gastado" />
-            <include layout="@layout/item_total_gastado" />
-            <include layout="@layout/item_total_gastado" />
+            <ListView
+                android:id="@+id/lista_reporte_integrantes"
+                android:layout_width="279dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+            </ListView>
 
 
             <TextView
@@ -101,9 +106,15 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <include layout="@layout/item_gasto_pendiente" />
-            <include layout="@layout/item_gasto_pendiente" />
-            <include layout="@layout/item_gasto_pendiente" />
+            <!-- gastos pedientes lista -->
+            <ListView
+                android:id="@+id/lista_saldo_pendiente"
+                android:layout_width="279dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+            </ListView>
 
         </LinearLayout>
     </ScrollView>

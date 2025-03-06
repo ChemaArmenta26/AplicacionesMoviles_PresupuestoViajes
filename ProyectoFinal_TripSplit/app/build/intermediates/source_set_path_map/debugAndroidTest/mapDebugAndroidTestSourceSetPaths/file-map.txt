@@ -1,6 +1,0 @@
-armenta.jose.proyectofinal_tripsplit.test.app-tracing-1.2.0-0 C:\Users\haloa\.gradle\caches\8.10.2\transforms\7e39a3e5dc953bf5dd211a69648a20e8\transformed\tracing-1.2.0\res
-armenta.jose.proyectofinal_tripsplit.test.app-core-1.6.1-1 C:\Users\haloa\.gradle\caches\8.10.2\transforms\c3c41da7d51b85f2c5e99c0cfdd0a9af\transformed\core-1.6.1\res
-armenta.jose.proyectofinal_tripsplit.test.app-androidTest-2 C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\build\generated\res\resValues\androidTest\debug
-armenta.jose.proyectofinal_tripsplit.test.app-mergeDebugAndroidTestResources-3 C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-armenta.jose.proyectofinal_tripsplit.test.app-mergeDebugAndroidTestResources-4 C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-armenta.jose.proyectofinal_tripsplit.test.app-debugAndroidTest-5 C:\Users\haloa\Desktop\github\AplicacionesMoviles_PresupuestoViajes\ProyectoFinal_TripSplit\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

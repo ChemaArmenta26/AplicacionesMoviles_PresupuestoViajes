@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -21,14 +22,23 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ListView listaReporteIntegrantes;
+
+  @NonNull
+  public final ListView listaSaldoPendiente;
+
+  @NonNull
   public final BottomNavigationView navView;
 
   @NonNull
   public final PieChart pieChart;
 
   private ActivityReporteGastosBinding(@NonNull LinearLayout rootView,
+      @NonNull ListView listaReporteIntegrantes, @NonNull ListView listaSaldoPendiente,
       @NonNull BottomNavigationView navView, @NonNull PieChart pieChart) {
     this.rootView = rootView;
+    this.listaReporteIntegrantes = listaReporteIntegrantes;
+    this.listaSaldoPendiente = listaSaldoPendiente;
     this.navView = navView;
     this.pieChart = pieChart;
   }
@@ -60,6 +70,18 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.lista_reporte_integrantes;
+      ListView listaReporteIntegrantes = ViewBindings.findChildViewById(rootView, id);
+      if (listaReporteIntegrantes == null) {
+        break missingId;
+      }
+
+      id = R.id.lista_saldo_pendiente;
+      ListView listaSaldoPendiente = ViewBindings.findChildViewById(rootView, id);
+      if (listaSaldoPendiente == null) {
+        break missingId;
+      }
+
       id = R.id.nav_view;
       BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
       if (navView == null) {
@@ -72,7 +94,8 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityReporteGastosBinding((LinearLayout) rootView, navView, pieChart);
+      return new ActivityReporteGastosBinding((LinearLayout) rootView, listaReporteIntegrantes,
+          listaSaldoPendiente, navView, pieChart);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

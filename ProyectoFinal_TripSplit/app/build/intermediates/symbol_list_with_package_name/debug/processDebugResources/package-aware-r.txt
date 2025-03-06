@@ -3309,6 +3309,7 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id concepto_gasto
 id confirm_button
 id constraint
 id container
@@ -3401,6 +3402,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id gasto
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3449,6 +3451,10 @@ id line3
 id linear
 id listMode
 id list_item
+id lista_gastos
+id lista_monto_pagar_persona
+id lista_reporte_integrantes
+id lista_saldo_pendiente
 id locale
 id ltr
 id m3_side_sheet
@@ -3714,6 +3720,7 @@ id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
 id tv_deuda_integrante
+id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante

@@ -15,6 +15,7 @@
         tools:layout="@layout/fragment_top_bar" />
 
     <TextView
+        android:id="@+id/tv_nombre_viaje"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -50,59 +51,93 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-
-            <!-- Lista de Integrantes -->
-            <include layout="@layout/item_integrante_detalle" />
-            <include layout="@layout/item_integrante_detalle" />
-            <include layout="@layout/item_integrante_detalle" />
-
-
-
-            <!-- Total Gastado -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="383dp"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:layout_marginTop="16dp"
-                app:cardElevation="4dp">
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Monto a Pagar por Persona"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-                <LinearLayout
+            <ListView
+                android:id="@+id/lista_monto_pagar_persona"
+                android:layout_width="279dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+            </ListView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <!-- Total Gastado -->
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal">
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="16dp"
+                    app:cardElevation="4dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Total Gastado"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/black" />
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/background_gradient"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$2573.00 MXN"
-                        android:textSize="16sp"
-                        android:textColor="@color/black" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Gastado"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$2573.00 MXN"
+                            android:textSize="16sp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
 
             <!-- Lista de Gastos -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Lista de gastos"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/blue" />
 
-            <include layout="@layout/item_gasto" />
-            <include layout="@layout/item_gasto" />
-            <include layout="@layout/item_gasto" />
+            <ListView
+                android:id="@+id/lista_gastos"
+                android:layout_width="279dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+            </ListView>
 
 
 
@@ -134,6 +169,7 @@
                 android:gravity="center"
                 android:layout_marginBottom="16dp"/>
         </LinearLayout>
+
     </ScrollView>
 
 
