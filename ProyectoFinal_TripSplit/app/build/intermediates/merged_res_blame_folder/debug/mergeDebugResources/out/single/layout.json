@@ -1,9 +1,5 @@
 [
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/activity_detalle_gasto.xml",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_detalle_gasto.xml"
-    },
-    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_detalle_gasto.xml",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_detalle_gasto.xml"
     },
@@ -24,8 +20,16 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_inicio.xml"
     },
     {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\item_gasto_pendiente.xml",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_gasto_pendiente.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_registrar_gastos.xml",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_registrar_gastos.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:/layout/fragment_home.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\fragment_top_bar.xml",
@@ -40,6 +44,10 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_integrante_detalle.xml"
     },
     {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\item_gasto.xml",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_gasto.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_main.xml"
     },
@@ -50,6 +58,18 @@
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_codigo_grupo.xml",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_codigo_grupo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\item_total_gastado.xml",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_total_gastado.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_reporte_gastos.xml",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_reporte_gastos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_pantalla_principal.xml",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_pantalla_principal.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-49:\\layout\\activity_login.xml",

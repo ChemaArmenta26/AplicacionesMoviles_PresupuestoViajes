@@ -28,6 +28,14 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_codigo_grupo.xml"
     },
     {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_activity_reporte_gastos.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_reporte_gastos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\drawable_circular_background.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\drawable\\circular_background.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\xml\\data_extraction_rules.xml"
     },
@@ -44,8 +52,16 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\drawable\\background_gradient.xml"
     },
     {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_item_gasto.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_gasto.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\drawable_boton_no_fondo.xml.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\drawable\\boton_no_fondo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_activity_pantalla_principal.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_pantalla_principal.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\mipmap-hdpi_decoracion_fondo.png.flat",
@@ -64,12 +80,20 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\mipmap-hdpi\\icon_crear_viaje.png"
     },
     {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_item_total_gastado.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_total_gastado.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_activity_crear_cuenta.xml.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_crear_cuenta.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_item_gasto_pendiente.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\item_gasto_pendiente.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -148,6 +172,10 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\layout\\activity_editar_grupo.xml"
     },
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_fragment_home.xml.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\mipmap-hdpi_titulo_app.png.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\mipmap-hdpi\\titulo_app.png"
     },
@@ -208,6 +236,10 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\mipmap-hdpi\\logo_usuario.png"
     },
     {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\drawable_recuadro_borde.xml.flat",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\drawable\\recuadro_borde.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -222,10 +254,6 @@
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\mipmap-hdpi_decoracion_ondas.png.flat",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-52:\\mipmap-hdpi\\decoracion_ondas.png"
-    },
-    {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_activity_detalle_gasto.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_detalle_gasto.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-debug-50:\\layout_activity_crear_grupo.xml.flat",

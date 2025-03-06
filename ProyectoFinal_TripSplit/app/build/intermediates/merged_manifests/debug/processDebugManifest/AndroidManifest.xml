@@ -28,6 +28,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoFinal_TripSplit" >
         <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.reporte_gastos"
+            android:exported="false" />
+        <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.pantalla_principal"
+            android:exported="false" />
+        <activity
             android:name="armenta.jose.proyectofinal_tripsplit.DetalleGastoActivity"
             android:exported="false" />
         <activity

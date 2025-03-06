@@ -112,10 +112,13 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+        android:textStyle="bold">
+
+    </androidx.appcompat.widget.AppCompatButton>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

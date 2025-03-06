@@ -7,6 +7,7 @@
     <color name="letra_boton_menu">#666666</color>
     <color name="light_blue">#A0CDFE</color>
     <color name="light_grey">#F5F5F5</color>
+    <color name="red">#FF2222</color>
     <color name="white">#FFFFFFFF</color>
     <color name="zapphire">#005E7A</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>

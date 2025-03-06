@@ -1,4 +1,4 @@
-#Mon Mar 03 21:05:08 MST 2025
+#Wed Mar 05 18:18:22 MST 2025
 base.0=C\:\\repos\\PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\repos\\PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\repos\\PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
