@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="concepto_gasto" type="id" />
+    <item name="tv_lugar_gasto" type="id" />
+    <item name="gasto" type="id" />
+</resources>

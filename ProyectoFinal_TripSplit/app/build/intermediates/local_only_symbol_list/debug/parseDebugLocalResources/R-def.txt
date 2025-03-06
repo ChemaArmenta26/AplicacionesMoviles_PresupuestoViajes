@@ -32,6 +32,7 @@ id btn_cancelar
 id btn_guardar
 id btn_ingresar
 id btn_registrarse
+id concepto_gasto
 id container
 id et_apellido
 id et_buscar
@@ -47,12 +48,17 @@ id et_nombreGrupo
 id et_nombre_gasto
 id et_numIntegrantes
 id et_salida
+id gasto
 id icon_edit
 id icon_left
 id icon_settings
 id icon_user
 id input_codigo
 id iv_perfil_integrante
+id lista_gastos
+id lista_monto_pagar_persona
+id lista_reporte_integrantes
+id lista_saldo_pendiente
 id main
 id mobile_navigation
 id mobile_navigation2
@@ -75,6 +81,7 @@ id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
 id tv_deuda_integrante
+id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante

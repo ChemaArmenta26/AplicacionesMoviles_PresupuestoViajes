@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:text="@string/crearGrupo"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_nombreGrupo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/nombreGrupo"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_desde"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/desde"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_salida"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/Salida"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_llegada"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/llegada"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_numIntegrantes"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/cuantosSon"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ingresar"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/boton_redondo"
+        android:text="@string/crear"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/light_blue"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>
