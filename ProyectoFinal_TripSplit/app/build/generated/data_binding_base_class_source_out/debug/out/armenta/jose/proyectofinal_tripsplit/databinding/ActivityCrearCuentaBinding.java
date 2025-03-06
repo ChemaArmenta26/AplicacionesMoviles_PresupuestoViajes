@@ -21,10 +21,10 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnIngresar;
+  public final AppCompatButton btnCrear;
 
   @NonNull
-  public final AppCompatButton btnRegistrarse;
+  public final AppCompatButton btnIniciarSesion;
 
   @NonNull
   public final EditText etApellido;
@@ -42,12 +42,12 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
   public final EditText etNombre;
 
   private ActivityCrearCuentaBinding(@NonNull LinearLayout rootView,
-      @NonNull AppCompatButton btnIngresar, @NonNull AppCompatButton btnRegistrarse,
+      @NonNull AppCompatButton btnCrear, @NonNull AppCompatButton btnIniciarSesion,
       @NonNull EditText etApellido, @NonNull EditText etConfContrasena,
       @NonNull EditText etContrasena, @NonNull EditText etCorreo, @NonNull EditText etNombre) {
     this.rootView = rootView;
-    this.btnIngresar = btnIngresar;
-    this.btnRegistrarse = btnRegistrarse;
+    this.btnCrear = btnCrear;
+    this.btnIniciarSesion = btnIniciarSesion;
     this.etApellido = etApellido;
     this.etConfContrasena = etConfContrasena;
     this.etContrasena = etContrasena;
@@ -82,15 +82,15 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_ingresar;
-      AppCompatButton btnIngresar = ViewBindings.findChildViewById(rootView, id);
-      if (btnIngresar == null) {
+      id = R.id.btn_crear;
+      AppCompatButton btnCrear = ViewBindings.findChildViewById(rootView, id);
+      if (btnCrear == null) {
         break missingId;
       }
 
-      id = R.id.btn_registrarse;
-      AppCompatButton btnRegistrarse = ViewBindings.findChildViewById(rootView, id);
-      if (btnRegistrarse == null) {
+      id = R.id.btn_iniciar_sesion;
+      AppCompatButton btnIniciarSesion = ViewBindings.findChildViewById(rootView, id);
+      if (btnIniciarSesion == null) {
         break missingId;
       }
 
@@ -124,7 +124,7 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCrearCuentaBinding((LinearLayout) rootView, btnIngresar, btnRegistrarse,
+      return new ActivityCrearCuentaBinding((LinearLayout) rootView, btnCrear, btnIniciarSesion,
           etApellido, etConfContrasena, etContrasena, etCorreo, etNombre);
     }
     String missingId = rootView.getResources().getResourceName(id);

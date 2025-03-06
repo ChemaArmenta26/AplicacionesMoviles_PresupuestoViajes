@@ -10,7 +10,6 @@
                     <padding android:left="16dp" android:right="16dp" android:top="12dp" android:bottom="12dp"/>
                 </shape>
             </item>
-            <item android:gravity="end|center_vertical" android:drawable="@drawable/ic_dropdown_arrow" />
         </layer-list>
     </item>
 </selector>

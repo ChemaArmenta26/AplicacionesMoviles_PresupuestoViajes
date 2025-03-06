@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,14 +29,18 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
   public final EditText inputCodigo;
 
   @NonNull
+  public final FrameLayout navHostFragmentActivityHome;
+
+  @NonNull
   public final BottomNavigationView navView;
 
   private ActivityCodigoGrupoBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnBuscar, @NonNull EditText inputCodigo,
-      @NonNull BottomNavigationView navView) {
+      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView) {
     this.rootView = rootView;
     this.btnBuscar = btnBuscar;
     this.inputCodigo = inputCodigo;
+    this.navHostFragmentActivityHome = navHostFragmentActivityHome;
     this.navView = navView;
   }
 
@@ -78,6 +83,12 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nav_host_fragment_activity_home;
+      FrameLayout navHostFragmentActivityHome = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragmentActivityHome == null) {
+        break missingId;
+      }
+
       id = R.id.nav_view;
       BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
       if (navView == null) {
@@ -85,7 +96,7 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
       }
 
       return new ActivityCodigoGrupoBinding((LinearLayout) rootView, btnBuscar, inputCodigo,
-          navView);
+          navHostFragmentActivityHome, navView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

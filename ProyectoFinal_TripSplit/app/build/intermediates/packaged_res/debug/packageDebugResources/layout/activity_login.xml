@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".Login">
 
+    <fragment
+        android:id="@+id/topBarFragment"
+        android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

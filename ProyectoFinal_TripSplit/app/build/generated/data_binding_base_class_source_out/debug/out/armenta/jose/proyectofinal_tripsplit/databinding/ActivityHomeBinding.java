@@ -9,6 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -22,6 +23,12 @@ public final class ActivityHomeBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final AppCompatButton btnCrearViaje;
+
+  @NonNull
+  public final AppCompatButton btnUnirseViaje;
+
+  @NonNull
   public final LinearLayout container;
 
   @NonNull
@@ -33,10 +40,13 @@ public final class ActivityHomeBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView navView;
 
-  private ActivityHomeBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout container,
-      @NonNull EditText etBuscar, @NonNull FrameLayout navHostFragmentActivityHome,
-      @NonNull BottomNavigationView navView) {
+  private ActivityHomeBinding(@NonNull LinearLayout rootView,
+      @NonNull AppCompatButton btnCrearViaje, @NonNull AppCompatButton btnUnirseViaje,
+      @NonNull LinearLayout container, @NonNull EditText etBuscar,
+      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView) {
     this.rootView = rootView;
+    this.btnCrearViaje = btnCrearViaje;
+    this.btnUnirseViaje = btnUnirseViaje;
     this.container = container;
     this.etBuscar = etBuscar;
     this.navHostFragmentActivityHome = navHostFragmentActivityHome;
@@ -70,6 +80,18 @@ public final class ActivityHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_crearViaje;
+      AppCompatButton btnCrearViaje = ViewBindings.findChildViewById(rootView, id);
+      if (btnCrearViaje == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_unirseViaje;
+      AppCompatButton btnUnirseViaje = ViewBindings.findChildViewById(rootView, id);
+      if (btnUnirseViaje == null) {
+        break missingId;
+      }
+
       LinearLayout container = (LinearLayout) rootView;
 
       id = R.id.et_buscar;
@@ -90,8 +112,8 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((LinearLayout) rootView, container, etBuscar,
-          navHostFragmentActivityHome, navView);
+      return new ActivityHomeBinding((LinearLayout) rootView, btnCrearViaje, btnUnirseViaje,
+          container, etBuscar, navHostFragmentActivityHome, navView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

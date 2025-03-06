@@ -3282,9 +3282,13 @@ id bounceEnd
 id bounceStart
 id btn_buscar
 id btn_cancelar
+id btn_crear
+id btn_crearViaje
 id btn_guardar
 id btn_ingresar
+id btn_iniciar_sesion
 id btn_registrarse
+id btn_unirseViaje
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3523,7 +3527,6 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
 id nav_host_fragment_activity_home
-id nav_host_fragment_activity_registrar_gastos
 id nav_host_fragment_container
 id nav_view
 id navigation_bar_item_active_indicator_view
@@ -3724,6 +3727,7 @@ id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante
+id tv_nombre_viaje
 id tv_tipo_gasto
 id unchecked
 id uniform
@@ -3902,6 +3906,7 @@ layout ime_secondary_split_test_activity
 layout item_gasto
 layout item_gasto_pendiente
 layout item_integrante_detalle
+layout item_registro_gasto
 layout item_total_gastado
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4199,6 +4204,7 @@ string title_dashboard
 string title_home
 string title_notifications
 string unete
+string unirme_a_grupo_n_de_viaje
 string yatienescuenta
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
