@@ -31,7 +31,7 @@
     <string name="categoriaDelGasto">Categoría:</string>
     <string name="ejemploCategoria">Nombre Categoría</string>
     <string name="deudaIndividual">Deuda Individual</string>
-    <string name="crarCuenta">Crear Cuenta</string>
+    <string name="crearCuenta">Crear Cuenta</string>
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="confirmarContraseña">Confirmar Contraseña</string>

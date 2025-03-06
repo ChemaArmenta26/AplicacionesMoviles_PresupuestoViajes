@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -35,15 +36,20 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final LinearLayout main;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton btnIngresar,
       @NonNull AppCompatButton btnRegistrarse, @NonNull EditText etContrasena,
-      @NonNull EditText etCorreoElectronico, @NonNull LinearLayout main) {
+      @NonNull EditText etCorreoElectronico, @NonNull LinearLayout main,
+      @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnIngresar = btnIngresar;
     this.btnRegistrarse = btnRegistrarse;
     this.etContrasena = etContrasena;
     this.etCorreoElectronico = etCorreoElectronico;
     this.main = main;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -99,8 +105,14 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       LinearLayout main = (LinearLayout) rootView;
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       return new ActivityLoginBinding((LinearLayout) rootView, btnIngresar, btnRegistrarse,
-          etContrasena, etCorreoElectronico, main);
+          etContrasena, etCorreoElectronico, main, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

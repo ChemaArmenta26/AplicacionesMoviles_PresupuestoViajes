@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -49,11 +50,15 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView navView;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityCrearGrupoBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnIngresar, @NonNull LinearLayout container,
       @NonNull EditText etDesde, @NonNull EditText etLlegada, @NonNull EditText etNombreGrupo,
       @NonNull EditText etNumIntegrantes, @NonNull EditText etSalida,
-      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView) {
+      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView,
+      @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnIngresar = btnIngresar;
     this.container = container;
@@ -64,6 +69,7 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
     this.etSalida = etSalida;
     this.navHostFragmentActivityHome = navHostFragmentActivityHome;
     this.navView = navView;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -143,9 +149,15 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       return new ActivityCrearGrupoBinding((LinearLayout) rootView, btnIngresar, container, etDesde,
           etLlegada, etNombreGrupo, etNumIntegrantes, etSalida, navHostFragmentActivityHome,
-          navView);
+          navView, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -27,6 +28,9 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
   public final AppCompatButton btnIniciarSesion;
 
   @NonNull
+  public final LinearLayout crearCuenta;
+
+  @NonNull
   public final EditText etApellido;
 
   @NonNull
@@ -41,18 +45,25 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
   @NonNull
   public final EditText etNombre;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityCrearCuentaBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnCrear, @NonNull AppCompatButton btnIniciarSesion,
-      @NonNull EditText etApellido, @NonNull EditText etConfContrasena,
-      @NonNull EditText etContrasena, @NonNull EditText etCorreo, @NonNull EditText etNombre) {
+      @NonNull LinearLayout crearCuenta, @NonNull EditText etApellido,
+      @NonNull EditText etConfContrasena, @NonNull EditText etContrasena,
+      @NonNull EditText etCorreo, @NonNull EditText etNombre,
+      @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnCrear = btnCrear;
     this.btnIniciarSesion = btnIniciarSesion;
+    this.crearCuenta = crearCuenta;
     this.etApellido = etApellido;
     this.etConfContrasena = etConfContrasena;
     this.etContrasena = etContrasena;
     this.etCorreo = etCorreo;
     this.etNombre = etNombre;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -94,6 +105,8 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
         break missingId;
       }
 
+      LinearLayout crearCuenta = (LinearLayout) rootView;
+
       id = R.id.et_apellido;
       EditText etApellido = ViewBindings.findChildViewById(rootView, id);
       if (etApellido == null) {
@@ -124,8 +137,15 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       return new ActivityCrearCuentaBinding((LinearLayout) rootView, btnCrear, btnIniciarSesion,
-          etApellido, etConfContrasena, etContrasena, etCorreo, etNombre);
+          crearCuenta, etApellido, etConfContrasena, etContrasena, etCorreo, etNombre,
+          topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

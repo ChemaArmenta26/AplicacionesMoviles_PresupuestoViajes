@@ -25,8 +25,8 @@
     <string name="confirmarContraseña">Confirmar Contraseña</string>
     <string name="contrase_a">Contraseña</string>
     <string name="correo_electronico">Correo Electronico</string>
-    <string name="crarCuenta">Crear Cuenta</string>
     <string name="crear">Crear</string>
+    <string name="crearCuenta">Crear Cuenta</string>
     <string name="crearGrupo">Crear nuevo grupo</string>
     <string name="crear_viaje_grupal">Crear viaje grupal</string>
     <string name="cuantosSon">¿Cuantos son?</string>

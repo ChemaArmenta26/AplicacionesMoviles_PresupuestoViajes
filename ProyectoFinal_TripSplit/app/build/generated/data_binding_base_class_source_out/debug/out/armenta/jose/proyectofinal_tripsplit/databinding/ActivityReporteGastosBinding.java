@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -33,14 +34,19 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   @NonNull
   public final PieChart pieChart;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityReporteGastosBinding(@NonNull LinearLayout rootView,
       @NonNull ListView listaReporteIntegrantes, @NonNull ListView listaSaldoPendiente,
-      @NonNull BottomNavigationView navView, @NonNull PieChart pieChart) {
+      @NonNull BottomNavigationView navView, @NonNull PieChart pieChart,
+      @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.listaReporteIntegrantes = listaReporteIntegrantes;
     this.listaSaldoPendiente = listaSaldoPendiente;
     this.navView = navView;
     this.pieChart = pieChart;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -94,8 +100,14 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       return new ActivityReporteGastosBinding((LinearLayout) rootView, listaReporteIntegrantes,
-          listaSaldoPendiente, navView, pieChart);
+          listaSaldoPendiente, navView, pieChart, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
