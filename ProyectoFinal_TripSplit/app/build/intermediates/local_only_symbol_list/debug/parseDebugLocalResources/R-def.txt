@@ -82,9 +82,11 @@ id mobile_navigation2
 id mobile_navigation3
 id nav_host_fragment_activity_home
 id nav_view
+id navigation_agregar_gasto
 id navigation_dashboard
 id navigation_home
 id navigation_notifications
+id navigation_reporte_gastos
 id pieChart
 id rv_integrantes
 id scrollViewMembers
@@ -143,8 +145,10 @@ mipmap ic_launcher_round
 mipmap icon_crear_viaje
 mipmap icon_home
 mipmap icon_unirse_viaje
+mipmap image_agregar_gasto
 mipmap image_default_user
 mipmap image_options
+mipmap image_reporte_gastos
 mipmap image_setting
 mipmap logo_avion
 mipmap logo_usuario
@@ -190,6 +194,7 @@ string nombreGrupo
 string nombre_del_gasto
 string registra_un_gasto
 string registrate
+string reporte_gastos
 string slogan
 string textoPresentacion
 string title_activity_home

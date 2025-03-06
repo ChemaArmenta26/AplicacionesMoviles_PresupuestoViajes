@@ -3542,6 +3542,7 @@ id nav_controller_view_tag
 id nav_host_fragment_activity_home
 id nav_host_fragment_container
 id nav_view
+id navigation_agregar_gasto
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3552,6 +3553,7 @@ id navigation_dashboard
 id navigation_header_container
 id navigation_home
 id navigation_notifications
+id navigation_reporte_gastos
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -4001,8 +4003,10 @@ mipmap ic_launcher_round
 mipmap icon_crear_viaje
 mipmap icon_home
 mipmap icon_unirse_viaje
+mipmap image_agregar_gasto
 mipmap image_default_user
 mipmap image_options
+mipmap image_reporte_gastos
 mipmap image_setting
 mipmap logo_avion
 mipmap logo_usuario
@@ -4211,6 +4215,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string registra_un_gasto
 string registrate
+string reporte_gastos
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

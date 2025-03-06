@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,8 @@ class Home : AppCompatActivity() {
                 .replace(R.id.topBarFragment, TopBarFragment())
                 .commit()
         }
+
+
         val btn_crearViaje = findViewById<Button>(R.id.btn_crearViaje)
         btn_crearViaje.setOnClickListener {
             val intent = Intent(this, CrearGrupo::class.java)

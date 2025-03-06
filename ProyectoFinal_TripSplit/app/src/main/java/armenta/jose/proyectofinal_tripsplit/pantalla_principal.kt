@@ -12,6 +12,8 @@ import armenta.jose.proyectofinal_tripsplit.utilities.GastoPendiente
 import armenta.jose.proyectofinal_tripsplit.utilities.GastoPendienteAdapter
 import armenta.jose.proyectofinal_tripsplit.utilities.PagarPorPersona
 import armenta.jose.proyectofinal_tripsplit.utilities.PagarPorPersonaAdapter
+import armenta.jose.proyectofinal_tripsplit.utilities.setupBottomNavigation
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class pantalla_principal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,8 @@ class pantalla_principal : AppCompatActivity() {
 
        // Primer ListView para los gastos de las personas
         val listViewPersonas = findViewById<ListView>(R.id.lista_monto_pagar_persona)
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.nav_view)
+        setupBottomNavigation(bottomNavigation, R.id.navigation_home)
 
         // Datos de prueba (mocks) para PagarPorPersona
         val listaMontoPagar = listOf(

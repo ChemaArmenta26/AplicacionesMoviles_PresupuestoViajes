@@ -149,7 +149,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
-                android:text="Codigo del grupo"
+                android:text="Código del grupo"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
