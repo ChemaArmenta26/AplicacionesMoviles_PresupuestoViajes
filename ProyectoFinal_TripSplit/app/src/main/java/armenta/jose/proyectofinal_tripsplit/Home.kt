@@ -1,35 +1,32 @@
 package armenta.jose.proyectofinal_tripsplit
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.widget.Button
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import armenta.jose.proyectofinal_tripsplit.databinding.ActivityHomeBinding
+import armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment
 
 class Home : AppCompatActivity() {
-
-    private lateinit var binding: ActivityHomeBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_home)
 
-        binding = ActivityHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        val navView: BottomNavigationView = binding.navView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_home)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.topBarFragment, TopBarFragment())
+                .commit()
+        }
+        val btn_crearViaje = findViewById<Button>(R.id.btn_crearViaje)
+        btn_crearViaje.setOnClickListener {
+            val intent = Intent(this, CrearGrupo::class.java)
+            startActivity(intent)
+        }
+        val btn_unirseViaje = findViewById<Button>(R.id.btn_unirseViaje)
+        btn_unirseViaje.setOnClickListener {
+            val intent = Intent(this, CodigoGrupoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

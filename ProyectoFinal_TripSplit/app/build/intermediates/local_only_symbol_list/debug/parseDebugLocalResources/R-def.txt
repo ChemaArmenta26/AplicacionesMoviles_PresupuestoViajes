@@ -29,9 +29,13 @@ drawable recuadro_borde
 drawable spinner
 id btn_buscar
 id btn_cancelar
+id btn_crear
+id btn_crearViaje
 id btn_guardar
 id btn_ingresar
+id btn_iniciar_sesion
 id btn_registrarse
+id btn_unirseViaje
 id concepto_gasto
 id container
 id et_apellido
@@ -64,7 +68,6 @@ id mobile_navigation
 id mobile_navigation2
 id mobile_navigation3
 id nav_host_fragment_activity_home
-id nav_host_fragment_activity_registrar_gastos
 id nav_view
 id navigation_dashboard
 id navigation_home
@@ -85,6 +88,7 @@ id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante
+id tv_nombre_viaje
 id tv_tipo_gasto
 layout activity_codigo_grupo
 layout activity_crear_cuenta
@@ -105,6 +109,7 @@ layout fragment_top_bar
 layout item_gasto
 layout item_gasto_pendiente
 layout item_integrante_detalle
+layout item_registro_gasto
 layout item_total_gastado
 menu bottom_nav_menu
 mipmap avion_volando
@@ -171,6 +176,7 @@ string title_dashboard
 string title_home
 string title_notifications
 string unete
+string unirme_a_grupo_n_de_viaje
 string yatienescuenta
 style Base.Theme.ProyectoFinal_TripSplit
 style Theme.ProyectoFinal_TripSplit
