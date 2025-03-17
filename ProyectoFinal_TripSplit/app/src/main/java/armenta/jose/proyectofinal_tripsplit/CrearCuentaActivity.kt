@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment
 
-class CrearCuentaActivity : AppCompatActivity()  {
+class CrearCuentaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,6 +26,7 @@ class CrearCuentaActivity : AppCompatActivity()  {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
+
         val btnCrear = findViewById<Button>(R.id.btn_crear)
         btnCrear.setOnClickListener {
             val intent = Intent(this, Home::class.java)

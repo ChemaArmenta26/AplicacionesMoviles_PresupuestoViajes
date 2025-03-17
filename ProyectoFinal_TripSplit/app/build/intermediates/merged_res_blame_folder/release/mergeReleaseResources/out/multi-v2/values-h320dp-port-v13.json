@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "armenta.jose.proyectofinal_tripsplit.app-mergeReleaseResources-48:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/esmeraldamolinaestrada/.gradle/caches/8.10.2/transforms/66df0dd4e396e332d5f385c0acb8e098/transformed/material-1.12.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

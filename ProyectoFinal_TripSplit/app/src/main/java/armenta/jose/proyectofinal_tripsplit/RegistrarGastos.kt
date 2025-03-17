@@ -16,6 +16,8 @@ import armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment
 import armenta.jose.proyectofinal_tripsplit.utilities.Integrante
 import armenta.jose.proyectofinal_tripsplit.utilities.IntegranteRegistroAdapter
 import armenta.jose.proyectofinal_tripsplit.utilities.IntegrantesAdapter
+import armenta.jose.proyectofinal_tripsplit.utilities.setupBottomNavigation
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class RegistrarGastos : AppCompatActivity() {
 
@@ -32,6 +34,9 @@ class RegistrarGastos : AppCompatActivity() {
                 .replace(R.id.topBarFragment, TopBarFragment())
                 .commit()
         }
+
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.nav_view)
+        setupBottomNavigation(bottomNavigation, R.id.navigation_agregar_gasto)
 
         val btnCancelar = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.btn_cancelar)
         btnCancelar.setOnClickListener {

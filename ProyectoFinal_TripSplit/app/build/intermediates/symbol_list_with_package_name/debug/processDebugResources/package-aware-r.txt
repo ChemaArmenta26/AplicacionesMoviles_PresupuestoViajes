@@ -3070,11 +3070,13 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable circular_background
+drawable delete_forever
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit
 drawable edit_text_custom
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
@@ -3173,6 +3175,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable person_outline
 drawable recuadro_borde
 drawable spinner
 drawable test_level_drawable
@@ -3280,6 +3283,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnEditGroupName
+id btnRemoveMember1
+id btnRemoveMember2
+id btnRemoveMember3
 id btn_buscar
 id btn_cancelar
 id btn_crear
@@ -3288,6 +3295,7 @@ id btn_guardar
 id btn_ingresar
 id btn_iniciar_sesion
 id btn_registrarse
+id btn_regresar
 id btn_unirseViaje
 id buttonPanel
 id cache_measures
@@ -3325,6 +3333,7 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
+id crearCuenta
 id currentState
 id custom
 id customPanel
@@ -3442,6 +3451,9 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivMember1
+id ivMember2
+id ivMember3
 id iv_perfil_integrante
 id jumpToEnd
 id jumpToStart
@@ -3459,6 +3471,7 @@ id lista_gastos
 id lista_monto_pagar_persona
 id lista_reporte_integrantes
 id lista_saldo_pendiente
+id llMembersContainer
 id locale
 id ltr
 id m3_side_sheet
@@ -3529,6 +3542,7 @@ id nav_controller_view_tag
 id nav_host_fragment_activity_home
 id nav_host_fragment_container
 id nav_view
+id navigation_agregar_gasto
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3539,6 +3553,7 @@ id navigation_dashboard
 id navigation_header_container
 id navigation_home
 id navigation_notifications
+id navigation_reporte_gastos
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3610,6 +3625,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollViewMembers
 id scrollable
 id search_badge
 id search_bar
@@ -3719,6 +3735,13 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvEliminar1
+id tvEliminar2
+id tvEliminar3
+id tvIntegrantesLabel
+id tvMember1Name
+id tvMember2Name
+id tvMember3Name
 id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
@@ -3729,6 +3752,7 @@ id tv_nombre_gasto
 id tv_nombre_integrante
 id tv_nombre_viaje
 id tv_tipo_gasto
+id tv_title
 id unchecked
 id uniform
 id unlabeled
@@ -3979,8 +4003,10 @@ mipmap ic_launcher_round
 mipmap icon_crear_viaje
 mipmap icon_home
 mipmap icon_unirse_viaje
+mipmap image_agregar_gasto
 mipmap image_default_user
 mipmap image_options
+mipmap image_reporte_gastos
 mipmap image_setting
 mipmap logo_avion
 mipmap logo_usuario
@@ -4046,8 +4072,8 @@ string clear_text_end_icon_content_description
 string confirmarContraseña
 string contrase_a
 string correo_electronico
-string crarCuenta
 string crear
+string crearCuenta
 string crearGrupo
 string crear_viaje_grupal
 string cuantosSon
@@ -4189,6 +4215,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string registra_un_gasto
 string registrate
+string reporte_gastos
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

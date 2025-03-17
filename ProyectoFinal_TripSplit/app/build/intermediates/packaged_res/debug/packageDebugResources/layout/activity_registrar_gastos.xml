@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".RegistrarGastos">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/topBarFragment"
         android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
         android:layout_width="match_parent"

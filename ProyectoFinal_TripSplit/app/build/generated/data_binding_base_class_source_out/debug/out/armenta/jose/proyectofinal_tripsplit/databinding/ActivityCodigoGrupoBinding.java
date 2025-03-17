@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -34,14 +35,19 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView navView;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityCodigoGrupoBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnBuscar, @NonNull EditText inputCodigo,
-      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView) {
+      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView,
+      @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnBuscar = btnBuscar;
     this.inputCodigo = inputCodigo;
     this.navHostFragmentActivityHome = navHostFragmentActivityHome;
     this.navView = navView;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -95,8 +101,14 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       return new ActivityCodigoGrupoBinding((LinearLayout) rootView, btnBuscar, inputCodigo,
-          navHostFragmentActivityHome, navView);
+          navHostFragmentActivityHome, navView, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

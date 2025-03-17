@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegistrarGastos">
+
+    <fragment
+        android:id="@+id/topBarFragment"
+        android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/dark_blue"
+        android:textAlignment="center"
+        android:text="@string/registra_un_gasto">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_nombre_gasto"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/nombre_del_gasto"
+        android:inputType="text"
+        android:padding="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_monto_gasto"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_custom"
+        android:hint="@string/monto_total"
+        android:inputType="numberDecimal"
+        android:padding="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#BDBDBD"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner"
+        android:padding="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/integrantes"
+        android:layout_marginTop="10sp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="66dp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_integrantes"
+        android:layout_width="279dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        tools:listitem="@layout/item_registro_gasto">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Spinner
+        android:id="@+id/spinnerQuienPago"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner"
+        android:padding="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:textAllCaps="false"
+            android:paddingHorizontal="30dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@drawable/boto_registrar_gasto">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:textAllCaps="false"
+            android:layout_marginStart="17dp"
+            android:paddingHorizontal="30dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@drawable/boto_registrar_gasto">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/light_blue"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

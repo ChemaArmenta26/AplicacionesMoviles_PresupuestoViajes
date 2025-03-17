@@ -40,6 +40,9 @@
             android:name="armenta.jose.proyectofinal_tripsplit.DetalleGastoActivity"
             android:exported="false" />
         <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.EditarGrupoActivity"
+            android:exported="false" />
+        <activity
             android:name="armenta.jose.proyectofinal_tripsplit.CodigoGrupoActivity"
             android:exported="false" />
         <activity

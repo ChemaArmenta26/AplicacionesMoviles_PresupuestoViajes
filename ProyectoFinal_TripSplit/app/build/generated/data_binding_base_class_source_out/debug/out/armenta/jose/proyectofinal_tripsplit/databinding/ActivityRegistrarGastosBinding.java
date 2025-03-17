@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -50,12 +51,15 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
   @NonNull
   public final Spinner spinnerQuienPago;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityRegistrarGastosBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnCancelar, @NonNull AppCompatButton btnGuardar,
       @NonNull LinearLayout container, @NonNull EditText etMontoGasto,
       @NonNull EditText etNombreGasto, @NonNull BottomNavigationView navView,
       @NonNull RecyclerView rvIntegrantes, @NonNull Spinner spinnerCategoria,
-      @NonNull Spinner spinnerQuienPago) {
+      @NonNull Spinner spinnerQuienPago, @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnCancelar = btnCancelar;
     this.btnGuardar = btnGuardar;
@@ -66,6 +70,7 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
     this.rvIntegrantes = rvIntegrantes;
     this.spinnerCategoria = spinnerCategoria;
     this.spinnerQuienPago = spinnerQuienPago;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -145,9 +150,15 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       return new ActivityRegistrarGastosBinding((LinearLayout) rootView, btnCancelar, btnGuardar,
           container, etMontoGasto, etNombreGasto, navView, rvIntegrantes, spinnerCategoria,
-          spinnerQuienPago);
+          spinnerQuienPago, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

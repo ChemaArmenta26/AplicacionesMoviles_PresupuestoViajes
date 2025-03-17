@@ -14,6 +14,8 @@ import com.github.mikephil.charting.utils.ColorTemplate
 import armenta.jose.proyectofinal_tripsplit.utilities.GastoPendiente
 import armenta.jose.proyectofinal_tripsplit.utilities.TotalGastado
 import armenta.jose.proyectofinal_tripsplit.utilities.TotalGastadoAdapter
+import armenta.jose.proyectofinal_tripsplit.utilities.setupBottomNavigation
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class reporte_gastos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +27,8 @@ class reporte_gastos : AppCompatActivity() {
         setupPieChart(pieChart)
 
         val listView = findViewById<ListView>(R.id.lista_saldo_pendiente)
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.nav_view)
+        setupBottomNavigation(bottomNavigation, R.id.navigation_reporte_gastos)
 
         // Datos de prueba (mocks)
         val listaGastos = listOf(

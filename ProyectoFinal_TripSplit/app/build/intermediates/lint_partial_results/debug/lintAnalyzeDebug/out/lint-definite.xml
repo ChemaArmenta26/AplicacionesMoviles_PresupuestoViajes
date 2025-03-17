@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.8.2" type="incidents">
+
+    <incident
+        id="NestedScrolling"
+        severity="warning"
+        message="The vertically scrolling `ScrollView` should not contain another vertically scrolling widget (`ListView`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="68"
+            column="14"
+            startOffset="2497"
+            endLine="68"
+            endColumn="22"
+            endOffset="2505"/>
+    </incident>
+
+    <incident
+        id="NestedScrolling"
+        severity="warning"
+        message="The vertically scrolling `ScrollView` should not contain another vertically scrolling widget (`ListView`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="133"
+            column="14"
+            startOffset="5191"
+            endLine="133"
+            endColumn="22"
+            endOffset="5199"/>
+    </incident>
+
+    <incident
+        id="NestedScrolling"
+        severity="warning"
+        message="The vertically scrolling `ScrollView` should not contain another vertically scrolling widget (`ListView`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="85"
+            column="14"
+            startOffset="3194"
+            endLine="85"
+            endColumn="22"
+            endOffset="3202"/>
+    </incident>
+
+    <incident
+        id="NestedScrolling"
+        severity="warning"
+        message="The vertically scrolling `ScrollView` should not contain another vertically scrolling widget (`ListView`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="110"
+            column="14"
+            startOffset="4121"
+            endLine="110"
+            endColumn="22"
+            endOffset="4129"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_codigo_grupo.xml"
+            line="11"
+            column="6"
+            startOffset="414"
+            endLine="11"
+            endColumn="14"
+            endOffset="422"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_crear_cuenta.xml"
+            line="10"
+            column="6"
+            startOffset="365"
+            endLine="10"
+            endColumn="14"
+            endOffset="373"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_crear_grupo.xml"
+            line="11"
+            column="6"
+            startOffset="412"
+            endLine="11"
+            endColumn="14"
+            endOffset="420"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_detalle_gasto.xml"
+            line="10"
+            column="6"
+            startOffset="380"
+            endLine="10"
+            endColumn="14"
+            endOffset="388"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_home.xml"
+            line="13"
+            column="6"
+            startOffset="439"
+            endLine="13"
+            endColumn="14"
+            endOffset="447"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="11"
+            column="6"
+            startOffset="378"
+            endLine="11"
+            endColumn="14"
+            endOffset="386"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="10"
+            column="6"
+            startOffset="380"
+            endLine="10"
+            endColumn="14"
+            endOffset="388"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_registrar_gastos.xml"
+            line="12"
+            column="6"
+            startOffset="449"
+            endLine="12"
+            endColumn="14"
+            endOffset="457"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="10"
+            column="6"
+            startOffset="380"
+            endLine="10"
+            endColumn="14"
+            endOffset="388"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.application than 8.8.2 is available: 8.9.0">
+        <fix-replace
+            description="Change to 8.9.0"
+            family="Update versions"
+            oldString="8.8.2"
+            replacement="8.9.0"
+            priority="0"/>
+        <location
+            file="$HOME/Documents/PoyectoMoviles2/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/gradle/libs.versions.toml"
+            line="2"
+            column="7"
+            startOffset="17"
+            endLine="2"
+            endColumn="14"
+            endOffset="24"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.6.0 is available: 2.8.8">
+        <fix-replace
+            description="Change to 2.8.8"
+            family="Update versions"
+            oldString="2.6.0"
+            replacement="2.8.8"
+            priority="0"/>
+        <location
+            file="$HOME/Documents/PoyectoMoviles2/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/gradle/libs.versions.toml"
+            line="14"
+            column="25"
+            startOffset="299"
+            endLine="14"
+            endColumn="32"
+            endOffset="306"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.6.0 is available: 2.8.8">
+        <fix-replace
+            description="Change to 2.8.8"
+            family="Update versions"
+            oldString="2.6.0"
+            replacement="2.8.8"
+            priority="0"/>
+        <location
+            file="$HOME/Documents/PoyectoMoviles2/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/gradle/libs.versions.toml"
+            line="15"
+            column="19"
+            startOffset="325"
+            endLine="15"
+            endColumn="26"
+            endOffset="332"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/DetalleGastoActivity.kt"
+            line="47"
+            column="9"
+            startOffset="1752"
+            endLine="47"
+            endColumn="39"
+            endOffset="1782"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/RegistrarGastos.kt"
+            line="122"
+            column="9"
+            startOffset="4533"
+            endLine="122"
+            endColumn="39"
+            endOffset="4563"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `172dp` for better performance">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_editar_grupo.xml"
+            line="32"
+            column="13"
+            startOffset="994"
+            endLine="32"
+            endColumn="41"
+            endOffset="1022"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_codigo_grupo.xml"
+            line="8"
+            column="5"
+            startOffset="339"
+            endLine="8"
+            endColumn="38"
+            endOffset="372"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_crear_cuenta.xml"
+            line="7"
+            column="5"
+            startOffset="283"
+            endLine="7"
+            endColumn="38"
+            endOffset="316"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_crear_grupo.xml"
+            line="8"
+            column="5"
+            startOffset="336"
+            endLine="8"
+            endColumn="38"
+            endOffset="369"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_detalle_gasto.xml"
+            line="8"
+            column="5"
+            startOffset="339"
+            endLine="8"
+            endColumn="38"
+            endOffset="372"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_editar_grupo.xml"
+            line="8"
+            column="5"
+            startOffset="339"
+            endLine="8"
+            endColumn="38"
+            endOffset="372"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_home.xml"
+            line="8"
+            column="5"
+            startOffset="336"
+            endLine="8"
+            endColumn="38"
+            endOffset="369"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="7"
+            column="5"
+            startOffset="275"
+            endLine="7"
+            endColumn="38"
+            endOffset="308"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="8"
+            column="5"
+            startOffset="339"
+            endLine="8"
+            endColumn="38"
+            endOffset="372"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_registrar_gastos.xml"
+            line="8"
+            column="5"
+            startOffset="336"
+            endLine="8"
+            endColumn="38"
+            endOffset="369"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="8"
+            column="5"
+            startOffset="339"
+            endLine="8"
+            endColumn="38"
+            endOffset="372"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_home.xml"
+            line="8"
+            column="5"
+            startOffset="339"
+            endLine="8"
+            endColumn="38"
+            endOffset="372"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/light_blue` with a theme that also paints a background (inferred theme is `@style/Theme.ProyectoFinal_TripSplit`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_top_bar.xml"
+            line="5"
+            column="5"
+            startOffset="218"
+            endLine="5"
+            endColumn="43"
+            endOffset="256"/>
+    </incident>
+
+    <incident
+        id="UselessLeaf"
+        severity="warning"
+        message="This `LinearLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_editar_grupo.xml"
+            line="44"
+            column="6"
+            startOffset="1318"
+            endLine="44"
+            endColumn="18"
+            endOffset="1330"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto.xml"
+            line="7"
+            column="6"
+            startOffset="222"
+            endLine="7"
+            endColumn="18"
+            endOffset="234"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto_pendiente.xml"
+            line="9"
+            column="6"
+            startOffset="272"
+            endLine="9"
+            endColumn="18"
+            endOffset="284"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_registro_gasto.xml"
+            line="8"
+            column="6"
+            startOffset="271"
+            endLine="8"
+            endColumn="18"
+            endOffset="283"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_total_gastado.xml"
+            line="8"
+            column="6"
+            startOffset="271"
+            endLine="8"
+            endColumn="18"
+            endOffset="283"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="13"
+            column="27"
+            startOffset="646"
+            endLine="13"
+            endColumn="36"
+            endOffset="655"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            point="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_codigo_grupo.xml"
+            line="46"
+            column="14"
+            startOffset="1606"
+            endLine="46"
+            endColumn="22"
+            endOffset="1614"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_codigo_grupo.xml"
+            line="46"
+            column="14"
+            startOffset="1606"
+            endLine="46"
+            endColumn="22"
+            endOffset="1614"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for philjay-mpandroidchart"
+            robot="true">
+            <fix-replace
+                description="Replace with mpandroidchartVersion = &quot;v3.1.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="mpandroidchartVersion = &quot;v3.1.0&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Documents/PoyectoMoviles2/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/gradle/libs.versions.toml"
+                    startOffset="275"
+                    endOffset="275"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with philjay-mpandroidchart = { module = &quot;com.github.PhilJay:MPAndroidChart&quot;, version.ref = &quot;mpandroidchartVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="philjay-mpandroidchart = { module = &quot;com.github.PhilJay:MPAndroidChart&quot;, version.ref = &quot;mpandroidchartVersion&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Documents/PoyectoMoviles2/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/gradle/libs.versions.toml"
+                    startOffset="1741"
+                    endOffset="1741"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.philjay.mpandroidchart"
+                robot="true"
+                replacement="libs.philjay.mpandroidchart"
+                priority="0">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1644"
+                    endOffset="1686"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="57"
+            column="20"
+            startOffset="1644"
+            endLine="57"
+            endColumn="62"
+            endOffset="1686"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_codigo_grupo.xml"
+            line="24"
+            column="10"
+            startOffset="788"
+            endLine="24"
+            endColumn="19"
+            endOffset="797"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_crear_cuenta.xml"
+            line="166"
+            column="10"
+            startOffset="5499"
+            endLine="166"
+            endColumn="19"
+            endOffset="5508"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_inicio.xml"
+            line="52"
+            column="10"
+            startOffset="1739"
+            endLine="52"
+            endColumn="19"
+            endOffset="1748"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_inicio.xml"
+            line="58"
+            column="10"
+            startOffset="1948"
+            endLine="58"
+            endColumn="19"
+            endOffset="1957"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="116"
+            column="10"
+            startOffset="3897"
+            endLine="116"
+            endColumn="19"
+            endOffset="3906"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_top_bar.xml"
+            line="9"
+            column="6"
+            startOffset="355"
+            endLine="9"
+            endColumn="15"
+            endOffset="364"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_top_bar.xml"
+            line="17"
+            column="6"
+            startOffset="593"
+            endLine="17"
+            endColumn="15"
+            endOffset="602"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_top_bar.xml"
+            line="33"
+            column="10"
+            startOffset="1113"
+            endLine="33"
+            endColumn="19"
+            endOffset="1122"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_top_bar.xml"
+            line="40"
+            column="10"
+            startOffset="1343"
+            endLine="40"
+            endColumn="19"
+            endOffset="1352"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_top_bar.xml"
+            line="47"
+            column="10"
+            startOffset="1568"
+            endLine="47"
+            endColumn="19"
+            endOffset="1577"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto_pendiente.xml"
+            line="16"
+            column="10"
+            startOffset="546"
+            endLine="16"
+            endColumn="19"
+            endOffset="555"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_integrante_detalle.xml"
+            line="8"
+            column="6"
+            startOffset="271"
+            endLine="8"
+            endColumn="15"
+            endOffset="280"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_registro_gasto.xml"
+            line="15"
+            column="10"
+            startOffset="545"
+            endLine="15"
+            endColumn="19"
+            endOffset="554"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_total_gastado.xml"
+            line="15"
+            column="10"
+            startOffset="545"
+            endLine="15"
+            endColumn="19"
+            endOffset="554"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/DetalleGastoActivity.kt"
+            line="36"
+            column="31"
+            startOffset="1384"
+            endLine="36"
+            endColumn="52"
+            endOffset="1405"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/DetalleGastoActivity.kt"
+            line="37"
+            column="29"
+            startOffset="1435"
+            endLine="37"
+            endColumn="40"
+            endOffset="1446"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/DetalleGastoActivity.kt"
+            line="37"
+            column="31"
+            startOffset="1437"
+            endLine="37"
+            endColumn="39"
+            endOffset="1445"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/DetalleGastoActivity.kt"
+            line="38"
+            column="34"
+            startOffset="1480"
+            endLine="38"
+            endColumn="40"
+            endOffset="1486"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/armenta/jose/proyectofinal_tripsplit/utilities/IntegrantesAdapter.kt"
+            line="32"
+            column="39"
+            startOffset="1379"
+            endLine="32"
+            endColumn="61"
+            endOffset="1401"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Viaje Amigochas&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="26"
+            column="9"
+            startOffset="1003"
+            endLine="26"
+            endColumn="39"
+            endOffset="1033"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Monto a Pagar por Persona&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="62"
+            column="17"
+            startOffset="2263"
+            endLine="62"
+            endColumn="57"
+            endOffset="2303"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Total Gastado&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="105"
+            column="29"
+            startOffset="4057"
+            endLine="105"
+            endColumn="57"
+            endOffset="4085"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;$2573.00 MXN&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="114"
+            column="29"
+            startOffset="4475"
+            endLine="114"
+            endColumn="56"
+            endOffset="4502"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Lista de gastos&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="127"
+            column="17"
+            startOffset="4966"
+            endLine="127"
+            endColumn="47"
+            endOffset="4996"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Codigo del grupo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="152"
+            column="17"
+            startOffset="5837"
+            endLine="152"
+            endColumn="48"
+            endOffset="5868"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;GR12345&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_pantalla_principal.xml"
+            line="165"
+            column="17"
+            startOffset="6402"
+            endLine="165"
+            endColumn="39"
+            endOffset="6424"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Reporte Gastos Mensuales&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="25"
+            column="9"
+            startOffset="961"
+            endLine="25"
+            endColumn="48"
+            endOffset="1000"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Gastos totales por categoria&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="55"
+            column="17"
+            startOffset="1928"
+            endLine="55"
+            endColumn="60"
+            endOffset="1971"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Gastos totales por integrante&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="78"
+            column="17"
+            startOffset="2914"
+            endLine="78"
+            endColumn="61"
+            endOffset="2958"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Saldos Pendietes&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_reporte_gastos.xml"
+            line="103"
+            column="17"
+            startOffset="3852"
+            endLine="103"
+            endColumn="48"
+            endOffset="3883"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;C&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto.xml"
+            line="19"
+            column="13"
+            startOffset="659"
+            endLine="19"
+            endColumn="29"
+            endOffset="675"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Comida&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto.xml"
+            line="34"
+            column="17"
+            startOffset="1217"
+            endLine="34"
+            endColumn="38"
+            endOffset="1238"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Cena en restaurante&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto.xml"
+            line="43"
+            column="17"
+            startOffset="1568"
+            endLine="43"
+            endColumn="51"
+            endOffset="1602"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;- $6,622.00&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto.xml"
+            line="52"
+            column="13"
+            startOffset="1891"
+            endLine="52"
+            endColumn="39"
+            endOffset="1917"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Abelson&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto_pendiente.xml"
+            line="30"
+            column="13"
+            startOffset="1008"
+            endLine="30"
+            endColumn="35"
+            endOffset="1030"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Gasto Pendiente&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto_pendiente.xml"
+            line="45"
+            column="17"
+            startOffset="1564"
+            endLine="45"
+            endColumn="47"
+            endOffset="1594"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;$375&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_gasto_pendiente.xml"
+            line="56"
+            column="17"
+            startOffset="1989"
+            endLine="56"
+            endColumn="36"
+            endOffset="2008"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Abelson&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_integrante_detalle.xml"
+            line="20"
+            column="9"
+            startOffset="676"
+            endLine="20"
+            endColumn="31"
+            endOffset="698"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;$375&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_integrante_detalle.xml"
+            line="31"
+            column="9"
+            startOffset="1050"
+            endLine="31"
+            endColumn="28"
+            endOffset="1069"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Abelson&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_registro_gasto.xml"
+            line="29"
+            column="13"
+            startOffset="1007"
+            endLine="29"
+            endColumn="35"
+            endOffset="1029"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Abelson&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_total_gastado.xml"
+            line="29"
+            column="13"
+            startOffset="1007"
+            endLine="29"
+            endColumn="35"
+            endOffset="1029"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Total Gastado&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_total_gastado.xml"
+            line="44"
+            column="17"
+            startOffset="1563"
+            endLine="44"
+            endColumn="45"
+            endOffset="1591"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;$375&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_total_gastado.xml"
+            line="55"
+            column="17"
+            startOffset="1986"
+            endLine="55"
+            endColumn="36"
+            endOffset="2005"/>
+    </incident>
+
+</incidents>

@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,6 +29,9 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
   public final RecyclerView rvIntegrantes;
 
   @NonNull
+  public final FragmentContainerView topBarFragment;
+
+  @NonNull
   public final TextView tvCategoriaGasto;
 
   @NonNull
@@ -38,11 +42,12 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
 
   private ActivityDetalleGastoBinding(@NonNull LinearLayout rootView,
       @NonNull BottomNavigationView navView, @NonNull RecyclerView rvIntegrantes,
-      @NonNull TextView tvCategoriaGasto, @NonNull TextView tvMontoGasto,
-      @NonNull TextView tvNombreGasto) {
+      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvCategoriaGasto,
+      @NonNull TextView tvMontoGasto, @NonNull TextView tvNombreGasto) {
     this.rootView = rootView;
     this.navView = navView;
     this.rvIntegrantes = rvIntegrantes;
+    this.topBarFragment = topBarFragment;
     this.tvCategoriaGasto = tvCategoriaGasto;
     this.tvMontoGasto = tvMontoGasto;
     this.tvNombreGasto = tvNombreGasto;
@@ -87,6 +92,12 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
       id = R.id.tv_categoria_gasto;
       TextView tvCategoriaGasto = ViewBindings.findChildViewById(rootView, id);
       if (tvCategoriaGasto == null) {
@@ -106,7 +117,7 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
       }
 
       return new ActivityDetalleGastoBinding((LinearLayout) rootView, navView, rvIntegrantes,
-          tvCategoriaGasto, tvMontoGasto, tvNombreGasto);
+          topBarFragment, tvCategoriaGasto, tvMontoGasto, tvNombreGasto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
