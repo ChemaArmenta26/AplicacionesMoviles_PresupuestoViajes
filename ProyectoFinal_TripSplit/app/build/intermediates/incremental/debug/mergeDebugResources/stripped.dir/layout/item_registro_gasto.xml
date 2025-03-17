@@ -39,6 +39,7 @@
             android:layout_height="wrap_content">
             <CheckBox
                 android:layout_width="match_parent"
+                android:buttonTint="@color/blue"
                 android:layout_height="match_parent">
             </CheckBox>
 

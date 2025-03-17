@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981777734028",
+    "project_id": "proyectofinal-tripsplit",
+    "storage_bucket": "proyectofinal-tripsplit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981777734028:android:790825d0255a0ef9b81ea9",
+        "android_client_info": {
+          "package_name": "armenta.jose.proyectofinal_tripsplit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEIorR92JwruxoRLGajKmTfewrIgq0mYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

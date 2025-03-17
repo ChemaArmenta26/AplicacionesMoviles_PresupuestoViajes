@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -39,10 +40,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final FragmentContainerView topBarFragment;
 
+  @NonNull
+  public final TextView tvError;
+
   private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton btnIngresar,
       @NonNull AppCompatButton btnRegistrarse, @NonNull EditText etContrasena,
       @NonNull EditText etCorreoElectronico, @NonNull LinearLayout main,
-      @NonNull FragmentContainerView topBarFragment) {
+      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvError) {
     this.rootView = rootView;
     this.btnIngresar = btnIngresar;
     this.btnRegistrarse = btnRegistrarse;
@@ -50,6 +54,7 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.etCorreoElectronico = etCorreoElectronico;
     this.main = main;
     this.topBarFragment = topBarFragment;
+    this.tvError = tvError;
   }
 
   @Override
@@ -111,8 +116,14 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvError;
+      TextView tvError = ViewBindings.findChildViewById(rootView, id);
+      if (tvError == null) {
+        break missingId;
+      }
+
       return new ActivityLoginBinding((LinearLayout) rootView, btnIngresar, btnRegistrarse,
-          etContrasena, etCorreoElectronico, main, topBarFragment);
+          etContrasena, etCorreoElectronico, main, topBarFragment, tvError);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

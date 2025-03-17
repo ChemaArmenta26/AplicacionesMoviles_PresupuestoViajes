@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="armenta.jose.proyectofinal_tripsplit" />
+                  <option name="mobileSdkAppId" value="1:981777734028:android:790825d0255a0ef9b81ea9" />
+                  <option name="projectId" value="proyectofinal-tripsplit" />
+                  <option name="projectNumber" value="981777734028" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
