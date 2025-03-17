@@ -11,6 +11,7 @@ import armenta.jose.proyectofinal_tripsplit.EditarGrupoActivity
 import armenta.jose.proyectofinal_tripsplit.Home
 import armenta.jose.proyectofinal_tripsplit.InicioActivity
 import armenta.jose.proyectofinal_tripsplit.R
+import com.google.firebase.auth.FirebaseAuth
 
 class TopBarFragment : Fragment() {
     override fun onCreateView(
@@ -24,6 +25,7 @@ class TopBarFragment : Fragment() {
 
         logoAvion?.setOnClickListener {
             val intent = Intent(activity, InicioActivity::class.java)
+            FirebaseAuth.getInstance().signOut()
             startActivity(intent)
         }
 

@@ -99,6 +99,7 @@ id topBarFragment
 id tvEliminar1
 id tvEliminar2
 id tvEliminar3
+id tvError
 id tvIntegrantesLabel
 id tvMember1Name
 id tvMember2Name
@@ -176,6 +177,11 @@ string desde
 string deudaIndividual
 string ejemploCategoria
 string ejemploMonto
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string guardar
 string hacía
 string hintCodigo
@@ -192,6 +198,7 @@ string nombre
 string nombreGasto
 string nombreGrupo
 string nombre_del_gasto
+string project_id
 string registra_un_gasto
 string registrate
 string reporte_gastos

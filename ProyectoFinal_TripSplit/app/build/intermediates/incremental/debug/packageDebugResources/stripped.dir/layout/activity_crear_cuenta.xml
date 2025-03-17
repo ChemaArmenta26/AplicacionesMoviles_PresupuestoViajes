@@ -98,6 +98,15 @@
         android:textColorHint="#BDBDBD"
         android:textSize="16sp" />
 
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/red"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
     <!-- Botón Crear Cuenta -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_crear"

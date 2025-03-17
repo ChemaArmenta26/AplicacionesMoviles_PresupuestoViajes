@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -48,12 +49,15 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
   @NonNull
   public final FragmentContainerView topBarFragment;
 
+  @NonNull
+  public final TextView tvError;
+
   private ActivityCrearCuentaBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnCrear, @NonNull AppCompatButton btnIniciarSesion,
       @NonNull LinearLayout crearCuenta, @NonNull EditText etApellido,
       @NonNull EditText etConfContrasena, @NonNull EditText etContrasena,
       @NonNull EditText etCorreo, @NonNull EditText etNombre,
-      @NonNull FragmentContainerView topBarFragment) {
+      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvError) {
     this.rootView = rootView;
     this.btnCrear = btnCrear;
     this.btnIniciarSesion = btnIniciarSesion;
@@ -64,6 +68,7 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
     this.etCorreo = etCorreo;
     this.etNombre = etNombre;
     this.topBarFragment = topBarFragment;
+    this.tvError = tvError;
   }
 
   @Override
@@ -143,9 +148,15 @@ public final class ActivityCrearCuentaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvError;
+      TextView tvError = ViewBindings.findChildViewById(rootView, id);
+      if (tvError == null) {
+        break missingId;
+      }
+
       return new ActivityCrearCuentaBinding((LinearLayout) rootView, btnCrear, btnIniciarSesion,
           crearCuenta, etApellido, etConfContrasena, etContrasena, etCorreo, etNombre,
-          topBarFragment);
+          topBarFragment, tvError);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
