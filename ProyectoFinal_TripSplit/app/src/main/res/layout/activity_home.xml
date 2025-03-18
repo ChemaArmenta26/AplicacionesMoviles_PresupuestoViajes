@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Home">
 
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/topBarFragment"
+        android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar" />
 
     <EditText
         android:id="@+id/et_buscar"
@@ -32,6 +41,7 @@
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_crearViaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/boton_menu"
@@ -45,14 +55,15 @@
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_unirseViaje"
+            android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:background="@drawable/boton_menu"
             android:layout_marginStart="10dp"
             android:textColor="@color/letra_boton_menu"
-            android:padding="15sp"
+            android:padding="8sp"
             android:textAllCaps="false"
-            android:text="@string/crear_viaje_grupal"
+            android:text="@string/unirme_a_grupo_n_de_viaje"
             android:drawableBottom="@mipmap/icon_unirse_viaje">
 
         </androidx.appcompat.widget.AppCompatButton>
@@ -65,13 +76,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-
-        <fragment
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/mobile_navigation2" />
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

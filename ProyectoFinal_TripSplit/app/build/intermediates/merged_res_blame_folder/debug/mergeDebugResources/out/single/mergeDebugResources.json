@@ -1,170 +1,306 @@
 [
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/xml_backup_rules.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/xml/backup_rules.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_pantalla_principal.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_pantalla_principal.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_boto_registrar_gasto.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/boto_registrar_gasto.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_fondo_nubes.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/fondo_nubes.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_fragment_dashboard.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_dashboard.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-pngs-54:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_icon_unirse_viaje.png.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/icon_unirse_viaje.png"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_background_gradient.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/background_gradient.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_integrante_detalle.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_integrante_detalle.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_lupita.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/lupita.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/navigation_mobile_navigation.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/navigation/mobile_navigation.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_ic_launcher_background.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_edit_text_custom.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/edit_text_custom.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_home.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_home.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_icon_home.png.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/icon_home.png"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_icon_crear_viaje.png.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/icon_crear_viaje.png"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_fragment_home.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_home.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_fragment_notifications.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_notifications.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_icon_crear_viaje.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/icon_crear_viaje.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_fragment_top_bar.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_top_bar.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_edit_text_custom.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/edit_text_custom.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_editar_grupo.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_grupo.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_fragment_home.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/fragment_home.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/ic_dashboard_black_24dp.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_options.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_options.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_activity_login.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_login.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_boton_redondo.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/boton_redondo.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_activity_main.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_main.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_decoracion_ondas.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/decoracion_ondas.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_activity_registrar_gastos.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_registrar_gastos.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_boton_menu.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/boton_menu.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_boton_menu.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/boton_menu.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_ic_dropdown_arrow.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/ic_dropdown_arrow.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_gasto_pendiente.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_gasto_pendiente.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/navigation_mobile_navigation2.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/navigation/mobile_navigation2.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_circular_background.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/circular_background.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_boton_no_fondo.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/boton_no_fondo.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/ic_home_black_24dp.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_spinner.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/spinner.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_fragment_notifications.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_notifications.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_boton_redondo.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/boton_redondo.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/layout_activity_home.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/layout/activity_home.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_titulo_app.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/titulo_app.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_registrar_gastos.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_registrar_gastos.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_boton_no_fondo.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/boton_no_fondo.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_gasto.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_gasto.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/menu_bottom_nav_menu.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/menu/bottom_nav_menu.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_total_gastado.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_total_gastado.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/menu_bottom_nav_menu.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_button_plus.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/button_plus.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_ic_home_black_24dp.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/ic_home_black_24dp.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_detalle_gasto.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_detalle_gasto.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/drawable/ic_notifications_black_24dp.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_decoracion_fondo.png.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/decoracion_fondo.png"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_crear_cuenta.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_crear_cuenta.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/navigation_mobile_navigation3.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/navigation/mobile_navigation3.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_delete_forever.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/delete_forever.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/xml_backup_rules.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/xml/backup_rules.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/mipmap-hdpi_lupita.png.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/mipmap-hdpi/lupita.png"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_edit.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/edit.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-pngs-46:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_logo_usuario.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/logo_usuario.png"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-50:/xml_data_extraction_rules.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-52:/xml/data_extraction_rules.xml"
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_decoracion_fondo.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/decoracion_fondo.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_setting.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_setting.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/navigation_mobile_navigation3.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/navigation/mobile_navigation3.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_ic_dropdown_arrow.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/ic_dropdown_arrow.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_registro_gasto.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_registro_gasto.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_reporte_gastos.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_reporte_gastos.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_avion_volando.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/avion_volando.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_codigo_grupo.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_codigo_grupo.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_login.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_crear_grupo.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_crear_grupo.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_button_minus.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/button_minus.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_recuadro_borde.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/recuadro_borde.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_icon_home.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/icon_home.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_person_outline.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/person_outline.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_logo_avion.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/logo_avion.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_main.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/navigation_mobile_navigation2.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/navigation/mobile_navigation2.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_crear_grupo.xml.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_crear_grupo.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_reporte_gastos.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_reporte_gastos.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_default_user.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_default_user.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_agregar_gasto.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_agregar_gasto.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_inicio.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_inicio.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_spinner.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/spinner.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_boto_registrar_gasto.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/boto_registrar_gasto.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_fragment_dashboard.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_icon_unirse_viaje.png.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/icon_unirse_viaje.png"
+    },
+    {
+        "merged": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-debug-59:/navigation_mobile_navigation.xml.flat",
+        "source": "/Users/esmeraldamolinaestrada/.gradle/daemon/8.10.2/armenta.jose.proyectofinal_tripsplit.app-main-61:/navigation/mobile_navigation.xml"
     }
 ]

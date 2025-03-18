@@ -1,0 +1,8 @@
+# Ignorar carpetas y archivos generados automáticamente por Gradle
+.gradle/
+.idea/
+local.properties
+/build
+/captures
+.externalNativeBuild
+local.properties

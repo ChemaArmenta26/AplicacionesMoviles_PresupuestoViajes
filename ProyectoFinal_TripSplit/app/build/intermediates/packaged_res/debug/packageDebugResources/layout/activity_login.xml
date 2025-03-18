@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".Login">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/topBarFragment"
+        android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,6 +60,15 @@
         android:textSize="16sp">
 
     </EditText>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/red">
+
+    </TextView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_ingresar"
