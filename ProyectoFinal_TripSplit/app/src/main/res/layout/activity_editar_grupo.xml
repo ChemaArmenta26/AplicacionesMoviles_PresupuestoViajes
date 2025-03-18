@@ -24,7 +24,7 @@
         android:layout_marginTop="30dp"
         android:text="Nombre del Grupo"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/zapphire"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:padding="12dp"
-        app:tint="#0B4C74" />
+        app:tint="@color/dark_blue" />
 
     <!-- Sección Integrantes -->
     <LinearLayout
@@ -82,7 +82,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:scaleType="centerCrop"
-                        android:background="@drawable/person_outline"
+                        android:background="@mipmap/image_default_user"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true" />
 
@@ -111,9 +111,9 @@
 
                     <ImageButton
                         android:id="@+id/btnRemoveMember1"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/delete_forever"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/imagen_eliminar_miembro"
                         android:padding="8dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true" />
@@ -137,7 +137,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:scaleType="centerCrop"
-                        android:background="@drawable/person_outline"
+                        android:background="@mipmap/image_default_user"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true" />
 
@@ -166,9 +166,9 @@
 
                     <ImageButton
                         android:id="@+id/btnRemoveMember2"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/delete_forever"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/imagen_eliminar_miembro"
                         android:padding="8dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true" />
@@ -192,7 +192,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/person_outline"
+                        android:src="@mipmap/image_default_user"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true" />
 
@@ -221,9 +221,9 @@
 
                     <ImageButton
                         android:id="@+id/btnRemoveMember3"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/delete_forever"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/imagen_eliminar_miembro"
                         android:padding="8dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true" />
@@ -250,7 +250,8 @@
         android:text="Regresar"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textStyle="bold"
+        android:textSize="20sp" />
 
     <!-- Barra inferior existente -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
