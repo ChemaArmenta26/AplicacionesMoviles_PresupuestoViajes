@@ -47,6 +47,8 @@
     <string name="cuantosSon">¿Cuantos son?</string>
     <string name="unirme_a_grupo_n_de_viaje">Unirme a grupo \n de viaje</string>
     <string name="reporte_gastos">Reporte Gastos</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 
 
 </resources>

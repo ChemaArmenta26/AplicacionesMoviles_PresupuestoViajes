@@ -9,7 +9,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -32,25 +31,25 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
   public final BottomNavigationView navView;
 
   @NonNull
-  public final FragmentContainerView topBarFragment;
-
-  @NonNull
   public final TextView tvCodigoGrupo;
 
   @NonNull
   public final TextView tvNombreViaje;
 
+  @NonNull
+  public final TextView tvSaldoDisponbile;
+
   private ActivityPantallaPrincipalBinding(@NonNull LinearLayout rootView,
       @NonNull ListView listaGastos, @NonNull ListView listaMontoPagarPersona,
-      @NonNull BottomNavigationView navView, @NonNull FragmentContainerView topBarFragment,
-      @NonNull TextView tvCodigoGrupo, @NonNull TextView tvNombreViaje) {
+      @NonNull BottomNavigationView navView, @NonNull TextView tvCodigoGrupo,
+      @NonNull TextView tvNombreViaje, @NonNull TextView tvSaldoDisponbile) {
     this.rootView = rootView;
     this.listaGastos = listaGastos;
     this.listaMontoPagarPersona = listaMontoPagarPersona;
     this.navView = navView;
-    this.topBarFragment = topBarFragment;
     this.tvCodigoGrupo = tvCodigoGrupo;
     this.tvNombreViaje = tvNombreViaje;
+    this.tvSaldoDisponbile = tvSaldoDisponbile;
   }
 
   @Override
@@ -98,12 +97,6 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.topBarFragment;
-      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
-      if (topBarFragment == null) {
-        break missingId;
-      }
-
       id = R.id.tv_codigo_grupo;
       TextView tvCodigoGrupo = ViewBindings.findChildViewById(rootView, id);
       if (tvCodigoGrupo == null) {
@@ -116,8 +109,14 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvSaldoDisponbile;
+      TextView tvSaldoDisponbile = ViewBindings.findChildViewById(rootView, id);
+      if (tvSaldoDisponbile == null) {
+        break missingId;
+      }
+
       return new ActivityPantallaPrincipalBinding((LinearLayout) rootView, listaGastos,
-          listaMontoPagarPersona, navView, topBarFragment, tvCodigoGrupo, tvNombreViaje);
+          listaMontoPagarPersona, navView, tvCodigoGrupo, tvNombreViaje, tvSaldoDisponbile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -17,6 +17,8 @@ drawable boto_registrar_gasto
 drawable boton_menu
 drawable boton_no_fondo
 drawable boton_redondo
+drawable button_minus
+drawable button_plus
 drawable circular_background
 drawable delete_forever
 drawable edit
@@ -30,6 +32,10 @@ drawable ic_notifications_black_24dp
 drawable person_outline
 drawable recuadro_borde
 drawable spinner
+id barAlimentos
+id barEntretenimiento
+id barOtros
+id barTransporte
 id btnEditGroupName
 id btnRemoveMember1
 id btnRemoveMember2
@@ -41,6 +47,8 @@ id btn_crearViaje
 id btn_guardar
 id btn_ingresar
 id btn_iniciar_sesion
+id btn_minus
+id btn_plus
 id btn_registrarse
 id btn_regresar
 id btn_unirseViaje
@@ -54,6 +62,7 @@ id et_contrasena
 id et_correo
 id et_correoElectronico
 id et_desde
+id et_hacia
 id et_llegada
 id et_monto_gasto
 id et_nombre
@@ -87,7 +96,6 @@ id navigation_dashboard
 id navigation_home
 id navigation_notifications
 id navigation_reporte_gastos
-id pieChart
 id rv_integrantes
 id scrollViewMembers
 id spinnerCategoria
@@ -104,6 +112,7 @@ id tvIntegrantesLabel
 id tvMember1Name
 id tvMember2Name
 id tvMember3Name
+id tvSaldoDisponbile
 id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
@@ -191,6 +200,7 @@ string iniciar_sesion
 string instruccionCodigo
 string integrantes
 string llegada
+string minus
 string montoTotal
 string monto_total
 string no_tienes_cuenta
@@ -198,6 +208,7 @@ string nombre
 string nombreGasto
 string nombreGrupo
 string nombre_del_gasto
+string plus
 string project_id
 string registra_un_gasto
 string registrate

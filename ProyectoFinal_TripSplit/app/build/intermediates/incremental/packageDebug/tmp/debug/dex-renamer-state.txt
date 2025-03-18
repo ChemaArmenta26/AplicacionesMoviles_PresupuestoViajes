@@ -1,13 +1,13 @@
-#Sun Mar 16 20:20:44 MST 2025
-base.0=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.3=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.4=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.5=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.6=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.7=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.8=C\:\\Users\\haloa\\Desktop\\github\\AplicacionesMoviles_PresupuestoViajes\\ProyectoFinal_TripSplit\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+#Mon Mar 17 23:57:41 MST 2025
+base.0=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+base.3=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.4=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
+base.5=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+base.6=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
+base.7=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.8=/Users/esmeraldamolinaestrada/AndroidStudioProjects/proyectoMoviles/AplicacionesMoviles_PresupuestoViajes/ProyectoFinal_TripSplit/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=12/classes.dex

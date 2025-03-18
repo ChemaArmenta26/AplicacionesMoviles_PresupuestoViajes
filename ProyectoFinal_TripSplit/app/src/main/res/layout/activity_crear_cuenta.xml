@@ -25,7 +25,6 @@
         android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold" />
-
     <!-- Campos de Entrada (EditText) -->
 
     <EditText
