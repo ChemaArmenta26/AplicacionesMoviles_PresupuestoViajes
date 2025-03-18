@@ -15,10 +15,34 @@
         tools:layout="@layout/fragment_top_bar" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:text="Saldo Disponible:"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/tvSaldoDisponbile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:text="$0.00"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="right"/>
+
+    <TextView
         android:id="@+id/tv_nombre_viaje"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"

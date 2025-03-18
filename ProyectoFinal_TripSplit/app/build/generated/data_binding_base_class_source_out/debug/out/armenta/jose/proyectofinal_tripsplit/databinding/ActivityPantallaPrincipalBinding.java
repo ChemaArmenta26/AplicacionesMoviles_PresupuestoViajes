@@ -33,14 +33,23 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
   @NonNull
   public final TextView tvCodigoGrupo;
 
+  @NonNull
+  public final TextView tvNombreViaje;
+
+  @NonNull
+  public final TextView tvSaldoDisponbile;
+
   private ActivityPantallaPrincipalBinding(@NonNull LinearLayout rootView,
       @NonNull ListView listaGastos, @NonNull ListView listaMontoPagarPersona,
-      @NonNull BottomNavigationView navView, @NonNull TextView tvCodigoGrupo) {
+      @NonNull BottomNavigationView navView, @NonNull TextView tvCodigoGrupo,
+      @NonNull TextView tvNombreViaje, @NonNull TextView tvSaldoDisponbile) {
     this.rootView = rootView;
     this.listaGastos = listaGastos;
     this.listaMontoPagarPersona = listaMontoPagarPersona;
     this.navView = navView;
     this.tvCodigoGrupo = tvCodigoGrupo;
+    this.tvNombreViaje = tvNombreViaje;
+    this.tvSaldoDisponbile = tvSaldoDisponbile;
   }
 
   @Override
@@ -94,8 +103,20 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_nombre_viaje;
+      TextView tvNombreViaje = ViewBindings.findChildViewById(rootView, id);
+      if (tvNombreViaje == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSaldoDisponbile;
+      TextView tvSaldoDisponbile = ViewBindings.findChildViewById(rootView, id);
+      if (tvSaldoDisponbile == null) {
+        break missingId;
+      }
+
       return new ActivityPantallaPrincipalBinding((LinearLayout) rootView, listaGastos,
-          listaMontoPagarPersona, navView, tvCodigoGrupo);
+          listaMontoPagarPersona, navView, tvCodigoGrupo, tvNombreViaje, tvSaldoDisponbile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -59,12 +59,94 @@
                 android:textStyle="bold" />
 
             <!-- debe funcionar esta despues, aparece asi pq no tiene dato xd -->
-            <com.github.mikephil.charting.charts.PieChart
-                android:id="@+id/pieChart"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginHorizontal="16dp"/>
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:id="@+id/barAlimentos"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:background="#FF5722"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alimentos"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:id="@+id/barTransporte"
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        android:background="#4CAF50"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transporte"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:id="@+id/barEntretenimiento"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:background="#2196F3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entretenimiento"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:id="@+id/barOtros"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="#FFC107"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otros"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
 
             <TextView
@@ -117,6 +199,7 @@
             </ListView>
 
         </LinearLayout>
+
     </ScrollView>
 
 

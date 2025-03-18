@@ -3268,6 +3268,10 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
+id barAlimentos
+id barEntretenimiento
+id barOtros
+id barTransporte
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3578,7 +3582,6 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id pieChart
 id pin
 id position
 id postLayout
@@ -3716,6 +3719,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvSaldoDisponbile
 id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
@@ -3724,6 +3728,7 @@ id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante
+id tv_nombre_viaje
 id tv_tipo_gasto
 id unchecked
 id uniform

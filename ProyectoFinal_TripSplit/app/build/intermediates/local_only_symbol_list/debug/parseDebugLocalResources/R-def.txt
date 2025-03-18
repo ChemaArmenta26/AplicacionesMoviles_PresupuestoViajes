@@ -27,6 +27,10 @@ drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
 drawable recuadro_borde
 drawable spinner
+id barAlimentos
+id barEntretenimiento
+id barOtros
+id barTransporte
 id btn_buscar
 id btn_cancelar
 id btn_guardar
@@ -69,7 +73,6 @@ id nav_view
 id navigation_dashboard
 id navigation_home
 id navigation_notifications
-id pieChart
 id rv_integrantes
 id spinnerCategoria
 id spinnerQuienPago
@@ -77,6 +80,7 @@ id textHome
 id text_dashboard
 id text_notifications
 id topBarFragment
+id tvSaldoDisponbile
 id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
@@ -85,6 +89,7 @@ id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante
+id tv_nombre_viaje
 id tv_tipo_gasto
 layout activity_codigo_grupo
 layout activity_crear_cuenta

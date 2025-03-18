@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.github.mikephil.charting.charts.PieChart;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -22,6 +21,18 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final View barAlimentos;
+
+  @NonNull
+  public final View barEntretenimiento;
+
+  @NonNull
+  public final View barOtros;
+
+  @NonNull
+  public final View barTransporte;
+
+  @NonNull
   public final ListView listaReporteIntegrantes;
 
   @NonNull
@@ -30,17 +41,18 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView navView;
 
-  @NonNull
-  public final PieChart pieChart;
-
-  private ActivityReporteGastosBinding(@NonNull LinearLayout rootView,
+  private ActivityReporteGastosBinding(@NonNull LinearLayout rootView, @NonNull View barAlimentos,
+      @NonNull View barEntretenimiento, @NonNull View barOtros, @NonNull View barTransporte,
       @NonNull ListView listaReporteIntegrantes, @NonNull ListView listaSaldoPendiente,
-      @NonNull BottomNavigationView navView, @NonNull PieChart pieChart) {
+      @NonNull BottomNavigationView navView) {
     this.rootView = rootView;
+    this.barAlimentos = barAlimentos;
+    this.barEntretenimiento = barEntretenimiento;
+    this.barOtros = barOtros;
+    this.barTransporte = barTransporte;
     this.listaReporteIntegrantes = listaReporteIntegrantes;
     this.listaSaldoPendiente = listaSaldoPendiente;
     this.navView = navView;
-    this.pieChart = pieChart;
   }
 
   @Override
@@ -70,6 +82,30 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.barAlimentos;
+      View barAlimentos = ViewBindings.findChildViewById(rootView, id);
+      if (barAlimentos == null) {
+        break missingId;
+      }
+
+      id = R.id.barEntretenimiento;
+      View barEntretenimiento = ViewBindings.findChildViewById(rootView, id);
+      if (barEntretenimiento == null) {
+        break missingId;
+      }
+
+      id = R.id.barOtros;
+      View barOtros = ViewBindings.findChildViewById(rootView, id);
+      if (barOtros == null) {
+        break missingId;
+      }
+
+      id = R.id.barTransporte;
+      View barTransporte = ViewBindings.findChildViewById(rootView, id);
+      if (barTransporte == null) {
+        break missingId;
+      }
+
       id = R.id.lista_reporte_integrantes;
       ListView listaReporteIntegrantes = ViewBindings.findChildViewById(rootView, id);
       if (listaReporteIntegrantes == null) {
@@ -88,14 +124,9 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.pieChart;
-      PieChart pieChart = ViewBindings.findChildViewById(rootView, id);
-      if (pieChart == null) {
-        break missingId;
-      }
-
-      return new ActivityReporteGastosBinding((LinearLayout) rootView, listaReporteIntegrantes,
-          listaSaldoPendiente, navView, pieChart);
+      return new ActivityReporteGastosBinding((LinearLayout) rootView, barAlimentos,
+          barEntretenimiento, barOtros, barTransporte, listaReporteIntegrantes, listaSaldoPendiente,
+          navView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
