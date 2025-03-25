@@ -48,6 +48,7 @@
     <string name="instruccionCodigo">Ingresa el código del viaje:</string>
     <string name="integrantes">Integrantes</string>
     <string name="llegada">Llegada</string>
+    <string name="minus">-</string>
     <string name="montoTotal">Monto Total del Gasto:</string>
     <string name="monto_total">Monto total</string>
     <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
@@ -55,6 +56,7 @@
     <string name="nombreGasto">Nombre del Gasto</string>
     <string name="nombreGrupo">Nombre del Grupo</string>
     <string name="nombre_del_gasto">Nombre del Gasto</string>
+    <string name="plus">+</string>
     <string name="project_id" translatable="false">proyectofinal-tripsplit</string>
     <string name="registra_un_gasto">Registra un Gasto</string>
     <string name="registrate">Regístrate</string>

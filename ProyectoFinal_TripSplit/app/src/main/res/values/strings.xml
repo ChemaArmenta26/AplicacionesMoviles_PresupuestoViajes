@@ -35,7 +35,7 @@
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="confirmarContraseña">Confirmar Contraseña</string>
-    <string name="crear">Crear</string>
+    <string name="crear">Crear Cuenta</string>
     <string name="yatienescuenta">¿Ya tengo una cuenta?</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
     <string name="crearGrupo">Crear nuevo grupo</string>
@@ -47,6 +47,8 @@
     <string name="cuantosSon">¿Cuantos son?</string>
     <string name="unirme_a_grupo_n_de_viaje">Unirme a grupo \n de viaje</string>
     <string name="reporte_gastos">Reporte Gastos</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 
 
 </resources>

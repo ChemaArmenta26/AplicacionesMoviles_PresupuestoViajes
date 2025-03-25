@@ -49,8 +49,8 @@
                 android:layout_height="50dp"
                 android:hint="@string/hintCodigo"
                 android:gravity="center"
-                android:background="@drawable/edit_text_custom"
-                android:textSize="16sp"
+                android:background="@drawable/edit_text_black_border"
+                android:textSize="23sp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="16dp" />
 
@@ -58,7 +58,7 @@
                 android:id="@+id/btn_buscar"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_redondo"
+                android:background="@drawable/boto_registrar_gasto"
                 android:text="@string/btnBuscar"
                 android:textColor="@color/black"
                 android:textSize="18sp"

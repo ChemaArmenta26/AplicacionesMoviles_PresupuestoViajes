@@ -3092,6 +3092,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_minus
+drawable button_plus
 drawable circular_background
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -3320,6 +3322,10 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
+id barAlimentos
+id barEntretenimiento
+id barOtros
+id barTransporte
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3348,6 +3354,8 @@ id btn_crearViaje
 id btn_guardar
 id btn_ingresar
 id btn_iniciar_sesion
+id btn_minus
+id btn_plus
 id btn_registrarse
 id btn_regresar
 id btn_unirseViaje
@@ -3443,6 +3451,7 @@ id et_contrasena
 id et_correo
 id et_correoElectronico
 id et_desde
+id et_hacia
 id et_llegada
 id et_monto_gasto
 id et_nombre
@@ -3653,7 +3662,6 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id pieChart
 id pin
 id position
 id postLayout
@@ -3800,6 +3808,7 @@ id tvIntegrantesLabel
 id tvMember1Name
 id tvMember2Name
 id tvMember3Name
+id tvSaldoDisponbile
 id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
@@ -4229,6 +4238,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string minus
 string montoTotal
 string monto_total
 string mtrl_badge_numberless_content_description
@@ -4305,6 +4315,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string plus
 string project_id
 string registra_un_gasto
 string registrate

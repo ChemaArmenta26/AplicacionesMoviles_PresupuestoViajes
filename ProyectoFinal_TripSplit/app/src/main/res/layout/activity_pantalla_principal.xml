@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/topBarFragment"
         android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
         android:layout_width="match_parent"
@@ -15,17 +15,41 @@
         tools:layout="@layout/fragment_top_bar" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:text="Saldo Disponible:"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/tvSaldoDisponbile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:text="$0.00"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="right"/>
+
+    <TextView
         android:id="@+id/tv_nombre_viaje"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:gravity="center"
         android:text="Viaje Amigochas"
         android:textAlignment="center"
-        android:textColor="@color/blue"
+        android:textColor="@color/dark_blue"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -34,7 +58,7 @@
         android:layout_height="7dp"
         android:minHeight="5dp"
         android:layout_marginBottom="10dp"
-        android:background="@color/light_blue"
+        android:background="@color/grey_view"
         android:layout_marginRight="80dp"
         android:layout_marginLeft="80dp"
         />
@@ -61,7 +85,7 @@
                 android:gravity="center"
                 android:text="Monto a Pagar por Persona"
                 android:textAlignment="center"
-                android:textColor="@color/blue"
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -79,7 +103,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp">
 
                 <!-- Total Gastado -->
                 <androidx.cardview.widget.CardView
@@ -97,7 +122,8 @@
                         android:gravity="center_horizontal"
                         android:background="@drawable/background_gradient"
                         android:layout_marginLeft="50dp"
-                        android:layout_marginRight="50dp">
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="50dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -125,10 +151,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Lista de gastos"
-                android:textSize="18sp"
+                android:textSize="23sp"
                 android:textStyle="bold"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/blue" />
+                android:textColor="@color/black" />
 
             <ListView
                 android:id="@+id/lista_gastos"
@@ -157,14 +183,16 @@
 
             <TextView
                 android:id="@+id/tv_codigo_grupo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
                 android:layout_marginLeft="7dp"
                 android:layout_marginRight="7dp"
-                android:background="@drawable/recuadro_borde"
-                android:text="GR12345"
-                android:textSize="16sp"
-                android:textColor="@color/black"
+                android:background="@drawable/edit_text_black_border"
+                android:text="EREE-2EFSR-MSX7"
+                android:textSize="25sp"
+                android:textColor="@color/letra_boton_menu"
+                android:textStyle="bold"
                 android:padding="16dp"
                 android:gravity="center"
                 android:layout_marginBottom="16dp"/>

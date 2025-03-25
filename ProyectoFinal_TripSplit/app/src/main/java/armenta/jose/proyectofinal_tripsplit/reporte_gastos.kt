@@ -1,21 +1,15 @@
+
 package armenta.jose.proyectofinal_tripsplit
 
-import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import armenta.jose.proyectofinal_tripsplit.utilities.GastoPendienteAdapter
-import com.github.mikephil.charting.charts.PieChart
-import com.github.mikephil.charting.data.PieData
-import com.github.mikephil.charting.data.PieDataSet
-import com.github.mikephil.charting.data.PieEntry
-import com.github.mikephil.charting.utils.ColorTemplate
 import armenta.jose.proyectofinal_tripsplit.utilities.GastoPendiente
 import armenta.jose.proyectofinal_tripsplit.utilities.TotalGastado
 import armenta.jose.proyectofinal_tripsplit.utilities.TotalGastadoAdapter
-import armenta.jose.proyectofinal_tripsplit.utilities.setupBottomNavigation
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class reporte_gastos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,61 +17,49 @@ class reporte_gastos : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_reporte_gastos)
 
-        val pieChart = findViewById<PieChart>(R.id.pieChart)
-        setupPieChart(pieChart)
+        //para lo de la grafica de barras
+        val barAlimentos = findViewById<View>(R.id.barAlimentos)
+        val barTransporte = findViewById<View>(R.id.barTransporte)
+        val barEntretenimiento = findViewById<View>(R.id.barEntretenimiento)
+        val barOtros = findViewById<View>(R.id.barOtros)
 
-        val listView = findViewById<ListView>(R.id.lista_saldo_pendiente)
-        val bottomNavigation = findViewById<BottomNavigationView>(R.id.nav_view)
-        setupBottomNavigation(bottomNavigation, R.id.navigation_reporte_gastos)
 
-        // Datos de prueba (mocks)
+        val valoresCategorias = mapOf(
+            "Alimentos" to 100f,        // 100% de la altura máxima (100dp)
+            "Transporte" to 150f,       // 150dp de altura
+            "Entretenimiento" to 80f,   // 80dp de altura
+            "Otros" to 120f             // 120dp de altura
+        )
+
+
+        val maxHeight = 200f // Altura máxima de la barra
+
+        // Ajuste de altura de las barras
+        barAlimentos.layoutParams.height = (valoresCategorias["Alimentos"]!! / maxHeight * 200).toInt()
+        barTransporte.layoutParams.height = (valoresCategorias["Transporte"]!! / maxHeight * 200).toInt()
+        barEntretenimiento.layoutParams.height = (valoresCategorias["Entretenimiento"]!! / maxHeight * 200).toInt()
+        barOtros.layoutParams.height = (valoresCategorias["Otros"]!! / maxHeight * 200).toInt()
+
+        // Configurar ListView de saldo pendiente
+        val listViewSaldoPendiente = findViewById<ListView>(R.id.lista_saldo_pendiente)
         val listaGastos = listOf(
             GastoPendiente("Juan", "$500", R.mipmap.image_default_user),
             GastoPendiente("María", "$200", R.mipmap.image_default_user),
             GastoPendiente("Carlos", "$350", R.mipmap.image_default_user),
             GastoPendiente("Ana", "$400", R.mipmap.image_default_user)
         )
+        val adapterGastos = GastoPendienteAdapter(this, listaGastos)
+        listViewSaldoPendiente.adapter = adapterGastos
 
-        val adapter = GastoPendienteAdapter(this, listaGastos)
-        listView.adapter = adapter
-
+        // Configurar ListView de total gastado
         val listViewTotalGastado = findViewById<ListView>(R.id.lista_reporte_integrantes)
-
-        // Datos de prueba (mocks)
         val listaTotales = listOf(
             TotalGastado("Juan", "$1200", R.mipmap.image_default_user),
             TotalGastado("María", "$950", R.mipmap.image_default_user),
             TotalGastado("Carlos", "$1500", R.mipmap.image_default_user),
             TotalGastado("Ana", "$1100", R.mipmap.image_default_user)
         )
-
         val adapterTotal = TotalGastadoAdapter(this, listaTotales)
         listViewTotalGastado.adapter = adapterTotal
-
-    }
-
-    private fun setupPieChart(pieChart: PieChart) {
-        // Datos de prueba (mock)
-        val entries = listOf(
-            PieEntry(40f, "Alimentos"),
-            PieEntry(25f, "Transporte"),
-            PieEntry(15f, "Entretenimiento"),
-            PieEntry(20f, "Otros")
-        )
-
-        val dataSet = PieDataSet(entries, "Categorías de Gastos")
-        dataSet.colors = ColorTemplate.COLORFUL_COLORS.toList() // Colores predeterminados
-        dataSet.valueTextColor = Color.WHITE
-        dataSet.valueTextSize = 14f
-
-        val pieData = PieData(dataSet)
-        pieChart.data = pieData
-
-        // Personalización del gráfico
-        pieChart.description.isEnabled = false
-        pieChart.isDrawHoleEnabled = true
-        pieChart.setEntryLabelColor(Color.BLACK)
-        pieChart.animateY(1000)
-        pieChart.invalidate() // Refresca el gráfico
     }
 }
