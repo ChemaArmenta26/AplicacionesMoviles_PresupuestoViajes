@@ -1504,6 +1504,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color grey_view
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color letra_boton_menu
@@ -3121,6 +3122,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit
+drawable edit_text_black_border
 drawable edit_text_custom
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -4079,6 +4081,8 @@ mipmap image_default_user
 mipmap image_options
 mipmap image_reporte_gastos
 mipmap image_setting
+mipmap imagen_eliminar_miembro
+mipmap imagen_ojito
 mipmap logo_avion
 mipmap logo_usuario
 mipmap lupita

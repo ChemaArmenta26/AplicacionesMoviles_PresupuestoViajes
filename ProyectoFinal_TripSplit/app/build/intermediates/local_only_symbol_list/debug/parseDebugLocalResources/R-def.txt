@@ -4,6 +4,7 @@ color black
 color blue
 color btn_home_blue
 color dark_blue
+color grey_view
 color letra_boton_menu
 color light_blue
 color light_grey
@@ -22,6 +23,7 @@ drawable button_plus
 drawable circular_background
 drawable delete_forever
 drawable edit
+drawable edit_text_black_border
 drawable edit_text_custom
 drawable ic_dashboard_black_24dp
 drawable ic_dropdown_arrow
@@ -160,6 +162,8 @@ mipmap image_default_user
 mipmap image_options
 mipmap image_reporte_gastos
 mipmap image_setting
+mipmap imagen_eliminar_miembro
+mipmap imagen_ojito
 mipmap logo_avion
 mipmap logo_usuario
 mipmap lupita

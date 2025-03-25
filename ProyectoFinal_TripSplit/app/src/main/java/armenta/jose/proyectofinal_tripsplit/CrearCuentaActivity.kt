@@ -12,7 +12,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.database.FirebaseDatabase
 
 class CrearCuentaActivity : AppCompatActivity() {
 
@@ -76,7 +76,8 @@ class CrearCuentaActivity : AppCompatActivity() {
     }
 
     fun signIn(email: String, password: String, nombre: String, apellido: String) {
-        Log.d("INFO", "email: ${email}, password: ${password}")
+        Log.d("INFO", "email: $email, password: $password")
+
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -84,25 +85,26 @@ class CrearCuentaActivity : AppCompatActivity() {
                     val user = auth.currentUser
                     val uid = user?.uid
 
-                    // Guarda los datos adicionales en Firestore
+                    // Guarda los datos adicionales en Firebase Realtime Database
                     if (uid != null) {
-                        val userData = hashMapOf(
+                        val database = FirebaseDatabase.getInstance().getReference("Usuarios")
+                        val userData = mapOf(
                             "nombre" to nombre,
                             "apellido" to apellido,
                             "email" to email
                         )
-                        FirebaseFirestore.getInstance().collection("usuarios").document(uid)
-                            .set(userData)
+
+                        database.child(uid).setValue(userData)
                             .addOnSuccessListener {
-                                Log.d("INFO", "Datos adicionales guardados")
+                                Log.d("INFO", "Datos adicionales guardados en Realtime Database")
                             }
                             .addOnFailureListener { e ->
-                                Log.w("INFO", "Error al guardar los datos", e)
+                                Log.w("INFO", "Error al guardar los datos en Realtime Database", e)
                             }
                     }
 
                     val intent = Intent(this, Home::class.java)
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                 } else {
                     Log.w("INFO", "createUserWithEmail:failure", task.exception)
@@ -113,5 +115,6 @@ class CrearCuentaActivity : AppCompatActivity() {
                 }
             }
     }
+
 
 }
