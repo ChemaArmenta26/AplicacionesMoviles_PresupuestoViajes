@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
@@ -22,10 +23,14 @@ public final class ActivityInicioBinding implements ViewBinding {
   @NonNull
   public final AppCompatButton btnIngresar;
 
+  @NonNull
+  public final FragmentContainerView topBarFragment;
+
   private ActivityInicioBinding(@NonNull LinearLayout rootView,
-      @NonNull AppCompatButton btnIngresar) {
+      @NonNull AppCompatButton btnIngresar, @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnIngresar = btnIngresar;
+    this.topBarFragment = topBarFragment;
   }
 
   @Override
@@ -61,7 +66,13 @@ public final class ActivityInicioBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityInicioBinding((LinearLayout) rootView, btnIngresar);
+      id = R.id.topBarFragment;
+      FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (topBarFragment == null) {
+        break missingId;
+      }
+
+      return new ActivityInicioBinding((LinearLayout) rootView, btnIngresar, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
