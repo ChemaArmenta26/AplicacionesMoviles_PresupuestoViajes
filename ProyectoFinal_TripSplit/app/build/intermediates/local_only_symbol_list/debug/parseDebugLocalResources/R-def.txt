@@ -38,6 +38,7 @@ id barAlimentos
 id barEntretenimiento
 id barOtros
 id barTransporte
+id btnCrearGrupo
 id btnEditGroupName
 id btnRemoveMember1
 id btnRemoveMember2
@@ -70,7 +71,6 @@ id et_monto_gasto
 id et_nombre
 id et_nombreGrupo
 id et_nombre_gasto
-id et_numIntegrantes
 id et_salida
 id gasto
 id icon_edit
@@ -124,6 +124,7 @@ id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante
 id tv_nombre_viaje
+id tv_numIntegrantes
 id tv_tipo_gasto
 id tv_title
 layout activity_codigo_grupo

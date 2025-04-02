@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -25,7 +26,7 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnIngresar;
+  public final AppCompatButton btnCrearGrupo;
 
   @NonNull
   public final MaterialButton btnMinus;
@@ -49,9 +50,6 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
   public final EditText etNombreGrupo;
 
   @NonNull
-  public final EditText etNumIntegrantes;
-
-  @NonNull
   public final EditText etSalida;
 
   @NonNull
@@ -63,15 +61,18 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
   @NonNull
   public final FragmentContainerView topBarFragment;
 
+  @NonNull
+  public final TextView tvNumIntegrantes;
+
   private ActivityCrearGrupoBinding(@NonNull LinearLayout rootView,
-      @NonNull AppCompatButton btnIngresar, @NonNull MaterialButton btnMinus,
+      @NonNull AppCompatButton btnCrearGrupo, @NonNull MaterialButton btnMinus,
       @NonNull MaterialButton btnPlus, @NonNull LinearLayout container, @NonNull EditText etDesde,
       @NonNull EditText etHacia, @NonNull EditText etLlegada, @NonNull EditText etNombreGrupo,
-      @NonNull EditText etNumIntegrantes, @NonNull EditText etSalida,
-      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView,
-      @NonNull FragmentContainerView topBarFragment) {
+      @NonNull EditText etSalida, @NonNull FrameLayout navHostFragmentActivityHome,
+      @NonNull BottomNavigationView navView, @NonNull FragmentContainerView topBarFragment,
+      @NonNull TextView tvNumIntegrantes) {
     this.rootView = rootView;
-    this.btnIngresar = btnIngresar;
+    this.btnCrearGrupo = btnCrearGrupo;
     this.btnMinus = btnMinus;
     this.btnPlus = btnPlus;
     this.container = container;
@@ -79,11 +80,11 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
     this.etHacia = etHacia;
     this.etLlegada = etLlegada;
     this.etNombreGrupo = etNombreGrupo;
-    this.etNumIntegrantes = etNumIntegrantes;
     this.etSalida = etSalida;
     this.navHostFragmentActivityHome = navHostFragmentActivityHome;
     this.navView = navView;
     this.topBarFragment = topBarFragment;
+    this.tvNumIntegrantes = tvNumIntegrantes;
   }
 
   @Override
@@ -113,9 +114,9 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_ingresar;
-      AppCompatButton btnIngresar = ViewBindings.findChildViewById(rootView, id);
-      if (btnIngresar == null) {
+      id = R.id.btnCrearGrupo;
+      AppCompatButton btnCrearGrupo = ViewBindings.findChildViewById(rootView, id);
+      if (btnCrearGrupo == null) {
         break missingId;
       }
 
@@ -157,12 +158,6 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.et_numIntegrantes;
-      EditText etNumIntegrantes = ViewBindings.findChildViewById(rootView, id);
-      if (etNumIntegrantes == null) {
-        break missingId;
-      }
-
       id = R.id.et_salida;
       EditText etSalida = ViewBindings.findChildViewById(rootView, id);
       if (etSalida == null) {
@@ -187,9 +182,15 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCrearGrupoBinding((LinearLayout) rootView, btnIngresar, btnMinus, btnPlus,
-          container, etDesde, etHacia, etLlegada, etNombreGrupo, etNumIntegrantes, etSalida,
-          navHostFragmentActivityHome, navView, topBarFragment);
+      id = R.id.tv_numIntegrantes;
+      TextView tvNumIntegrantes = ViewBindings.findChildViewById(rootView, id);
+      if (tvNumIntegrantes == null) {
+        break missingId;
+      }
+
+      return new ActivityCrearGrupoBinding((LinearLayout) rootView, btnCrearGrupo, btnMinus,
+          btnPlus, container, etDesde, etHacia, etLlegada, etNombreGrupo, etSalida,
+          navHostFragmentActivityHome, navView, topBarFragment, tvNumIntegrantes);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

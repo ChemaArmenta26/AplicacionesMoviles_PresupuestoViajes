@@ -3345,6 +3345,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnCrearGrupo
 id btnEditGroupName
 id btnRemoveMember1
 id btnRemoveMember2
@@ -3459,7 +3460,6 @@ id et_monto_gasto
 id et_nombre
 id et_nombreGrupo
 id et_nombre_gasto
-id et_numIntegrantes
 id et_salida
 id exitUntilCollapsed
 id expand_activities_button
@@ -3820,6 +3820,7 @@ id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_integrante
 id tv_nombre_viaje
+id tv_numIntegrantes
 id tv_tipo_gasto
 id tv_title
 id unchecked
