@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -39,22 +38,18 @@ public final class ActivityHomev2Binding implements ViewBinding {
   public final ListView listViewGrupos;
 
   @NonNull
-  public final BottomNavigationView navView;
-
-  @NonNull
   public final FragmentContainerView topBarFragment;
 
   private ActivityHomev2Binding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnCrearViaje, @NonNull AppCompatButton btnUnirseViaje,
       @NonNull LinearLayout container, @NonNull EditText etBuscar, @NonNull ListView listViewGrupos,
-      @NonNull BottomNavigationView navView, @NonNull FragmentContainerView topBarFragment) {
+      @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnCrearViaje = btnCrearViaje;
     this.btnUnirseViaje = btnUnirseViaje;
     this.container = container;
     this.etBuscar = etBuscar;
     this.listViewGrupos = listViewGrupos;
-    this.navView = navView;
     this.topBarFragment = topBarFragment;
   }
 
@@ -111,12 +106,6 @@ public final class ActivityHomev2Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
-        break missingId;
-      }
-
       id = R.id.topBarFragment;
       FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
       if (topBarFragment == null) {
@@ -124,7 +113,7 @@ public final class ActivityHomev2Binding implements ViewBinding {
       }
 
       return new ActivityHomev2Binding((LinearLayout) rootView, btnCrearViaje, btnUnirseViaje,
-          container, etBuscar, listViewGrupos, navView, topBarFragment);
+          container, etBuscar, listViewGrupos, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

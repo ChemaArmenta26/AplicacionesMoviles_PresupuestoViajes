@@ -18,6 +18,7 @@ drawable boto_registrar_gasto
 drawable boton_menu
 drawable boton_no_fondo
 drawable boton_redondo
+drawable boton_redondo_bluebackground
 drawable button_minus
 drawable button_plus
 drawable circular_background
@@ -43,10 +44,13 @@ id btnEditGroupName
 id btnRemoveMember1
 id btnRemoveMember2
 id btnRemoveMember3
+id btn_agregar_gasto
 id btn_buscar
 id btn_cancelar
+id btn_cerrar_sesion
 id btn_crear
 id btn_crearViaje
+id btn_flecha_atras
 id btn_guardar
 id btn_ingresar
 id btn_iniciar_sesion
@@ -55,6 +59,7 @@ id btn_plus
 id btn_registrarse
 id btn_regresar
 id btn_unirseViaje
+id btn_ver_reporte_gastos
 id concepto_gasto
 id container
 id crearCuenta
@@ -77,6 +82,7 @@ id icon_edit
 id icon_left
 id icon_settings
 id icon_user
+id img_perfil
 id input_codigo
 id ivMember1
 id ivMember2
@@ -93,7 +99,6 @@ id mobile_navigation
 id mobile_navigation2
 id mobile_navigation3
 id nav_host_fragment_activity_home
-id nav_view
 id navigation_agregar_gasto
 id navigation_dashboard
 id navigation_home
@@ -136,6 +141,7 @@ layout activity_crear_cuenta
 layout activity_crear_grupo
 layout activity_detalle_gasto
 layout activity_editar_grupo
+layout activity_editar_perfil
 layout activity_home
 layout activity_homev2
 layout activity_inicio
@@ -156,14 +162,18 @@ layout item_total_gastado
 layout item_viaje
 menu bottom_nav_menu
 mipmap avion_volando
+mipmap barra_decoracion_inferior
 mipmap decoracion_fondo
 mipmap decoracion_ondas
+mipmap flecha_atras
 mipmap fondo_nubes
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap icon_crear_viaje
+mipmap icon_crear_viaje_50
 mipmap icon_home
 mipmap icon_unirse_viaje
+mipmap icon_unirse_viaje_50
 mipmap image_agregar_gasto
 mipmap image_default_user
 mipmap image_options
@@ -185,6 +195,7 @@ string btnBuscar
 string buscar
 string cancelar
 string categoriaDelGasto
+string cerrar_sesi_n
 string confirmarContraseña
 string contrase_a
 string correo_electronico
@@ -224,6 +235,8 @@ string project_id
 string registra_un_gasto
 string registrate
 string reporte_gastos
+string reporte_gastos_mensuales
+string saldo_disponible
 string slogan
 string textoPresentacion
 string title_activity_home
@@ -233,6 +246,7 @@ string title_home
 string title_notifications
 string unete
 string unirme_a_grupo_n_de_viaje
+string ver_reporte_de_gastos
 string yatienescuenta
 style Base.Theme.ProyectoFinal_TripSplit
 style Theme.ProyectoFinal_TripSplit

@@ -13,30 +13,55 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_top_bar" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="5dp"
-        android:textSize="15dp"
-        android:text="Saldo Disponible:"
-        android:textColor="@color/dark_blue"
-        android:layout_gravity="right"/>
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvSaldoDisponbile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="5dp"
-        android:textSize="15dp"
-        android:text="$0.00"
-        android:textColor="@color/dark_blue"
-        android:layout_gravity="right"/>
+        <ImageButton
+            android:id="@+id/btn_flecha_atras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/flecha_atras"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="245dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"
+            android:text="@string/saldo_disponible"
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:id="@+id/tvSaldoDisponbile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:text="$0.00"
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/tv_nombre_viaje"
@@ -165,7 +190,37 @@
 
             </ListView>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_ver_reporte_gastos"
+                    android:layout_width="215dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/boton_menu"
+                    android:drawableEnd="@mipmap/image_reporte_gastos"
+                    android:drawableTint="@color/letra_boton_menu"
+                    android:text="@string/ver_reporte_de_gastos"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/letra_boton_menu" />
+
+                <ImageButton
+                    android:id="@+id/btn_agregar_gasto"
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/boton_redondo_bluebackground"
+                    android:src="@mipmap/image_agregar_gasto"
+                    android:drawableTintMode="src_in"/>
+            </LinearLayout>
 
             <TextView
                 android:layout_width="383dp"
@@ -201,10 +256,10 @@
     </ScrollView>
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
-        app:menu="@menu/bottom_nav_menu" />
+        android:scaleType="fitXY"
+        android:src="@mipmap/barra_decoracion_inferior" />
+
 </LinearLayout>

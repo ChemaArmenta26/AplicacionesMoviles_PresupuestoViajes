@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +15,6 @@ import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -27,26 +27,26 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
   public final AppCompatButton btnBuscar;
 
   @NonNull
+  public final ImageButton btnFlechaAtras;
+
+  @NonNull
   public final EditText inputCodigo;
 
   @NonNull
   public final FrameLayout navHostFragmentActivityHome;
 
   @NonNull
-  public final BottomNavigationView navView;
-
-  @NonNull
   public final FragmentContainerView topBarFragment;
 
   private ActivityCodigoGrupoBinding(@NonNull LinearLayout rootView,
-      @NonNull AppCompatButton btnBuscar, @NonNull EditText inputCodigo,
-      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView,
+      @NonNull AppCompatButton btnBuscar, @NonNull ImageButton btnFlechaAtras,
+      @NonNull EditText inputCodigo, @NonNull FrameLayout navHostFragmentActivityHome,
       @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnBuscar = btnBuscar;
+    this.btnFlechaAtras = btnFlechaAtras;
     this.inputCodigo = inputCodigo;
     this.navHostFragmentActivityHome = navHostFragmentActivityHome;
-    this.navView = navView;
     this.topBarFragment = topBarFragment;
   }
 
@@ -83,6 +83,12 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_flecha_atras;
+      ImageButton btnFlechaAtras = ViewBindings.findChildViewById(rootView, id);
+      if (btnFlechaAtras == null) {
+        break missingId;
+      }
+
       id = R.id.input_codigo;
       EditText inputCodigo = ViewBindings.findChildViewById(rootView, id);
       if (inputCodigo == null) {
@@ -95,20 +101,14 @@ public final class ActivityCodigoGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
-        break missingId;
-      }
-
       id = R.id.topBarFragment;
       FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
       if (topBarFragment == null) {
         break missingId;
       }
 
-      return new ActivityCodigoGrupoBinding((LinearLayout) rootView, btnBuscar, inputCodigo,
-          navHostFragmentActivityHome, navView, topBarFragment);
+      return new ActivityCodigoGrupoBinding((LinearLayout) rootView, btnBuscar, btnFlechaAtras,
+          inputCodigo, navHostFragmentActivityHome, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

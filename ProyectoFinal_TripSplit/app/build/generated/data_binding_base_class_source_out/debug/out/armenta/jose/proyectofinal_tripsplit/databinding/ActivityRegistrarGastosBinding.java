@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import androidx.annotation.NonNull;
@@ -15,7 +16,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,6 +26,9 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
 
   @NonNull
   public final AppCompatButton btnCancelar;
+
+  @NonNull
+  public final ImageButton btnFlechaAtras;
 
   @NonNull
   public final AppCompatButton btnGuardar;
@@ -40,9 +43,6 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
   public final EditText etNombreGasto;
 
   @NonNull
-  public final BottomNavigationView navView;
-
-  @NonNull
   public final RecyclerView rvIntegrantes;
 
   @NonNull
@@ -55,18 +55,18 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
   public final FragmentContainerView topBarFragment;
 
   private ActivityRegistrarGastosBinding(@NonNull LinearLayout rootView,
-      @NonNull AppCompatButton btnCancelar, @NonNull AppCompatButton btnGuardar,
-      @NonNull LinearLayout container, @NonNull EditText etMontoGasto,
-      @NonNull EditText etNombreGasto, @NonNull BottomNavigationView navView,
+      @NonNull AppCompatButton btnCancelar, @NonNull ImageButton btnFlechaAtras,
+      @NonNull AppCompatButton btnGuardar, @NonNull LinearLayout container,
+      @NonNull EditText etMontoGasto, @NonNull EditText etNombreGasto,
       @NonNull RecyclerView rvIntegrantes, @NonNull Spinner spinnerCategoria,
       @NonNull Spinner spinnerQuienPago, @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnCancelar = btnCancelar;
+    this.btnFlechaAtras = btnFlechaAtras;
     this.btnGuardar = btnGuardar;
     this.container = container;
     this.etMontoGasto = etMontoGasto;
     this.etNombreGasto = etNombreGasto;
-    this.navView = navView;
     this.rvIntegrantes = rvIntegrantes;
     this.spinnerCategoria = spinnerCategoria;
     this.spinnerQuienPago = spinnerQuienPago;
@@ -106,6 +106,12 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_flecha_atras;
+      ImageButton btnFlechaAtras = ViewBindings.findChildViewById(rootView, id);
+      if (btnFlechaAtras == null) {
+        break missingId;
+      }
+
       id = R.id.btn_guardar;
       AppCompatButton btnGuardar = ViewBindings.findChildViewById(rootView, id);
       if (btnGuardar == null) {
@@ -123,12 +129,6 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
       id = R.id.et_nombre_gasto;
       EditText etNombreGasto = ViewBindings.findChildViewById(rootView, id);
       if (etNombreGasto == null) {
-        break missingId;
-      }
-
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
         break missingId;
       }
 
@@ -156,9 +156,9 @@ public final class ActivityRegistrarGastosBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegistrarGastosBinding((LinearLayout) rootView, btnCancelar, btnGuardar,
-          container, etMontoGasto, etNombreGasto, navView, rvIntegrantes, spinnerCategoria,
-          spinnerQuienPago, topBarFragment);
+      return new ActivityRegistrarGastosBinding((LinearLayout) rootView, btnCancelar,
+          btnFlechaAtras, btnGuardar, container, etMontoGasto, etNombreGasto, rvIntegrantes,
+          spinnerCategoria, spinnerQuienPago, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

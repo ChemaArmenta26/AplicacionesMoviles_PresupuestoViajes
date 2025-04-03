@@ -1,6 +1,9 @@
 package armenta.jose.proyectofinal_tripsplit
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.AdapterView
+import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,7 +25,25 @@ class homev2 : AppCompatActivity() {
         grupoAdapter = GrupoAdapter(this, gruposList)
         listView.adapter = grupoAdapter
 
+        val btn_crearViaje = findViewById<Button>(R.id.btn_crearViaje)
+        btn_crearViaje.setOnClickListener {
+            val intent = Intent(this, CrearGrupo::class.java)
+            startActivity(intent)
+        }
+        val btn_unirseViaje = findViewById<Button>(R.id.btn_unirseViaje)
+        btn_unirseViaje.setOnClickListener {
+            val intent = Intent(this, CodigoGrupoActivity::class.java)
+            startActivity(intent)
+        }
+
+
         cargarGruposDesdeFirebase()
+
+        listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            val gastoSeleccionado = gruposList[position]
+            val intent = Intent(this, pantalla_principal::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun cargarGruposDesdeFirebase() {

@@ -78,12 +78,11 @@
         android:layout_weight="1">
     </FrameLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/light_blue"
-        app:menu="@menu/bottom_nav_menu" />
+        android:scaleType="fitXY"
+        android:src="@mipmap/barra_decoracion_inferior" />
+
 
 </LinearLayout>

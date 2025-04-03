@@ -13,7 +13,10 @@
         android:theme="@style/Theme.ProyectoFinal_TripSplit"
         tools:targetApi="31">
         <activity
-            android:name=".InicioActivity"
+            android:name=".EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".homev2"
             android:exported="false" />
         <activity
             android:name=".CrearGrupo"
@@ -51,7 +54,7 @@
             android:name=".CrearCuentaActivity"
             android:exported="false" />
         <activity
-            android:name=".homev2"
+            android:name=".InicioActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

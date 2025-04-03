@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -34,6 +35,11 @@ class CrearGrupo : AppCompatActivity() {
         val btnSumar = findViewById<MaterialButton>(R.id.btn_plus)
         val btnRestar = findViewById<MaterialButton>(R.id.btn_minus)
         val tvNumIntegrantes = findViewById<TextView>(R.id.tv_numIntegrantes)
+        val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
+
+        btnFlechaAtras.setOnClickListener {
+            finish()
+        }
 
 
         btnCrearGrupo.setOnClickListener {
