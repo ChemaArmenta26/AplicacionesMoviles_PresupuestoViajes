@@ -32,6 +32,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoFinal_TripSplit" >
         <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.InicioActivity"
+            android:exported="false" />
+        <activity
             android:name="armenta.jose.proyectofinal_tripsplit.CrearGrupo"
             android:exported="false" />
         <activity
@@ -67,7 +70,7 @@
             android:name="armenta.jose.proyectofinal_tripsplit.CrearCuentaActivity"
             android:exported="false" />
         <activity
-            android:name="armenta.jose.proyectofinal_tripsplit.InicioActivity"
+            android:name="armenta.jose.proyectofinal_tripsplit.homev2"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
