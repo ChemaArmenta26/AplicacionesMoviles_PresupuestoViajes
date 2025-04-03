@@ -3534,6 +3534,7 @@ id line1
 id line3
 id linear
 id listMode
+id listViewGrupos
 id list_item
 id lista_gastos
 id lista_monto_pagar_persona
@@ -3814,10 +3815,13 @@ id tvSaldoDisponbile
 id tv_app_title
 id tv_categoria_gasto
 id tv_codigo_grupo
+id tv_destino_grupo
 id tv_deuda_integrante
+id tv_inicial_grupo
 id tv_lugar_gasto
 id tv_monto_gasto
 id tv_nombre_gasto
+id tv_nombre_grupo
 id tv_nombre_integrante
 id tv_nombre_viaje
 id tv_numIntegrantes
@@ -3971,6 +3975,7 @@ layout activity_crear_grupo
 layout activity_detalle_gasto
 layout activity_editar_grupo
 layout activity_home
+layout activity_homev2
 layout activity_inicio
 layout activity_login
 layout activity_main
@@ -4006,6 +4011,7 @@ layout item_gasto_pendiente
 layout item_integrante_detalle
 layout item_registro_gasto
 layout item_total_gastado
+layout item_viaje
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
