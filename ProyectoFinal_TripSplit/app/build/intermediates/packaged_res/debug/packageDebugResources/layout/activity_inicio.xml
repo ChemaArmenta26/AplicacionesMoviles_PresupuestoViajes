@@ -7,11 +7,17 @@
     android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/topBarFragment"
+        android:name="armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar" />
 
     <TextView
         android:layout_width="342dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:text="@string/slogan"
         android:layout_gravity="center"
         android:textAlignment="center"

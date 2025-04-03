@@ -49,6 +49,10 @@
     <string name="reporte_gastos">Reporte Gastos</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
+    <string name="saldo_disponible">Saldo Disponible:</string>
+    <string name="reporte_gastos_mensuales">Reporte Gastos Mensuales</string>
+    <string name="ver_reporte_de_gastos">Ver reporte de gastos</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
 
 
 </resources>

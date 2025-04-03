@@ -4,7 +4,7 @@
             "outputFile": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-57:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/esmeraldamolinaestrada/.gradle/caches/8.10.2/transforms/6aa6f3f44a7ac6d774cbed23c182abf0/transformed/material-1.12.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\Sergio\\.gradle\\caches\\8.10.2\\transforms\\e98b8c35ff2a5965778c05d04c5d6386\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

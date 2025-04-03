@@ -14,15 +14,23 @@
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_top_bar" />
 
+    <ImageButton
+        android:id="@+id/btn_flecha_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/flecha_atras"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
     <TextView
         android:layout_width="383dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:gravity="center"
-        android:text="Reporte Gastos Mensuales"
+        android:text="@string/reporte_gastos_mensuales"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -54,7 +62,7 @@
                 android:gravity="center"
                 android:text="Gastos totales por categoria"
                 android:textAlignment="center"
-                android:textColor="@color/blue"
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -159,7 +167,7 @@
                 android:gravity="center"
                 android:text="Gastos totales por integrante"
                 android:textAlignment="center"
-                android:textColor="@color/blue"
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -184,7 +192,7 @@
                 android:gravity="center"
                 android:text="Saldos Pendietes"
                 android:textAlignment="center"
-                android:textColor="@color/blue"
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -203,10 +211,10 @@
     </ScrollView>
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
-        app:menu="@menu/bottom_nav_menu" />
+        android:scaleType="fitXY"
+        android:src="@mipmap/barra_decoracion_inferior" />
+
 </LinearLayout>

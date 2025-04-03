@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageButton
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -28,6 +29,11 @@ class RegistrarGastos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_registrar_gastos)
+        val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
+
+        btnFlechaAtras.setOnClickListener {
+            finish()
+        }
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
@@ -35,8 +41,6 @@ class RegistrarGastos : AppCompatActivity() {
                 .commit()
         }
 
-        val bottomNavigation = findViewById<BottomNavigationView>(R.id.nav_view)
-        setupBottomNavigation(bottomNavigation, R.id.navigation_agregar_gasto)
 
         val btnCancelar = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.btn_cancelar)
         btnCancelar.setOnClickListener {

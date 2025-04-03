@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProyectoFinal_TripSplit"
         tools:targetApi="31">
         <activity
+            android:name=".EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".homev2"
+            android:exported="false" />
+        <activity
             android:name=".CrearGrupo"
             android:exported="false" />
         <activity

@@ -16,10 +16,18 @@
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_top_bar" />
 
+    <ImageButton
+        android:id="@+id/btn_flecha_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/flecha_atras"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/dark_blue"
@@ -33,7 +41,7 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:autofillHints=""
-        android:background="@drawable/edit_text_custom"
+        android:background="@drawable/edit_text_black_border"
         android:hint="@string/nombre_del_gasto"
         android:inputType="text"
         android:padding="12sp"
@@ -48,7 +56,7 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:autofillHints=""
-        android:background="@drawable/edit_text_custom"
+        android:background="@drawable/edit_text_black_border"
         android:hint="@string/monto_total"
         android:inputType="numberDecimal"
         android:padding="12sp"
@@ -62,7 +70,7 @@
         android:id="@+id/spinnerCategoria"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:background="@drawable/spinner"
+        android:background="@drawable/edit_text_black_border"
         android:padding="12sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
@@ -95,7 +103,7 @@
         android:id="@+id/spinnerQuienPago"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:background="@drawable/spinner"
+        android:background="@drawable/edit_text_black_border"
         android:padding="12sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
@@ -107,6 +115,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
 
@@ -140,12 +149,11 @@
 
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/light_blue"
-        app:menu="@menu/bottom_nav_menu" />
+        android:scaleType="fitXY"
+        android:src="@mipmap/barra_decoracion_inferior" />
+
 
 </LinearLayout>

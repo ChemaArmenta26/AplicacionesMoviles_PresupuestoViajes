@@ -69,7 +69,7 @@ class Login : AppCompatActivity() {
     }
 
     fun goToHome(user: FirebaseUser) {
-        val intent = Intent(this, Home::class.java)
+        val intent = Intent(this, homev2::class.java)
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
     }
