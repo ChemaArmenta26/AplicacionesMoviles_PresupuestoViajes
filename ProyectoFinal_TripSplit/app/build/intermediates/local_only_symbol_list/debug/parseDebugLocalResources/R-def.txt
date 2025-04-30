@@ -54,8 +54,6 @@ id btn_flecha_atras
 id btn_guardar
 id btn_ingresar
 id btn_iniciar_sesion
-id btn_minus
-id btn_plus
 id btn_registrarse
 id btn_regresar
 id btn_unirseViaje
@@ -133,7 +131,6 @@ id tv_nombre_gasto
 id tv_nombre_grupo
 id tv_nombre_integrante
 id tv_nombre_viaje
-id tv_numIntegrantes
 id tv_tipo_gasto
 id tv_title
 layout activity_codigo_grupo

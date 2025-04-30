@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_reporte_gastos.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_pantalla_principal.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_pantalla_principal.xml"
-    },
-    {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_gasto.xml",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_gasto.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_pantalla_principal.xml",
+        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_pantalla_principal.xml"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_editar_perfil.xml",
@@ -66,6 +66,10 @@
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_registro_gasto.xml",
         "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_registro_gasto.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_crear_grupo.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_crear_grupo.xml"
     },
     {
         "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\fragment_home.xml",

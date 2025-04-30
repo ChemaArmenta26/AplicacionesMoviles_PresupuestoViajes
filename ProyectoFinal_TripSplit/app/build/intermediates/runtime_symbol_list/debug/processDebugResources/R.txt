@@ -3360,8 +3360,6 @@ int id btn_flecha_atras 0x7f08007c
 int id btn_guardar 0x7f08007d
 int id btn_ingresar 0x7f08007e
 int id btn_iniciar_sesion 0x7f08007f
-int id btn_minus 0x7f080080
-int id btn_plus 0x7f080081
 int id btn_registrarse 0x7f080082
 int id btn_regresar 0x7f080083
 int id btn_unirseViaje 0x7f080084
@@ -3828,7 +3826,6 @@ int id tv_nombre_gasto 0x7f080251
 int id tv_nombre_grupo 0x7f080252
 int id tv_nombre_integrante 0x7f080253
 int id tv_nombre_viaje 0x7f080254
-int id tv_numIntegrantes 0x7f080255
 int id tv_tipo_gasto 0x7f080256
 int id tv_title 0x7f080257
 int id unchecked 0x7f080258
