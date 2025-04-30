@@ -8,42 +8,55 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import armenta.jose.proyectofinal_tripsplit.EditarGrupoActivity
-import armenta.jose.proyectofinal_tripsplit.EditarPerfil
-import armenta.jose.proyectofinal_tripsplit.Home
-import armenta.jose.proyectofinal_tripsplit.InicioActivity
 import armenta.jose.proyectofinal_tripsplit.R
-import com.google.firebase.auth.FirebaseAuth
 
 class TopBarFragment : Fragment() {
+
+    companion object {
+        private const val ARG_GROUP_ID = "ARG_GROUP_ID"
+
+
+        fun newInstance(groupId: String) = TopBarFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_GROUP_ID, groupId)
+            }
+        }
+    }
+
+    // Aquí guardamos el groupId que nos pase el padre o el Intent
+    private val groupId: String by lazy {
+        arguments?.getString(ARG_GROUP_ID)
+            ?: requireActivity().intent.getStringExtra("groupId")
+                .orEmpty()
+    }
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_top_bar, container, false)
-
-        val logoAvion = view.findViewById<ImageView>(R.id.icon_left)
         val iconSettings = view.findViewById<ImageView>(R.id.icon_settings)
-        val iconUser = view.findViewById<ImageView>(R.id.icon_user)
 
+        // Intent de la Activity contenedora
+        val groupId = requireActivity()
+            .intent
+            .getStringExtra("groupId")
+            .orEmpty()
 
-        logoAvion?.setOnClickListener {
-            val intent = Intent(activity, InicioActivity::class.java)
-            FirebaseAuth.getInstance().signOut()
-            startActivity(intent)
+        // Si no hay groupId disponible => oculto el icono
+        iconSettings.visibility =
+            if (groupId.isBlank()) View.GONE else View.VISIBLE
+
+        iconSettings.setOnClickListener {
+            // Si llega aquí, sabe que groupId NO es blank
+            Intent(requireActivity(), EditarGrupoActivity::class.java).also {
+                it.putExtra("groupId", groupId)
+                startActivity(it)
+            }
         }
 
-        iconSettings?.setOnClickListener {
-            val intent = Intent(activity, EditarGrupoActivity::class.java)
-            startActivity(intent)
-        }
-
-        iconUser?.setOnClickListener {
-            val intent = Intent(activity, EditarPerfil::class.java)
-            startActivity(intent)
-        }
-
-
-
+        // resto de iconos …
         return view
     }
 }

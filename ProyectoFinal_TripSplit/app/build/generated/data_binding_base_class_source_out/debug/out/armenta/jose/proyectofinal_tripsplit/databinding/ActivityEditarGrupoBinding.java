@@ -5,9 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,89 +30,32 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
   public final AppCompatButton btnRegresar;
 
   @NonNull
-  public final ImageButton btnRemoveMember1;
-
-  @NonNull
-  public final ImageButton btnRemoveMember2;
-
-  @NonNull
-  public final ImageButton btnRemoveMember3;
-
-  @NonNull
   public final LinearLayout container;
 
   @NonNull
-  public final ImageView ivMember1;
-
-  @NonNull
-  public final ImageView ivMember2;
-
-  @NonNull
-  public final ImageView ivMember3;
-
-  @NonNull
-  public final LinearLayout llMembersContainer;
-
-  @NonNull
-  public final ScrollView scrollViewMembers;
+  public final ListView listViewIntegrantes;
 
   @NonNull
   public final FragmentContainerView topBarFragment;
 
   @NonNull
-  public final TextView tvEliminar1;
-
-  @NonNull
-  public final TextView tvEliminar2;
-
-  @NonNull
-  public final TextView tvEliminar3;
-
-  @NonNull
   public final TextView tvIntegrantesLabel;
-
-  @NonNull
-  public final TextView tvMember1Name;
-
-  @NonNull
-  public final TextView tvMember2Name;
-
-  @NonNull
-  public final TextView tvMember3Name;
 
   @NonNull
   public final TextView tvTitle;
 
   private ActivityEditarGrupoBinding(@NonNull LinearLayout rootView,
       @NonNull ImageButton btnEditGroupName, @NonNull AppCompatButton btnRegresar,
-      @NonNull ImageButton btnRemoveMember1, @NonNull ImageButton btnRemoveMember2,
-      @NonNull ImageButton btnRemoveMember3, @NonNull LinearLayout container,
-      @NonNull ImageView ivMember1, @NonNull ImageView ivMember2, @NonNull ImageView ivMember3,
-      @NonNull LinearLayout llMembersContainer, @NonNull ScrollView scrollViewMembers,
-      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvEliminar1,
-      @NonNull TextView tvEliminar2, @NonNull TextView tvEliminar3,
-      @NonNull TextView tvIntegrantesLabel, @NonNull TextView tvMember1Name,
-      @NonNull TextView tvMember2Name, @NonNull TextView tvMember3Name, @NonNull TextView tvTitle) {
+      @NonNull LinearLayout container, @NonNull ListView listViewIntegrantes,
+      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvIntegrantesLabel,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnEditGroupName = btnEditGroupName;
     this.btnRegresar = btnRegresar;
-    this.btnRemoveMember1 = btnRemoveMember1;
-    this.btnRemoveMember2 = btnRemoveMember2;
-    this.btnRemoveMember3 = btnRemoveMember3;
     this.container = container;
-    this.ivMember1 = ivMember1;
-    this.ivMember2 = ivMember2;
-    this.ivMember3 = ivMember3;
-    this.llMembersContainer = llMembersContainer;
-    this.scrollViewMembers = scrollViewMembers;
+    this.listViewIntegrantes = listViewIntegrantes;
     this.topBarFragment = topBarFragment;
-    this.tvEliminar1 = tvEliminar1;
-    this.tvEliminar2 = tvEliminar2;
-    this.tvEliminar3 = tvEliminar3;
     this.tvIntegrantesLabel = tvIntegrantesLabel;
-    this.tvMember1Name = tvMember1Name;
-    this.tvMember2Name = tvMember2Name;
-    this.tvMember3Name = tvMember3Name;
     this.tvTitle = tvTitle;
   }
 
@@ -156,53 +98,11 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnRemoveMember1;
-      ImageButton btnRemoveMember1 = ViewBindings.findChildViewById(rootView, id);
-      if (btnRemoveMember1 == null) {
-        break missingId;
-      }
-
-      id = R.id.btnRemoveMember2;
-      ImageButton btnRemoveMember2 = ViewBindings.findChildViewById(rootView, id);
-      if (btnRemoveMember2 == null) {
-        break missingId;
-      }
-
-      id = R.id.btnRemoveMember3;
-      ImageButton btnRemoveMember3 = ViewBindings.findChildViewById(rootView, id);
-      if (btnRemoveMember3 == null) {
-        break missingId;
-      }
-
       LinearLayout container = (LinearLayout) rootView;
 
-      id = R.id.ivMember1;
-      ImageView ivMember1 = ViewBindings.findChildViewById(rootView, id);
-      if (ivMember1 == null) {
-        break missingId;
-      }
-
-      id = R.id.ivMember2;
-      ImageView ivMember2 = ViewBindings.findChildViewById(rootView, id);
-      if (ivMember2 == null) {
-        break missingId;
-      }
-
-      id = R.id.ivMember3;
-      ImageView ivMember3 = ViewBindings.findChildViewById(rootView, id);
-      if (ivMember3 == null) {
-        break missingId;
-      }
-
-      id = R.id.llMembersContainer;
-      LinearLayout llMembersContainer = ViewBindings.findChildViewById(rootView, id);
-      if (llMembersContainer == null) {
-        break missingId;
-      }
-
-      id = R.id.scrollViewMembers;
-      ScrollView scrollViewMembers = ViewBindings.findChildViewById(rootView, id);
-      if (scrollViewMembers == null) {
+      id = R.id.listViewIntegrantes;
+      ListView listViewIntegrantes = ViewBindings.findChildViewById(rootView, id);
+      if (listViewIntegrantes == null) {
         break missingId;
       }
 
@@ -212,45 +112,9 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvEliminar1;
-      TextView tvEliminar1 = ViewBindings.findChildViewById(rootView, id);
-      if (tvEliminar1 == null) {
-        break missingId;
-      }
-
-      id = R.id.tvEliminar2;
-      TextView tvEliminar2 = ViewBindings.findChildViewById(rootView, id);
-      if (tvEliminar2 == null) {
-        break missingId;
-      }
-
-      id = R.id.tvEliminar3;
-      TextView tvEliminar3 = ViewBindings.findChildViewById(rootView, id);
-      if (tvEliminar3 == null) {
-        break missingId;
-      }
-
       id = R.id.tvIntegrantesLabel;
       TextView tvIntegrantesLabel = ViewBindings.findChildViewById(rootView, id);
       if (tvIntegrantesLabel == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMember1Name;
-      TextView tvMember1Name = ViewBindings.findChildViewById(rootView, id);
-      if (tvMember1Name == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMember2Name;
-      TextView tvMember2Name = ViewBindings.findChildViewById(rootView, id);
-      if (tvMember2Name == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMember3Name;
-      TextView tvMember3Name = ViewBindings.findChildViewById(rootView, id);
-      if (tvMember3Name == null) {
         break missingId;
       }
 
@@ -261,10 +125,7 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
       }
 
       return new ActivityEditarGrupoBinding((LinearLayout) rootView, btnEditGroupName, btnRegresar,
-          btnRemoveMember1, btnRemoveMember2, btnRemoveMember3, container, ivMember1, ivMember2,
-          ivMember3, llMembersContainer, scrollViewMembers, topBarFragment, tvEliminar1,
-          tvEliminar2, tvEliminar3, tvIntegrantesLabel, tvMember1Name, tvMember2Name, tvMember3Name,
-          tvTitle);
+          container, listViewIntegrantes, topBarFragment, tvIntegrantesLabel, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

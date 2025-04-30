@@ -1,106 +1,102 @@
 [
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_registrar_gastos.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_registrar_gastos.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_pantalla_principal.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_pantalla_principal.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_inicio.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_inicio.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_integrante_detalle.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_integrante_detalle.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_login.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_configuracion_grupo.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_configuracion_grupo.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_homev2.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_homev2.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_reporte_gastos.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_reporte_gastos.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_reporte_gastos.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_reporte_gastos.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/fragment_home.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_gasto.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_gasto.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_homev2.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_homev2.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_pantalla_principal.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_pantalla_principal.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_gasto.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_gasto.xml"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_editar_perfil.xml",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_perfil.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_crear_cuenta.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_crear_cuenta.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/fragment_dashboard.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\fragment_notifications.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\fragment_notifications.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_total_gastado.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_total_gastado.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_integrante_detalle.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_integrante_detalle.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_gasto_pendiente.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_gasto_pendiente.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_viaje.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_viaje.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_editar_grupo.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_grupo.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_editar_perfil.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_editar_perfil.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_detalle_gasto.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_detalle_gasto.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_editar_grupo.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_editar_grupo.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_registro_gasto.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_registro_gasto.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_crear_cuenta.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_crear_cuenta.xml"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_crear_grupo.xml",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_crear_grupo.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\fragment_home.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_codigo_grupo.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_codigo_grupo.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_home.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_home.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_viaje.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_viaje.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_gasto_pendiente.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_gasto_pendiente.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_main.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_codigo_grupo.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_codigo_grupo.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_detalle_gasto.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_detalle_gasto.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\fragment_top_bar.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\fragment_top_bar.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_login.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_total_gastado.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_total_gastado.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/fragment_notifications.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_notifications.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\fragment_dashboard.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\fragment_dashboard.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_registrar_gastos.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_registrar_gastos.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\activity_crear_grupo.xml",
-        "source": "C:\\Users\\Sergio\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\activity_crear_grupo.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/fragment_top_bar.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_top_bar.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_inicio.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_inicio.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_home.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_home.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_registro_gasto.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_registro_gasto.xml"
     }
 ]

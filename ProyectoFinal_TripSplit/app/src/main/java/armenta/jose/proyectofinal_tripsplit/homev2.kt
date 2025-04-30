@@ -52,10 +52,9 @@ class homev2 : AppCompatActivity() {
         listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             if (position < gruposFiltradosList.size) {
                 val grupoSeleccionado = gruposFiltradosList[position]
-                Log.d("HomeV2", "Grupo seleccionado: ${grupoSeleccionado.nombre} con código ${grupoSeleccionado.codigo}")
-                val intent = Intent(this, pantalla_principal::class.java)
-                // Aqui se pasara información del grupo seleccionado a la siguiente pantalla
-                // intent.putExtra("GRUPO_CODIGO", grupoSeleccionado.codigo)
+                val intent = Intent(this, pantalla_principal::class.java).apply {
+                    putExtra("groupId", grupoSeleccionado.codigo)   // <- aquí el ID real
+                }
                 startActivity(intent)
             } else {
                 Log.e("HomeV2", "Error: Posición de click inválida en la lista.")
