@@ -3,6 +3,7 @@ package armenta.jose.proyectofinal_tripsplit
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,7 +23,11 @@ class reporte_gastos : AppCompatActivity() {
         val barTransporte = findViewById<View>(R.id.barTransporte)
         val barEntretenimiento = findViewById<View>(R.id.barEntretenimiento)
         val barOtros = findViewById<View>(R.id.barOtros)
+        val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
 
+        btnFlechaAtras.setOnClickListener {
+            finish()
+        }
 
         val valoresCategorias = mapOf(
             "Alimentos" to 100f,        // 100% de la altura máxima (100dp)

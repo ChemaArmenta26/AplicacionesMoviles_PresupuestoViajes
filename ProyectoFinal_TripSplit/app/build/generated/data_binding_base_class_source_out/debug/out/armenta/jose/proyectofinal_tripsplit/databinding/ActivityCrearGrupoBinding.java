@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,8 +15,6 @@ import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,13 +24,10 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnIngresar;
+  public final AppCompatButton btnCrearGrupo;
 
   @NonNull
-  public final MaterialButton btnMinus;
-
-  @NonNull
-  public final MaterialButton btnPlus;
+  public final ImageButton btnFlechaAtras;
 
   @NonNull
   public final LinearLayout container;
@@ -49,40 +45,30 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
   public final EditText etNombreGrupo;
 
   @NonNull
-  public final EditText etNumIntegrantes;
-
-  @NonNull
   public final EditText etSalida;
 
   @NonNull
   public final FrameLayout navHostFragmentActivityHome;
 
   @NonNull
-  public final BottomNavigationView navView;
-
-  @NonNull
   public final FragmentContainerView topBarFragment;
 
   private ActivityCrearGrupoBinding(@NonNull LinearLayout rootView,
-      @NonNull AppCompatButton btnIngresar, @NonNull MaterialButton btnMinus,
-      @NonNull MaterialButton btnPlus, @NonNull LinearLayout container, @NonNull EditText etDesde,
-      @NonNull EditText etHacia, @NonNull EditText etLlegada, @NonNull EditText etNombreGrupo,
-      @NonNull EditText etNumIntegrantes, @NonNull EditText etSalida,
-      @NonNull FrameLayout navHostFragmentActivityHome, @NonNull BottomNavigationView navView,
+      @NonNull AppCompatButton btnCrearGrupo, @NonNull ImageButton btnFlechaAtras,
+      @NonNull LinearLayout container, @NonNull EditText etDesde, @NonNull EditText etHacia,
+      @NonNull EditText etLlegada, @NonNull EditText etNombreGrupo, @NonNull EditText etSalida,
+      @NonNull FrameLayout navHostFragmentActivityHome,
       @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
-    this.btnIngresar = btnIngresar;
-    this.btnMinus = btnMinus;
-    this.btnPlus = btnPlus;
+    this.btnCrearGrupo = btnCrearGrupo;
+    this.btnFlechaAtras = btnFlechaAtras;
     this.container = container;
     this.etDesde = etDesde;
     this.etHacia = etHacia;
     this.etLlegada = etLlegada;
     this.etNombreGrupo = etNombreGrupo;
-    this.etNumIntegrantes = etNumIntegrantes;
     this.etSalida = etSalida;
     this.navHostFragmentActivityHome = navHostFragmentActivityHome;
-    this.navView = navView;
     this.topBarFragment = topBarFragment;
   }
 
@@ -113,21 +99,15 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_ingresar;
-      AppCompatButton btnIngresar = ViewBindings.findChildViewById(rootView, id);
-      if (btnIngresar == null) {
+      id = R.id.btnCrearGrupo;
+      AppCompatButton btnCrearGrupo = ViewBindings.findChildViewById(rootView, id);
+      if (btnCrearGrupo == null) {
         break missingId;
       }
 
-      id = R.id.btn_minus;
-      MaterialButton btnMinus = ViewBindings.findChildViewById(rootView, id);
-      if (btnMinus == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_plus;
-      MaterialButton btnPlus = ViewBindings.findChildViewById(rootView, id);
-      if (btnPlus == null) {
+      id = R.id.btn_flecha_atras;
+      ImageButton btnFlechaAtras = ViewBindings.findChildViewById(rootView, id);
+      if (btnFlechaAtras == null) {
         break missingId;
       }
 
@@ -157,12 +137,6 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.et_numIntegrantes;
-      EditText etNumIntegrantes = ViewBindings.findChildViewById(rootView, id);
-      if (etNumIntegrantes == null) {
-        break missingId;
-      }
-
       id = R.id.et_salida;
       EditText etSalida = ViewBindings.findChildViewById(rootView, id);
       if (etSalida == null) {
@@ -175,21 +149,15 @@ public final class ActivityCrearGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
-        break missingId;
-      }
-
       id = R.id.topBarFragment;
       FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
       if (topBarFragment == null) {
         break missingId;
       }
 
-      return new ActivityCrearGrupoBinding((LinearLayout) rootView, btnIngresar, btnMinus, btnPlus,
-          container, etDesde, etHacia, etLlegada, etNombreGrupo, etNumIntegrantes, etSalida,
-          navHostFragmentActivityHome, navView, topBarFragment);
+      return new ActivityCrearGrupoBinding((LinearLayout) rootView, btnCrearGrupo, btnFlechaAtras,
+          container, etDesde, etHacia, etLlegada, etNombreGrupo, etSalida,
+          navHostFragmentActivityHome, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

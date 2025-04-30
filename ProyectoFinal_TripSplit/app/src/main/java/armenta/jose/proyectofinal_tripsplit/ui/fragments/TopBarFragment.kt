@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import armenta.jose.proyectofinal_tripsplit.EditarGrupoActivity
+import armenta.jose.proyectofinal_tripsplit.EditarPerfil
 import armenta.jose.proyectofinal_tripsplit.Home
 import armenta.jose.proyectofinal_tripsplit.InicioActivity
 import armenta.jose.proyectofinal_tripsplit.R
@@ -22,6 +23,8 @@ class TopBarFragment : Fragment() {
 
         val logoAvion = view.findViewById<ImageView>(R.id.icon_left)
         val iconSettings = view.findViewById<ImageView>(R.id.icon_settings)
+        val iconUser = view.findViewById<ImageView>(R.id.icon_user)
+
 
         logoAvion?.setOnClickListener {
             val intent = Intent(activity, InicioActivity::class.java)
@@ -33,6 +36,13 @@ class TopBarFragment : Fragment() {
             val intent = Intent(activity, EditarGrupoActivity::class.java)
             startActivity(intent)
         }
+
+        iconUser?.setOnClickListener {
+            val intent = Intent(activity, EditarPerfil::class.java)
+            startActivity(intent)
+        }
+
+
 
         return view
     }

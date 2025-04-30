@@ -1,6 +1,7 @@
 package armenta.jose.proyectofinal_tripsplit
 
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,12 @@ class DetalleGastoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_detalle_gasto)
+
+        val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
+
+        btnFlechaAtras.setOnClickListener {
+            finish()
+        }
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()

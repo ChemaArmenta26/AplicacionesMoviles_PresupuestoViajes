@@ -103,7 +103,7 @@ class CrearCuentaActivity : AppCompatActivity() {
                             }
                     }
 
-                    val intent = Intent(this, Home::class.java)
+                    val intent = Intent(this, homev2::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                 } else {

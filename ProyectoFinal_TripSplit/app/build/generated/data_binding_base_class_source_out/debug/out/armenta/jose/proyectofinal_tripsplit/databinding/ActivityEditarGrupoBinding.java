@@ -16,7 +16,6 @@ import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -56,9 +55,6 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
   public final LinearLayout llMembersContainer;
 
   @NonNull
-  public final BottomNavigationView navView;
-
-  @NonNull
   public final ScrollView scrollViewMembers;
 
   @NonNull
@@ -93,9 +89,9 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
       @NonNull ImageButton btnRemoveMember1, @NonNull ImageButton btnRemoveMember2,
       @NonNull ImageButton btnRemoveMember3, @NonNull LinearLayout container,
       @NonNull ImageView ivMember1, @NonNull ImageView ivMember2, @NonNull ImageView ivMember3,
-      @NonNull LinearLayout llMembersContainer, @NonNull BottomNavigationView navView,
-      @NonNull ScrollView scrollViewMembers, @NonNull FragmentContainerView topBarFragment,
-      @NonNull TextView tvEliminar1, @NonNull TextView tvEliminar2, @NonNull TextView tvEliminar3,
+      @NonNull LinearLayout llMembersContainer, @NonNull ScrollView scrollViewMembers,
+      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvEliminar1,
+      @NonNull TextView tvEliminar2, @NonNull TextView tvEliminar3,
       @NonNull TextView tvIntegrantesLabel, @NonNull TextView tvMember1Name,
       @NonNull TextView tvMember2Name, @NonNull TextView tvMember3Name, @NonNull TextView tvTitle) {
     this.rootView = rootView;
@@ -109,7 +105,6 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
     this.ivMember2 = ivMember2;
     this.ivMember3 = ivMember3;
     this.llMembersContainer = llMembersContainer;
-    this.navView = navView;
     this.scrollViewMembers = scrollViewMembers;
     this.topBarFragment = topBarFragment;
     this.tvEliminar1 = tvEliminar1;
@@ -205,12 +200,6 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
-        break missingId;
-      }
-
       id = R.id.scrollViewMembers;
       ScrollView scrollViewMembers = ViewBindings.findChildViewById(rootView, id);
       if (scrollViewMembers == null) {
@@ -273,7 +262,7 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
 
       return new ActivityEditarGrupoBinding((LinearLayout) rootView, btnEditGroupName, btnRegresar,
           btnRemoveMember1, btnRemoveMember2, btnRemoveMember3, container, ivMember1, ivMember2,
-          ivMember3, llMembersContainer, navView, scrollViewMembers, topBarFragment, tvEliminar1,
+          ivMember3, llMembersContainer, scrollViewMembers, topBarFragment, tvEliminar1,
           tvEliminar2, tvEliminar3, tvIntegrantesLabel, tvMember1Name, tvMember2Name, tvMember3Name,
           tvTitle);
     }

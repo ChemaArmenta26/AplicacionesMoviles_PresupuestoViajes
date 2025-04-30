@@ -32,6 +32,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoFinal_TripSplit" >
         <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.homev2"
+            android:exported="false" />
+        <activity
             android:name="armenta.jose.proyectofinal_tripsplit.CrearGrupo"
             android:exported="false" />
         <activity

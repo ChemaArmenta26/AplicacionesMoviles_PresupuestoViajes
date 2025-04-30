@@ -4,6 +4,7 @@ package armenta.jose.proyectofinal_tripsplit.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
@@ -11,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -33,26 +33,26 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   public final View barTransporte;
 
   @NonNull
+  public final ImageButton btnFlechaAtras;
+
+  @NonNull
   public final ListView listaReporteIntegrantes;
 
   @NonNull
   public final ListView listaSaldoPendiente;
 
-  @NonNull
-  public final BottomNavigationView navView;
-
   private ActivityReporteGastosBinding(@NonNull LinearLayout rootView, @NonNull View barAlimentos,
       @NonNull View barEntretenimiento, @NonNull View barOtros, @NonNull View barTransporte,
-      @NonNull ListView listaReporteIntegrantes, @NonNull ListView listaSaldoPendiente,
-      @NonNull BottomNavigationView navView) {
+      @NonNull ImageButton btnFlechaAtras, @NonNull ListView listaReporteIntegrantes,
+      @NonNull ListView listaSaldoPendiente) {
     this.rootView = rootView;
     this.barAlimentos = barAlimentos;
     this.barEntretenimiento = barEntretenimiento;
     this.barOtros = barOtros;
     this.barTransporte = barTransporte;
+    this.btnFlechaAtras = btnFlechaAtras;
     this.listaReporteIntegrantes = listaReporteIntegrantes;
     this.listaSaldoPendiente = listaSaldoPendiente;
-    this.navView = navView;
   }
 
   @Override
@@ -106,6 +106,12 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_flecha_atras;
+      ImageButton btnFlechaAtras = ViewBindings.findChildViewById(rootView, id);
+      if (btnFlechaAtras == null) {
+        break missingId;
+      }
+
       id = R.id.lista_reporte_integrantes;
       ListView listaReporteIntegrantes = ViewBindings.findChildViewById(rootView, id);
       if (listaReporteIntegrantes == null) {
@@ -118,15 +124,9 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
-        break missingId;
-      }
-
       return new ActivityReporteGastosBinding((LinearLayout) rootView, barAlimentos,
-          barEntretenimiento, barOtros, barTransporte, listaReporteIntegrantes, listaSaldoPendiente,
-          navView);
+          barEntretenimiento, barOtros, barTransporte, btnFlechaAtras, listaReporteIntegrantes,
+          listaSaldoPendiente);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

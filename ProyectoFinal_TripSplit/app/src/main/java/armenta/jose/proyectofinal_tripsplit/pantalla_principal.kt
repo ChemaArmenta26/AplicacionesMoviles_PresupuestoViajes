@@ -1,9 +1,11 @@
 package armenta.jose.proyectofinal_tripsplit
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +21,7 @@ import armenta.jose.proyectofinal_tripsplit.utilities.setupBottomNavigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class pantalla_principal : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,8 +29,24 @@ class pantalla_principal : AppCompatActivity() {
 
         // Primer ListView para los pagos por persona
         val listViewPersonas = findViewById<ListView>(R.id.lista_monto_pagar_persona)
-        val bottomNavigation = findViewById<BottomNavigationView>(R.id.nav_view)
-        setupBottomNavigation(bottomNavigation, R.id.navigation_home)
+        val btnReporteGastos = findViewById<Button>(R.id.btn_ver_reporte_gastos)
+        val btnAgregarGasto = findViewById<ImageButton>(R.id.btn_agregar_gasto)
+        val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
+
+        btnFlechaAtras.setOnClickListener {
+            val intent = Intent(this, homev2::class.java)
+            startActivity(intent)
+        }
+
+        btnAgregarGasto.setOnClickListener{
+            val intent = Intent(this, RegistrarGastos::class.java)
+            startActivity(intent)
+        }
+
+        btnReporteGastos.setOnClickListener {
+            val intent = Intent(this, reporte_gastos::class.java)
+            startActivity(intent)
+        }
 
         // Datos de prueba para PagarPorPersona
         val listaMontoPagar = listOf(

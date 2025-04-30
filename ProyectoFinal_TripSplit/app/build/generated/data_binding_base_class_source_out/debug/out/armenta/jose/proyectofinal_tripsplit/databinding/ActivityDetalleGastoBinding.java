@@ -4,6 +4,7 @@ package armenta.jose.proyectofinal_tripsplit.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import armenta.jose.proyectofinal_tripsplit.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,7 +23,7 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final BottomNavigationView navView;
+  public final ImageButton btnFlechaAtras;
 
   @NonNull
   public final RecyclerView rvIntegrantes;
@@ -41,11 +41,11 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
   public final TextView tvNombreGasto;
 
   private ActivityDetalleGastoBinding(@NonNull LinearLayout rootView,
-      @NonNull BottomNavigationView navView, @NonNull RecyclerView rvIntegrantes,
+      @NonNull ImageButton btnFlechaAtras, @NonNull RecyclerView rvIntegrantes,
       @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvCategoriaGasto,
       @NonNull TextView tvMontoGasto, @NonNull TextView tvNombreGasto) {
     this.rootView = rootView;
-    this.navView = navView;
+    this.btnFlechaAtras = btnFlechaAtras;
     this.rvIntegrantes = rvIntegrantes;
     this.topBarFragment = topBarFragment;
     this.tvCategoriaGasto = tvCategoriaGasto;
@@ -80,9 +80,9 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.nav_view;
-      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
+      id = R.id.btn_flecha_atras;
+      ImageButton btnFlechaAtras = ViewBindings.findChildViewById(rootView, id);
+      if (btnFlechaAtras == null) {
         break missingId;
       }
 
@@ -116,7 +116,7 @@ public final class ActivityDetalleGastoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetalleGastoBinding((LinearLayout) rootView, navView, rvIntegrantes,
+      return new ActivityDetalleGastoBinding((LinearLayout) rootView, btnFlechaAtras, rvIntegrantes,
           topBarFragment, tvCategoriaGasto, tvMontoGasto, tvNombreGasto);
     }
     String missingId = rootView.getResources().getResourceName(id);
