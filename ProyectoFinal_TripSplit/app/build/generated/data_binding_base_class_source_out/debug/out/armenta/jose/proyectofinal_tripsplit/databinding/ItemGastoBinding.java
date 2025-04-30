@@ -23,21 +23,21 @@ public final class ItemGastoBinding implements ViewBinding {
   public final TextView tvCategoriaGasto;
 
   @NonNull
-  public final TextView tvLugarGasto;
+  public final TextView tvMontoGasto;
 
   @NonNull
-  public final TextView tvMontoGasto;
+  public final TextView tvNombreGasto;
 
   @NonNull
   public final TextView tvTipoGasto;
 
   private ItemGastoBinding(@NonNull LinearLayout rootView, @NonNull TextView tvCategoriaGasto,
-      @NonNull TextView tvLugarGasto, @NonNull TextView tvMontoGasto,
+      @NonNull TextView tvMontoGasto, @NonNull TextView tvNombreGasto,
       @NonNull TextView tvTipoGasto) {
     this.rootView = rootView;
     this.tvCategoriaGasto = tvCategoriaGasto;
-    this.tvLugarGasto = tvLugarGasto;
     this.tvMontoGasto = tvMontoGasto;
+    this.tvNombreGasto = tvNombreGasto;
     this.tvTipoGasto = tvTipoGasto;
   }
 
@@ -74,15 +74,15 @@ public final class ItemGastoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_lugar_gasto;
-      TextView tvLugarGasto = ViewBindings.findChildViewById(rootView, id);
-      if (tvLugarGasto == null) {
-        break missingId;
-      }
-
       id = R.id.tv_monto_gasto;
       TextView tvMontoGasto = ViewBindings.findChildViewById(rootView, id);
       if (tvMontoGasto == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_nombre_gasto;
+      TextView tvNombreGasto = ViewBindings.findChildViewById(rootView, id);
+      if (tvNombreGasto == null) {
         break missingId;
       }
 
@@ -92,8 +92,8 @@ public final class ItemGastoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemGastoBinding((LinearLayout) rootView, tvCategoriaGasto, tvLugarGasto,
-          tvMontoGasto, tvTipoGasto);
+      return new ItemGastoBinding((LinearLayout) rootView, tvCategoriaGasto, tvMontoGasto,
+          tvNombreGasto, tvTipoGasto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,6 +4,7 @@ package armenta.jose.proyectofinal_tripsplit.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,14 +22,18 @@ public final class ItemRegistroGastoBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final CheckBox cbParticipante;
+
+  @NonNull
   public final ImageView ivPerfilIntegrante;
 
   @NonNull
   public final TextView tvNombreIntegrante;
 
-  private ItemRegistroGastoBinding(@NonNull LinearLayout rootView,
+  private ItemRegistroGastoBinding(@NonNull LinearLayout rootView, @NonNull CheckBox cbParticipante,
       @NonNull ImageView ivPerfilIntegrante, @NonNull TextView tvNombreIntegrante) {
     this.rootView = rootView;
+    this.cbParticipante = cbParticipante;
     this.ivPerfilIntegrante = ivPerfilIntegrante;
     this.tvNombreIntegrante = tvNombreIntegrante;
   }
@@ -60,6 +65,12 @@ public final class ItemRegistroGastoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cb_participante;
+      CheckBox cbParticipante = ViewBindings.findChildViewById(rootView, id);
+      if (cbParticipante == null) {
+        break missingId;
+      }
+
       id = R.id.iv_perfil_integrante;
       ImageView ivPerfilIntegrante = ViewBindings.findChildViewById(rootView, id);
       if (ivPerfilIntegrante == null) {
@@ -72,8 +83,8 @@ public final class ItemRegistroGastoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemRegistroGastoBinding((LinearLayout) rootView, ivPerfilIntegrante,
-          tvNombreIntegrante);
+      return new ItemRegistroGastoBinding((LinearLayout) rootView, cbParticipante,
+          ivPerfilIntegrante, tvNombreIntegrante);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -24,16 +24,15 @@ class GastoAdapter(
             .inflate(R.layout.item_gasto, parent, false)
 
         val tipoGasto = view.findViewById<TextView>(R.id.tv_tipo_gasto)
-        val lugarGasto = view.findViewById<TextView>(R.id.tv_lugar_gasto)
+        val nombreGasto = view.findViewById<TextView>(R.id.tv_nombre_gasto)
         val categoriaGasto = view.findViewById<TextView>(R.id.tv_categoria_gasto)
         val montoGasto = view.findViewById<TextView>(R.id.tv_monto_gasto)
 
         val gasto = listaGastos[position]
 
-        tipoGasto.text = gasto.tipo
-        lugarGasto.text = gasto.lugar
+        nombreGasto.text = gasto.nombre
         categoriaGasto.text = gasto.categoria
-        montoGasto.text = gasto.monto
+        montoGasto.text = gasto.montoTotal.toString()
 
         return view
     }
