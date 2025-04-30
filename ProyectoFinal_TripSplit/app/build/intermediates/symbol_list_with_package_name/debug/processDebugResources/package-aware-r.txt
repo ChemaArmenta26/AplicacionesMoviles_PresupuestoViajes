@@ -3348,9 +3348,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnCrearGrupo
 id btnEditGroupName
-id btnRemoveMember1
-id btnRemoveMember2
-id btnRemoveMember3
+id btnRemoveMember
 id btn_agregar_gasto
 id btn_buscar
 id btn_cancelar
@@ -3361,8 +3359,6 @@ id btn_flecha_atras
 id btn_guardar
 id btn_ingresar
 id btn_iniciar_sesion
-id btn_minus
-id btn_plus
 id btn_registrarse
 id btn_regresar
 id btn_unirseViaje
@@ -3524,9 +3520,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id ivMember1
-id ivMember2
-id ivMember3
+id ivMember
 id iv_perfil_integrante
 id jumpToEnd
 id jumpToStart
@@ -3541,12 +3535,12 @@ id line3
 id linear
 id listMode
 id listViewGrupos
+id listViewIntegrantes
 id list_item
 id lista_gastos
 id lista_monto_pagar_persona
 id lista_reporte_integrantes
 id lista_saldo_pendiente
-id llMembersContainer
 id locale
 id ltr
 id m3_side_sheet
@@ -3698,7 +3692,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollViewMembers
 id scrollable
 id search_badge
 id search_bar
@@ -3809,13 +3802,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvEliminar1
-id tvEliminar2
-id tvEliminar3
 id tvError
 id tvIntegrantesLabel
-id tvMember1Name
-id tvMember2Name
-id tvMember3Name
+id tvMemberName
 id tvSaldoDisponbile
 id tv_app_title
 id tv_categoria_gasto
@@ -3829,7 +3818,6 @@ id tv_nombre_gasto
 id tv_nombre_grupo
 id tv_nombre_integrante
 id tv_nombre_viaje
-id tv_numIntegrantes
 id tv_tipo_gasto
 id tv_title
 id unchecked
@@ -4012,6 +4000,7 @@ layout fragment_notifications
 layout fragment_top_bar
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_configuracion_grupo
 layout item_gasto
 layout item_gasto_pendiente
 layout item_integrante_detalle

@@ -7,10 +7,12 @@ import android.widget.AdapterView
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ListView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import armenta.jose.proyectofinal_tripsplit.ui.fragments.TopBarFragment
 import armenta.jose.proyectofinal_tripsplit.utilities.Gasto
 import armenta.jose.proyectofinal_tripsplit.utilities.GastoAdapter
 import armenta.jose.proyectofinal_tripsplit.utilities.GastoPendiente
@@ -21,11 +23,32 @@ import armenta.jose.proyectofinal_tripsplit.utilities.setupBottomNavigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class pantalla_principal : AppCompatActivity() {
+
+    private lateinit var groupId: String
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pantalla_principal)
+
+        // 1) Leo el groupId que me pasaron en el Intent
+        groupId = intent.getStringExtra("groupId").orEmpty()
+        if (groupId.isBlank()) {
+            Toast.makeText(this, "Falta información del grupo", Toast.LENGTH_SHORT).show()
+            finish()
+            return
+        }
+
+        // 2) Inyecto el TopBarFragment con ese mismo groupId
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.topBarFragment,
+                    TopBarFragment.newInstance(groupId)
+                )
+                .commit()
+        }
 
         // Primer ListView para los pagos por persona
         val listViewPersonas = findViewById<ListView>(R.id.lista_monto_pagar_persona)
@@ -34,18 +57,17 @@ class pantalla_principal : AppCompatActivity() {
         val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
 
         btnFlechaAtras.setOnClickListener {
+            // Opcional: si quieres volver al homev2
             val intent = Intent(this, homev2::class.java)
             startActivity(intent)
         }
 
-        btnAgregarGasto.setOnClickListener{
-            val intent = Intent(this, RegistrarGastos::class.java)
-            startActivity(intent)
+        btnAgregarGasto.setOnClickListener {
+            startActivity(Intent(this, RegistrarGastos::class.java))
         }
 
         btnReporteGastos.setOnClickListener {
-            val intent = Intent(this, reporte_gastos::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, reporte_gastos::class.java))
         }
 
         // Datos de prueba para PagarPorPersona
@@ -55,31 +77,25 @@ class pantalla_principal : AppCompatActivity() {
             PagarPorPersona("Carlos", "$350", R.mipmap.image_default_user),
             PagarPorPersona("Ana", "$400", R.mipmap.image_default_user)
         )
-
-        val adapterPersonas = PagarPorPersonaAdapter(this, listaMontoPagar)
-        listViewPersonas.adapter = adapterPersonas
+        listViewPersonas.adapter = PagarPorPersonaAdapter(this, listaMontoPagar)
 
         // Segundo ListView para los gastos generales
         val listViewGastos = findViewById<ListView>(R.id.lista_gastos)
-
-        // Datos de prueba para Gasto
         val listaGastos = listOf(
             Gasto("C", "Mochomos", "Cena en restaurante", "- $6,622.00"),
             Gasto("T", "UBER", "Viaje en uber", "- $150.00"),
             Gasto("I", "Infonavit", "Pago de renta, Vivienda", "- $8,000.00")
         )
+        listViewGastos.adapter = GastoAdapter(this, listaGastos)
 
-        val adapterGastos = GastoAdapter(this, listaGastos)
-        listViewGastos.adapter = adapterGastos
-
-        // Evento de clic en un elemento de la lista de gastos
-        listViewGastos.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-            val gastoSeleccionado = listaGastos[position]
-            val intent = Intent(this, DetalleGastoActivity::class.java)
-            intent.putExtra("MONTO", gastoSeleccionado.monto)
-            intent.putExtra("DESCRIPCION_GASTO", gastoSeleccionado.tipo)
-            intent.putExtra("MONTO_GASTO", gastoSeleccionado.categoria)
-            startActivity(intent)
-        }
+        listViewGastos.onItemClickListener =
+            AdapterView.OnItemClickListener { _, _, position, _ ->
+                val gasto = listaGastos[position]
+                Intent(this, DetalleGastoActivity::class.java).apply {
+                    putExtra("MONTO", gasto.monto)
+                    putExtra("DESCRIPCION_GASTO", gasto.tipo)
+                    putExtra("MONTO_GASTO", gasto.categoria)
+                }.also { startActivity(it) }
+            }
     }
 }
