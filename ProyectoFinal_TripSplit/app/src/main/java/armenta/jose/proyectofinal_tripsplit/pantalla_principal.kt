@@ -32,7 +32,6 @@ class pantalla_principal : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_pantalla_principal)
 
-        // 1) Leo el groupId que me pasaron en el Intent
         groupId = intent.getStringExtra("groupId").orEmpty()
         if (groupId.isBlank()) {
             Toast.makeText(this, "Falta información del grupo", Toast.LENGTH_SHORT).show()
@@ -57,13 +56,18 @@ class pantalla_principal : AppCompatActivity() {
         val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
 
         btnFlechaAtras.setOnClickListener {
-            // Opcional: si quieres volver al homev2
             val intent = Intent(this, homev2::class.java)
             startActivity(intent)
         }
 
         btnAgregarGasto.setOnClickListener {
-            startActivity(Intent(this, RegistrarGastos::class.java))
+            if (groupId != null) {
+                val intentRegistrar = Intent(this, RegistrarGastos::class.java)
+                intentRegistrar.putExtra("GRUPO_ID", groupId)
+                startActivity(intentRegistrar)
+            } else {
+                Toast.makeText(this, "Error: No se pudo identificar el grupo.", Toast.LENGTH_SHORT).show()
+            }
         }
 
         btnReporteGastos.setOnClickListener {
@@ -82,9 +86,9 @@ class pantalla_principal : AppCompatActivity() {
         // Segundo ListView para los gastos generales
         val listViewGastos = findViewById<ListView>(R.id.lista_gastos)
         val listaGastos = listOf(
-            Gasto("C", "Mochomos", "Cena en restaurante", "- $6,622.00"),
-            Gasto("T", "UBER", "Viaje en uber", "- $150.00"),
-            Gasto("I", "Infonavit", "Pago de renta, Vivienda", "- $8,000.00")
+            Gasto("C", "Cena en restaurante", 6622.0, "Cena"),
+            Gasto("T", "Viaje en uber", 150.0, "Transporte"),
+            Gasto("I", "Pago de renta", 8000.0, "Vivienda")
         )
         listViewGastos.adapter = GastoAdapter(this, listaGastos)
 
@@ -92,9 +96,9 @@ class pantalla_principal : AppCompatActivity() {
             AdapterView.OnItemClickListener { _, _, position, _ ->
                 val gasto = listaGastos[position]
                 Intent(this, DetalleGastoActivity::class.java).apply {
-                    putExtra("MONTO", gasto.monto)
-                    putExtra("DESCRIPCION_GASTO", gasto.tipo)
-                    putExtra("MONTO_GASTO", gasto.categoria)
+                    putExtra("MONTO", gasto.montoTotal)
+                    putExtra("NOMBRE_GASTO", gasto.nombre)
+                    putExtra("CATEGORIA_GASTO", gasto.categoria)
                 }.also { startActivity(it) }
             }
     }
