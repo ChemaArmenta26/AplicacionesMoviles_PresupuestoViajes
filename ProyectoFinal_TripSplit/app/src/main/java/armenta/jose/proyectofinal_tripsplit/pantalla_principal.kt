@@ -83,6 +83,18 @@ class pantalla_principal : AppCompatActivity() {
         )
         listViewPersonas.adapter = PagarPorPersonaAdapter(this, listaMontoPagar)
 
+        // AÑADIR ESTA FUNCIONALIDAD:
+        // Configurar el onItemClickListener para la lista de personas
+        listViewPersonas.onItemClickListener =
+            AdapterView.OnItemClickListener { _, _, position, _ ->
+                val persona = listaMontoPagar[position]
+                Intent(this, DetalleGastoActivity::class.java).apply {
+                    putExtra("NOMBRE_PERSONA", persona.nombre)
+                    putExtra("MONTO", persona.cantidad)
+                    // Puedes agregar más información si es necesario
+                }.also { startActivity(it) }
+            }
+
         // Segundo ListView para los gastos generales
         val listViewGastos = findViewById<ListView>(R.id.lista_gastos)
         val listaGastos = listOf(
