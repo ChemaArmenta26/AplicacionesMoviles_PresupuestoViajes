@@ -1,17 +1,22 @@
 package armenta.jose.proyectofinal_tripsplit.utilities
 
 import android.content.Context
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import armenta.jose.proyectofinal_tripsplit.R
+import java.text.NumberFormat
+import java.util.Locale
 
 class GastoAdapter(
     private val context: Context,
     private val listaGastos: List<Gasto>
 ) : BaseAdapter() {
+
+    private val numberFormat = NumberFormat.getCurrencyInstance(Locale.getDefault())
 
     override fun getCount(): Int = listaGastos.size
 
@@ -29,10 +34,12 @@ class GastoAdapter(
         val montoGasto = view.findViewById<TextView>(R.id.tv_monto_gasto)
 
         val gasto = listaGastos[position]
+        tipoGasto.text = gasto.categoria?.firstOrNull()?.toString() ?: "?"
 
-        nombreGasto.text = gasto.nombre
-        categoriaGasto.text = gasto.categoria
-        montoGasto.text = gasto.montoTotal.toString()
+        nombreGasto.text = gasto.nombre ?: context.getString(R.string.default_nombre_gasto)
+        categoriaGasto.text = gasto.categoria ?: context.getString(R.string.default_categoria_gasto)
+
+        montoGasto.text = NumberFormat.getCurrencyInstance().format(gasto.montoTotal ?: 0.0)
 
         return view
     }
