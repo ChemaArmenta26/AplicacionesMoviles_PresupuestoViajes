@@ -12,6 +12,10 @@
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_configuracion_grupo.xml"
     },
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/item_pagar_por_persona.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_pagar_por_persona.xml"
+    },
+    {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_reporte_gastos.xml",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_reporte_gastos.xml"
     },

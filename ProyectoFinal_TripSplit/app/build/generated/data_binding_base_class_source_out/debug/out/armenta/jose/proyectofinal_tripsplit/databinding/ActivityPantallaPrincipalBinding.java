@@ -46,11 +46,15 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
   @NonNull
   public final TextView tvSaldoDisponbile;
 
+  @NonNull
+  public final TextView tvTotalGastado;
+
   private ActivityPantallaPrincipalBinding(@NonNull LinearLayout rootView,
       @NonNull ImageButton btnAgregarGasto, @NonNull ImageButton btnFlechaAtras,
       @NonNull AppCompatButton btnVerReporteGastos, @NonNull ListView listaGastos,
       @NonNull ListView listaMontoPagarPersona, @NonNull TextView tvCodigoGrupo,
-      @NonNull TextView tvNombreViaje, @NonNull TextView tvSaldoDisponbile) {
+      @NonNull TextView tvNombreViaje, @NonNull TextView tvSaldoDisponbile,
+      @NonNull TextView tvTotalGastado) {
     this.rootView = rootView;
     this.btnAgregarGasto = btnAgregarGasto;
     this.btnFlechaAtras = btnFlechaAtras;
@@ -60,6 +64,7 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
     this.tvCodigoGrupo = tvCodigoGrupo;
     this.tvNombreViaje = tvNombreViaje;
     this.tvSaldoDisponbile = tvSaldoDisponbile;
+    this.tvTotalGastado = tvTotalGastado;
   }
 
   @Override
@@ -137,9 +142,15 @@ public final class ActivityPantallaPrincipalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_total_gastado;
+      TextView tvTotalGastado = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalGastado == null) {
+        break missingId;
+      }
+
       return new ActivityPantallaPrincipalBinding((LinearLayout) rootView, btnAgregarGasto,
           btnFlechaAtras, btnVerReporteGastos, listaGastos, listaMontoPagarPersona, tvCodigoGrupo,
-          tvNombreViaje, tvSaldoDisponbile);
+          tvNombreViaje, tvSaldoDisponbile, tvTotalGastado);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
