@@ -48,6 +48,10 @@
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/menu/bottom_nav_menu.xml"
     },
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_boton_editar.png.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/boton_editar.png"
+    },
+    {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_imagen_eliminar_miembro.png.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/imagen_eliminar_miembro.png"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_options.png.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_options.png"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_image_eliminar.png.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/image_eliminar.png"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_decoracion_fondo.png.flat",

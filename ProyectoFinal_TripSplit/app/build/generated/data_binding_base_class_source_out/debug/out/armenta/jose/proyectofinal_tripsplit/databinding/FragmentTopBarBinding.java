@@ -4,7 +4,10 @@ package armenta.jose.proyectofinal_tripsplit.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -17,7 +20,16 @@ import java.lang.String;
 
 public final class FragmentTopBarBinding implements ViewBinding {
   @NonNull
-  private final Toolbar rootView;
+  private final RelativeLayout rootView;
+
+  @NonNull
+  public final Toolbar actualToolbar;
+
+  @NonNull
+  public final ImageButton iconDoDeleteGasto;
+
+  @NonNull
+  public final ImageButton iconDoEditGasto;
 
   @NonNull
   public final ImageView iconEdit;
@@ -32,22 +44,35 @@ public final class FragmentTopBarBinding implements ViewBinding {
   public final ImageView iconUser;
 
   @NonNull
+  public final LinearLayout iconsContainerRight;
+
+  @NonNull
+  public final LinearLayout layoutEditGastoOptions;
+
+  @NonNull
   public final ImageView tvAppTitle;
 
-  private FragmentTopBarBinding(@NonNull Toolbar rootView, @NonNull ImageView iconEdit,
-      @NonNull ImageView iconLeft, @NonNull ImageView iconSettings, @NonNull ImageView iconUser,
-      @NonNull ImageView tvAppTitle) {
+  private FragmentTopBarBinding(@NonNull RelativeLayout rootView, @NonNull Toolbar actualToolbar,
+      @NonNull ImageButton iconDoDeleteGasto, @NonNull ImageButton iconDoEditGasto,
+      @NonNull ImageView iconEdit, @NonNull ImageView iconLeft, @NonNull ImageView iconSettings,
+      @NonNull ImageView iconUser, @NonNull LinearLayout iconsContainerRight,
+      @NonNull LinearLayout layoutEditGastoOptions, @NonNull ImageView tvAppTitle) {
     this.rootView = rootView;
+    this.actualToolbar = actualToolbar;
+    this.iconDoDeleteGasto = iconDoDeleteGasto;
+    this.iconDoEditGasto = iconDoEditGasto;
     this.iconEdit = iconEdit;
     this.iconLeft = iconLeft;
     this.iconSettings = iconSettings;
     this.iconUser = iconUser;
+    this.iconsContainerRight = iconsContainerRight;
+    this.layoutEditGastoOptions = layoutEditGastoOptions;
     this.tvAppTitle = tvAppTitle;
   }
 
   @Override
   @NonNull
-  public Toolbar getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -72,6 +97,24 @@ public final class FragmentTopBarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.actual_toolbar;
+      Toolbar actualToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (actualToolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.icon_do_delete_gasto;
+      ImageButton iconDoDeleteGasto = ViewBindings.findChildViewById(rootView, id);
+      if (iconDoDeleteGasto == null) {
+        break missingId;
+      }
+
+      id = R.id.icon_do_edit_gasto;
+      ImageButton iconDoEditGasto = ViewBindings.findChildViewById(rootView, id);
+      if (iconDoEditGasto == null) {
+        break missingId;
+      }
+
       id = R.id.icon_edit;
       ImageView iconEdit = ViewBindings.findChildViewById(rootView, id);
       if (iconEdit == null) {
@@ -96,14 +139,27 @@ public final class FragmentTopBarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.icons_container_right;
+      LinearLayout iconsContainerRight = ViewBindings.findChildViewById(rootView, id);
+      if (iconsContainerRight == null) {
+        break missingId;
+      }
+
+      id = R.id.layout_edit_gasto_options;
+      LinearLayout layoutEditGastoOptions = ViewBindings.findChildViewById(rootView, id);
+      if (layoutEditGastoOptions == null) {
+        break missingId;
+      }
+
       id = R.id.tv_app_title;
       ImageView tvAppTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvAppTitle == null) {
         break missingId;
       }
 
-      return new FragmentTopBarBinding((Toolbar) rootView, iconEdit, iconLeft, iconSettings,
-          iconUser, tvAppTitle);
+      return new FragmentTopBarBinding((RelativeLayout) rootView, actualToolbar, iconDoDeleteGasto,
+          iconDoEditGasto, iconEdit, iconLeft, iconSettings, iconUser, iconsContainerRight,
+          layoutEditGastoOptions, tvAppTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
