@@ -28,6 +28,10 @@
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_gasto.xml"
     },
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_pagar_por_persona.xml.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_pagar_por_persona.xml"
+    },
+    {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_codigo_grupo.xml.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_codigo_grupo.xml"
     },
@@ -118,10 +122,6 @@
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_titulo_app.png.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/titulo_app.png"
-    },
-    {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-pngs-54:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_crear_cuenta.xml.flat",
@@ -230,6 +230,10 @@
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_item_configuracion_grupo.xml.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/item_configuracion_grupo.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_decoracion_ondas.png.flat",

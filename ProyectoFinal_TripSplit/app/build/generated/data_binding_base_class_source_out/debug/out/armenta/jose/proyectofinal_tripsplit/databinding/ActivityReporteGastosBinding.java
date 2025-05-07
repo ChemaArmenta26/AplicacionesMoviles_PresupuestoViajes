@@ -21,16 +21,19 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final View barAlimentos;
+  public final View barComida;
 
   @NonNull
   public final View barEntretenimiento;
 
   @NonNull
+  public final View barHospedaje;
+
+  @NonNull
   public final View barOtros;
 
   @NonNull
-  public final View barTransporte;
+  public final View barTraslado;
 
   @NonNull
   public final ImageButton btnFlechaAtras;
@@ -41,15 +44,16 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
   @NonNull
   public final ListView listaSaldoPendiente;
 
-  private ActivityReporteGastosBinding(@NonNull LinearLayout rootView, @NonNull View barAlimentos,
-      @NonNull View barEntretenimiento, @NonNull View barOtros, @NonNull View barTransporte,
-      @NonNull ImageButton btnFlechaAtras, @NonNull ListView listaReporteIntegrantes,
-      @NonNull ListView listaSaldoPendiente) {
+  private ActivityReporteGastosBinding(@NonNull LinearLayout rootView, @NonNull View barComida,
+      @NonNull View barEntretenimiento, @NonNull View barHospedaje, @NonNull View barOtros,
+      @NonNull View barTraslado, @NonNull ImageButton btnFlechaAtras,
+      @NonNull ListView listaReporteIntegrantes, @NonNull ListView listaSaldoPendiente) {
     this.rootView = rootView;
-    this.barAlimentos = barAlimentos;
+    this.barComida = barComida;
     this.barEntretenimiento = barEntretenimiento;
+    this.barHospedaje = barHospedaje;
     this.barOtros = barOtros;
-    this.barTransporte = barTransporte;
+    this.barTraslado = barTraslado;
     this.btnFlechaAtras = btnFlechaAtras;
     this.listaReporteIntegrantes = listaReporteIntegrantes;
     this.listaSaldoPendiente = listaSaldoPendiente;
@@ -82,9 +86,9 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.barAlimentos;
-      View barAlimentos = ViewBindings.findChildViewById(rootView, id);
-      if (barAlimentos == null) {
+      id = R.id.barComida;
+      View barComida = ViewBindings.findChildViewById(rootView, id);
+      if (barComida == null) {
         break missingId;
       }
 
@@ -94,15 +98,21 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.barHospedaje;
+      View barHospedaje = ViewBindings.findChildViewById(rootView, id);
+      if (barHospedaje == null) {
+        break missingId;
+      }
+
       id = R.id.barOtros;
       View barOtros = ViewBindings.findChildViewById(rootView, id);
       if (barOtros == null) {
         break missingId;
       }
 
-      id = R.id.barTransporte;
-      View barTransporte = ViewBindings.findChildViewById(rootView, id);
-      if (barTransporte == null) {
+      id = R.id.barTraslado;
+      View barTraslado = ViewBindings.findChildViewById(rootView, id);
+      if (barTraslado == null) {
         break missingId;
       }
 
@@ -124,9 +134,9 @@ public final class ActivityReporteGastosBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityReporteGastosBinding((LinearLayout) rootView, barAlimentos,
-          barEntretenimiento, barOtros, barTransporte, btnFlechaAtras, listaReporteIntegrantes,
-          listaSaldoPendiente);
+      return new ActivityReporteGastosBinding((LinearLayout) rootView, barComida,
+          barEntretenimiento, barHospedaje, barOtros, barTraslado, btnFlechaAtras,
+          listaReporteIntegrantes, listaSaldoPendiente);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

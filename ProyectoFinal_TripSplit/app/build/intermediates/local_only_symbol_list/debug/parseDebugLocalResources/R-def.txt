@@ -35,10 +35,11 @@ drawable ic_notifications_black_24dp
 drawable person_outline
 drawable recuadro_borde
 drawable spinner
-id barAlimentos
+id barComida
 id barEntretenimiento
+id barHospedaje
 id barOtros
-id barTransporte
+id barTraslado
 id btnCrearGrupo
 id btnEditGroupName
 id btnRemoveMember
@@ -56,6 +57,7 @@ id btn_registrarse
 id btn_regresar
 id btn_unirseViaje
 id btn_ver_reporte_gastos
+id cb_participante
 id concepto_gasto
 id container
 id crearCuenta
@@ -82,6 +84,7 @@ id img_perfil
 id input_codigo
 id ivMember
 id iv_perfil_integrante
+id iv_persona_imagen
 id listViewGrupos
 id listViewIntegrantes
 id lista_gastos
@@ -111,6 +114,7 @@ id tvIntegrantesLabel
 id tvMemberName
 id tvSaldoDisponbile
 id tv_app_title
+id tv_cantidad_persona
 id tv_categoria_gasto
 id tv_codigo_grupo
 id tv_destino_grupo
@@ -121,9 +125,11 @@ id tv_monto_gasto
 id tv_nombre_gasto
 id tv_nombre_grupo
 id tv_nombre_integrante
+id tv_nombre_persona
 id tv_nombre_viaje
 id tv_tipo_gasto
 id tv_title
+id tv_total_gastado
 layout activity_codigo_grupo
 layout activity_crear_cuenta
 layout activity_crear_grupo
@@ -146,6 +152,7 @@ layout item_configuracion_grupo
 layout item_gasto
 layout item_gasto_pendiente
 layout item_integrante_detalle
+layout item_pagar_por_persona
 layout item_registro_gasto
 layout item_total_gastado
 layout item_viaje
@@ -193,10 +200,20 @@ string crearCuenta
 string crearGrupo
 string crear_viaje_grupal
 string cuantosSon
+string currency_format
+string debe_format
+string default_categoria_gasto
+string default_nombre_gasto
+string default_nombre_usuario
+string default_tipo_gasto
 string desde
 string deudaIndividual
 string ejemploCategoria
 string ejemploMonto
+string error_cargar_gastos
+string error_cargar_miembros
+string error_info_grupo
+string foto_perfil_usuario
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -221,6 +238,7 @@ string nombreGrupo
 string nombre_del_gasto
 string plus
 string project_id
+string recibe_format
 string registra_un_gasto
 string registrate
 string reporte_gastos

@@ -53,7 +53,7 @@ class homev2 : AppCompatActivity() {
             if (position < gruposFiltradosList.size) {
                 val grupoSeleccionado = gruposFiltradosList[position]
                 val intent = Intent(this, pantalla_principal::class.java).apply {
-                    putExtra("groupId", grupoSeleccionado.codigo)   // <- aquí el ID real
+                    putExtra("groupId", grupoSeleccionado.codigo)
                 }
                 startActivity(intent)
             } else {

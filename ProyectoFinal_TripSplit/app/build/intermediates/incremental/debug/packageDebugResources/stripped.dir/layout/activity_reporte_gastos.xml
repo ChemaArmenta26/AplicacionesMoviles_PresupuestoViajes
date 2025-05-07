@@ -69,92 +69,112 @@
             <!-- debe funcionar esta despues, aparece asi pq no tiene dato xd -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="bottom"
                 android:orientation="horizontal"
                 android:padding="20dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="1"
+                    android:orientation="vertical"
                     android:gravity="center_horizontal">
 
                     <View
-                        android:id="@+id/barAlimentos"
+                        android:id="@+id/barHospedaje"
                         android:layout_width="50dp"
                         android:layout_height="100dp"
-                        android:background="#FF5722"/>
+                        android:background="#9C27B0" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Alimentos"
-                        android:textSize="14sp"/>
+                        android:text="Hospedaje"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="1"
+                    android:orientation="vertical"
                     android:gravity="center_horizontal">
 
                     <View
-                        android:id="@+id/barTransporte"
+                        android:id="@+id/barComida"
                         android:layout_width="50dp"
-                        android:layout_height="150dp"
-                        android:background="#4CAF50"/>
+                        android:layout_height="100dp"
+                        android:background="#FF5722" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Transporte"
-                        android:textSize="14sp"/>
+                        android:text="Comida"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:id="@+id/barTraslado"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:background="#4CAF50" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Traslado"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
                     android:gravity="center_horizontal">
 
                     <View
                         android:id="@+id/barEntretenimiento"
                         android:layout_width="50dp"
-                        android:layout_height="80dp"
-                        android:background="#2196F3"/>
+                        android:layout_height="100dp"
+                        android:background="#2196F3" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Entretenimiento"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="1"
+                    android:orientation="vertical"
                     android:gravity="center_horizontal">
 
                     <View
                         android:id="@+id/barOtros"
                         android:layout_width="50dp"
-                        android:layout_height="120dp"
-                        android:background="#FFC107"/>
+                        android:layout_height="100dp"
+                        android:background="#FFC107" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Otros"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
-
             </LinearLayout>
+
 
 
             <TextView

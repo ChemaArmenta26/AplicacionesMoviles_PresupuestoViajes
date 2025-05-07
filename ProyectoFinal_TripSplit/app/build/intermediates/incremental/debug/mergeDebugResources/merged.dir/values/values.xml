@@ -2079,6 +2079,12 @@
     <string name="crearGrupo">Crear nuevo grupo</string>
     <string name="crear_viaje_grupal">Crear viaje grupal</string>
     <string name="cuantosSon">¿Cuantos son?</string>
+    <string name="currency_format">$%.2f</string>
+    <string name="debe_format">Debe: %s</string>
+    <string name="default_categoria_gasto">Sin categoría</string>
+    <string name="default_nombre_gasto">Sin nombre</string>
+    <string name="default_nombre_usuario">Usuario</string>
+    <string name="default_tipo_gasto">%1$s</string>
     <string name="desde">Desde: </string>
     <string name="dest_title">destination title</string>
     <string name="deudaIndividual">Deuda Individual</string>
@@ -2087,13 +2093,17 @@
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
   </string>
+    <string name="error_cargar_gastos">Error al cargar los gastos</string>
+    <string name="error_cargar_miembros">Error al cargar los miembros</string>
     <string name="error_icon_content_description">Error</string>
+    <string name="error_info_grupo">Falta información del grupo</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="foto_perfil_usuario">Foto de perfil del usuario</string>
     <string name="gcm_defaultSenderId" translatable="false">981777734028</string>
     <string name="google_api_key" translatable="false">AIzaSyDEIorR92JwruxoRLGajKmTfewrIgq0mYM</string>
     <string name="google_app_id" translatable="false">1:981777734028:android:790825d0255a0ef9b81ea9</string>
@@ -2234,6 +2244,7 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="plus">+</string>
     <string name="project_id" translatable="false">proyectofinal-tripsplit</string>
+    <string name="recibe_format">Recibe: %s</string>
     <string name="registra_un_gasto">Registra un Gasto</string>
     <string name="registrate">Regístrate</string>
     <string name="reporte_gastos">Reporte Gastos</string>
