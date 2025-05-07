@@ -210,7 +210,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
-                android:text="Saldos Pendietes"
+                android:text="Saldos Pendientes"
                 android:textAlignment="center"
                 android:textColor="@color/dark_blue"
                 android:textSize="18sp"
