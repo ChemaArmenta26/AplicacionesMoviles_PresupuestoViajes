@@ -54,5 +54,23 @@
     <string name="ver_reporte_de_gastos">Ver reporte de gastos</string>
     <string name="cerrar_sesi_n">Cerrar sesión</string>
 
+    <string name="default_nombre_gasto">Sin nombre</string>
+    <string name="default_categoria_gasto">Sin categoría</string>
+    <string name="default_nombre_usuario">Usuario</string>
+
+    <!-- Formatos de moneda y mensajes -->
+    <string name="currency_format">$%.2f</string>
+    <string name="debe_format">Debe: %s</string>
+    <string name="recibe_format">Recibe: %s</string>
+
+    <!-- Mensajes de error -->
+    <string name="error_cargar_gastos">Error al cargar los gastos</string>
+    <string name="error_cargar_miembros">Error al cargar los miembros</string>
+    <string name="error_info_grupo">Falta información del grupo</string>
+
+    <string name="foto_perfil_usuario">Foto de perfil del usuario</string>
+    <string name="default_tipo_gasto">%1$s</string>
+
+
 
 </resources>
