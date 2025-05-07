@@ -3325,10 +3325,11 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
-id barAlimentos
+id barComida
 id barEntretenimiento
+id barHospedaje
 id barOtros
-id barTransporte
+id barTraslado
 id barrier
 id baseline
 id beginOnFirstDraw

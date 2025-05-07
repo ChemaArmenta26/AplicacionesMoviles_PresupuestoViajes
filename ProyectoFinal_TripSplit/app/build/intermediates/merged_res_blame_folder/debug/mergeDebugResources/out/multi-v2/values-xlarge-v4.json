@@ -4,7 +4,7 @@
             "outputFile": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-57:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/esmeraldamolinaestrada/.gradle/caches/8.10.2/transforms/6426d5f9a7d6d181f9fa41efe8ec2e89/transformed/appcompat-1.7.0/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "C:\\Users\\jesus\\.gradle\\caches\\8.10.2\\transforms\\6426d5f9a7d6d181f9fa41efe8ec2e89\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
