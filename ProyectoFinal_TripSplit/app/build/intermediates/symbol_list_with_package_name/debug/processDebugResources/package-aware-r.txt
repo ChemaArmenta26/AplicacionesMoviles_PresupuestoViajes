@@ -3304,6 +3304,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id actual_toolbar
 id add
 id adjust_height
 id adjust_width
@@ -3502,12 +3503,15 @@ id honorRequest
 id horizontal
 id horizontal_only
 id icon
+id icon_do_delete_gasto
+id icon_do_edit_gasto
 id icon_edit
 id icon_group
 id icon_left
 id icon_only
 id icon_settings
 id icon_user
+id icons_container_right
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3529,6 +3533,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_edit_gasto_options
 id left
 id leftToRight
 id legacy
@@ -4078,6 +4083,7 @@ layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
 mipmap avion_volando
 mipmap barra_decoracion_inferior
+mipmap boton_editar
 mipmap decoracion_fondo
 mipmap decoracion_ondas
 mipmap flecha_atras
@@ -4091,6 +4097,7 @@ mipmap icon_unirse_viaje
 mipmap icon_unirse_viaje_50
 mipmap image_agregar_gasto
 mipmap image_default_user
+mipmap image_eliminar
 mipmap image_options
 mipmap image_reporte_gastos
 mipmap image_setting

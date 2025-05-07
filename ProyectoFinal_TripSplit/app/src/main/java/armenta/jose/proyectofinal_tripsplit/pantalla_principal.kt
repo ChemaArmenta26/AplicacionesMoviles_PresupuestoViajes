@@ -58,10 +58,16 @@ class pantalla_principal : AppCompatActivity() {
         btnReporteGastos = findViewById(R.id.btn_ver_reporte_gastos)
         tvCodigoGrupo = findViewById(R.id.tv_codigo_grupo)
         tvNombreViaje = findViewById(R.id.tv_nombre_viaje)
+        val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
 
         loadGroupData()
         listenForExpenseChanges()
         listenForMembersChanges()
+
+
+        btnFlechaAtras.setOnClickListener {
+            finish()
+        }
 
         btnAgregarGasto.setOnClickListener {
             val intentRegistrar = Intent(this, RegistrarGastos::class.java)

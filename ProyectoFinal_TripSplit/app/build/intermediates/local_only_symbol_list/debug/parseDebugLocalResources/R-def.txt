@@ -35,6 +35,7 @@ drawable ic_notifications_black_24dp
 drawable person_outline
 drawable recuadro_borde
 drawable spinner
+id actual_toolbar
 id barComida
 id barEntretenimiento
 id barHospedaje
@@ -76,15 +77,19 @@ id et_nombreGrupo
 id et_nombre_gasto
 id et_salida
 id gasto
+id icon_do_delete_gasto
+id icon_do_edit_gasto
 id icon_edit
 id icon_left
 id icon_settings
 id icon_user
+id icons_container_right
 id img_perfil
 id input_codigo
 id ivMember
 id iv_perfil_integrante
 id iv_persona_imagen
+id layout_edit_gasto_options
 id listViewGrupos
 id listViewIntegrantes
 id lista_gastos
@@ -159,6 +164,7 @@ layout item_viaje
 menu bottom_nav_menu
 mipmap avion_volando
 mipmap barra_decoracion_inferior
+mipmap boton_editar
 mipmap decoracion_fondo
 mipmap decoracion_ondas
 mipmap flecha_atras
@@ -172,6 +178,7 @@ mipmap icon_unirse_viaje
 mipmap icon_unirse_viaje_50
 mipmap image_agregar_gasto
 mipmap image_default_user
+mipmap image_eliminar
 mipmap image_options
 mipmap image_reporte_gastos
 mipmap image_setting
