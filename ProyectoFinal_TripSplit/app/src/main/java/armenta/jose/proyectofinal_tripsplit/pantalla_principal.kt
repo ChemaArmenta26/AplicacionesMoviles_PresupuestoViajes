@@ -28,6 +28,8 @@ class pantalla_principal : AppCompatActivity() {
     private lateinit var tvCodigoGrupo: TextView
     private lateinit var tvNombreViaje: TextView
 
+    private var gastosList: List<Gasto> = emptyList()
+
     private lateinit var groupId: String
     private val TAG = "PantallaPrincipal"
 
@@ -92,7 +94,7 @@ class pantalla_principal : AppCompatActivity() {
     private fun listenForExpenseChanges() {
         dbRefGastos.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val gastosList = snapshot.children.mapNotNull {
+                gastosList = snapshot.children.mapNotNull {
                     val gasto = it.getValue(Gasto::class.java)
                     gasto?.takeIf { g -> g.groupId == groupId }
                 }
@@ -126,7 +128,13 @@ class pantalla_principal : AppCompatActivity() {
         listViewGastos.adapter = adapter
         adapter.notifyDataSetChanged()
 
-
+        listViewGastos.setOnItemClickListener { _, _, position, _ ->
+            val gastoSeleccionado = gastosList[position]
+            val intentDetalle = Intent(this, DetalleGastoActivity::class.java)
+            intentDetalle.putExtra("GASTO_ID", gastoSeleccionado.id)
+            intentDetalle.putExtra("GRUPO_ID", groupId)
+            startActivity(intentDetalle)
+        }
     }
 
     private fun updateTotalSpent(gastosList: List<Gasto>) {
