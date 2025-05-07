@@ -35,10 +35,11 @@ drawable ic_notifications_black_24dp
 drawable person_outline
 drawable recuadro_borde
 drawable spinner
-id barAlimentos
+id barComida
 id barEntretenimiento
+id barHospedaje
 id barOtros
-id barTransporte
+id barTraslado
 id btnCrearGrupo
 id btnEditGroupName
 id btnRemoveMember
