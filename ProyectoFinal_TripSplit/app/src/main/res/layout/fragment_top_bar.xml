@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -14,6 +14,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:padding="8dp">
 
+        <!-- Logo izquierda -->
         <ImageView
             android:id="@+id/icon_left"
             android:layout_width="65dp"
@@ -23,6 +24,7 @@
             android:padding="8dp"
             tools:ignore="ContentDescription" />
 
+        <!-- Título -->
         <ImageView
             android:id="@+id/tv_app_title"
             android:layout_width="125dp"
@@ -31,6 +33,7 @@
             android:layout_gravity="center"
             tools:ignore="ContentDescription" />
 
+        <!-- Iconos derecha -->
         <LinearLayout
             android:id="@+id/icons_container_right"
             android:layout_width="wrap_content"
@@ -69,14 +72,14 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Layout flotante de opciones -->
     <LinearLayout
         android:id="@+id/layout_edit_gasto_options"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_alignTop="@id/actual_toolbar"
-        android:layout_alignEnd="@id/actual_toolbar"
-        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo_bluebackground"
         android:padding="8dp"
@@ -84,31 +87,28 @@
         android:visibility="gone"
         tools:visibility="visible">
 
+        <ImageButton
+            android:id="@+id/icon_do_edit_gasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@mipmap/boton_editar"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:contentDescription="Editar Gasto" />
 
         <ImageButton
-        android:id="@+id/icon_do_edit_gasto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:src="@mipmap/boton_editar"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:padding="8dp"
-        android:contentDescription="Editar Gasto"/>
-
-
-        <ImageButton
-        android:id="@+id/icon_do_delete_gasto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:src="@mipmap/image_eliminar"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:padding="8dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="Eliminar Gasto"/>
-
+            android:id="@+id/icon_do_delete_gasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@mipmap/image_eliminar"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Eliminar Gasto" />
     </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>

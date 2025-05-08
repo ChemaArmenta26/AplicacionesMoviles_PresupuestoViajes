@@ -36,6 +36,10 @@
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_codigo_grupo.xml"
     },
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_activity_editar_gasto.xml.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_gasto.xml"
+    },
+    {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_delete_forever.xml.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/drawable/delete_forever.xml"
     },
@@ -92,6 +96,10 @@
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/xml/data_extraction_rules.xml"
     },
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_eliminar_grupo.png.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/eliminar_grupo.png"
+    },
+    {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_fondo_nubes.png.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/fondo_nubes.png"
     },
@@ -114,6 +122,10 @@
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/layout_fragment_dashboard.xml.flat",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/mipmap-hdpi_delete.png.flat",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/mipmap-hdpi/delete.png"
     },
     {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-debug-59:/drawable_button_plus.xml.flat",

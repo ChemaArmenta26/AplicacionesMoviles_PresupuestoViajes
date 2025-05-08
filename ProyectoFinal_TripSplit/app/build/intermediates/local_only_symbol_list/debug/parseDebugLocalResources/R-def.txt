@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array categorias_gasto
 color black
 color blue
 color btn_home_blue
@@ -50,6 +51,7 @@ id btn_cancelar
 id btn_cerrar_sesion
 id btn_crear
 id btn_crearViaje
+id btn_eliminar
 id btn_flecha_atras
 id btn_guardar
 id btn_ingresar
@@ -61,6 +63,7 @@ id btn_ver_reporte_gastos
 id cb_participante
 id concepto_gasto
 id container
+id correo_usuario
 id crearCuenta
 id et_apellido
 id et_buscar
@@ -107,6 +110,7 @@ id navigation_home
 id navigation_notifications
 id navigation_reporte_gastos
 id rv_integrantes
+id saludo_usuario
 id spinnerCategoria
 id spinnerQuienPago
 id textHome
@@ -139,6 +143,7 @@ layout activity_codigo_grupo
 layout activity_crear_cuenta
 layout activity_crear_grupo
 layout activity_detalle_gasto
+layout activity_editar_gasto
 layout activity_editar_grupo
 layout activity_editar_perfil
 layout activity_home
@@ -167,6 +172,8 @@ mipmap barra_decoracion_inferior
 mipmap boton_editar
 mipmap decoracion_fondo
 mipmap decoracion_ondas
+mipmap delete
+mipmap eliminar_grupo
 mipmap flecha_atras
 mipmap fondo_nubes
 mipmap ic_launcher

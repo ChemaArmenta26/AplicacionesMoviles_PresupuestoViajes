@@ -1,3 +1,0 @@
-armenta.jose.proyectofinal_tripsplit.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_editar_gasto.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_gasto.xml"
+    },
+    {
         "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_pantalla_principal.xml",
         "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_pantalla_principal.xml"
     },
