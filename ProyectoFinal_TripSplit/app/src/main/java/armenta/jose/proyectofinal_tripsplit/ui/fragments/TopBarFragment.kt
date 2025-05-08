@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import armenta.jose.proyectofinal_tripsplit.EditarGastoActivity
 import armenta.jose.proyectofinal_tripsplit.EditarGrupoActivity
 import armenta.jose.proyectofinal_tripsplit.EditarPerfil
 import armenta.jose.proyectofinal_tripsplit.R
@@ -42,7 +43,7 @@ class TopBarFragment : Fragment() {
     private val groupId: String by lazy {
         arguments?.getString(ARG_GROUP_ID)
             ?: requireActivity().intent.getStringExtra("groupId")
-                .orEmpty()
+            ?: ""
     }
 
     private val currentGastoId: String? by lazy { arguments?.getString(ARG_GASTO_ID) }
@@ -100,10 +101,16 @@ class TopBarFragment : Fragment() {
 
             iconDoEditGasto.setOnClickListener {
                 layoutEditGastoOptions.visibility = View.GONE
-                val intent = Intent(requireActivity(), EditarGastoActivity::class.java).apply {
-                    putExtra("groupId", groupId)
-                    putExtra("gastoId", currentGastoId)
+                if (currentGastoId.isNullOrBlank() || groupId.isBlank()) {
+                    Toast.makeText(requireContext(), "Error: IDs no válidos", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
                 }
+
+                val intent = Intent(requireActivity(), EditarGastoActivity::class.java).apply {
+                    putExtra("GRUPO_ID", groupId)
+                    putExtra("GASTO_ID", currentGastoId)
+                }
+                Log.d("TopBarFragment", "Enviando - GroupID: $groupId, GastoID: $currentGastoId")
                 startActivity(intent)
             }
 
@@ -128,8 +135,6 @@ class TopBarFragment : Fragment() {
     }
 
     private fun eliminarGasto() {
-        val dbRef = FirebaseDatabase.getInstance().reference
-
         if (currentGastoId.isNullOrBlank()) {
             Toast.makeText(requireContext(), "ID de gasto no válido", Toast.LENGTH_SHORT).show()
             return

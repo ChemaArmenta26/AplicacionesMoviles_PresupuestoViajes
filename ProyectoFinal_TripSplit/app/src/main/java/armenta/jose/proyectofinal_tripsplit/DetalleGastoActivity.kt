@@ -58,9 +58,6 @@ class DetalleGastoActivity : AppCompatActivity() {
         adapter = IntegrantesAdapter()
         recyclerView.adapter = adapter
 
-        gastoId = intent.getStringExtra("GASTO_ID") ?: return
-        grupoId = intent.getStringExtra("GRUPO_ID") ?: return
-
         dbRef = FirebaseDatabase.getInstance().reference
 
         cargarDatosDelGasto()

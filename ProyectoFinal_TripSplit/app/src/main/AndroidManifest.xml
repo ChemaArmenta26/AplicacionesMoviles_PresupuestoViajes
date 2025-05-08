@@ -17,7 +17,7 @@
             android:name=".EditarPerfil"
             android:exported="false" />
         <activity
-            android:name=".EditarGasto"
+            android:name=".EditarGastoActivity"
             android:exported="false" />
         <activity
             android:name=".homev2"

@@ -9,8 +9,9 @@ import armenta.jose.proyectofinal_tripsplit.R
 import armenta.jose.proyectofinal_tripsplit.utilities.Integrante
 
 class ParticipantesAdapter : RecyclerView.Adapter<ParticipantesAdapter.ViewHolder>() {
-    private var integrantes = ArrayList<Integrante>()
-    private val participantesSeleccionados = mutableSetOf<String>() // Cambiado a String
+    private var integrantes = mutableListOf<Integrante>()
+    private val participantesSeleccionados = mutableSetOf<String>()
+    private val integranteToUserIdMap = mutableMapOf<Int, String>() // Mapa para relacionar id con userId
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imagenPerfil: ImageView = view.findViewById(R.id.iv_perfil_integrante)
@@ -27,25 +28,35 @@ class ParticipantesAdapter : RecyclerView.Adapter<ParticipantesAdapter.ViewHolde
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val integrante = integrantes[position]
 
-        holder.imagenPerfil.setImageResource(integrante.imagenPerfilId)
         holder.nombreIntegrante.text = integrante.nombre
+        holder.imagenPerfil.setImageResource(integrante.imagenPerfilId)
 
-        // Configurar checkbox
+        // Configurar checkbox usando el userId del mapa
         holder.checkBox.setOnCheckedChangeListener(null)
-        holder.checkBox.isChecked = participantesSeleccionados.contains(integrante.id.toString())
+        val userId = integranteToUserIdMap[integrante.id]
+        holder.checkBox.isChecked = userId?.let { participantesSeleccionados.contains(it) } ?: false
         holder.checkBox.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                participantesSeleccionados.add(integrante.id.toString())
-            } else {
-                participantesSeleccionados.remove(integrante.id.toString())
+            userId?.let {
+                if (isChecked) {
+                    participantesSeleccionados.add(it)
+                } else {
+                    participantesSeleccionados.remove(it)
+                }
             }
         }
     }
 
     override fun getItemCount() = integrantes.size
 
-    fun actualizarLista(nuevosIntegrantes: List<Integrante>, participantesIds: List<String>) {
-        integrantes = ArrayList(nuevosIntegrantes)
+    fun actualizarLista(
+        nuevosIntegrantes: List<Integrante>,
+        participantesIds: List<String>,
+        userIdMap: Map<Int, String>
+    ) {
+        integrantes.clear()
+        integrantes.addAll(nuevosIntegrantes)
+        integranteToUserIdMap.clear()
+        integranteToUserIdMap.putAll(userIdMap)
         participantesSeleccionados.clear()
         participantesSeleccionados.addAll(participantesIds)
         notifyDataSetChanged()
