@@ -18,8 +18,6 @@ import armenta.jose.proyectofinal_tripsplit.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.FieldValue
-import com.google.firebase.firestore.FirebaseFirestore
 
 class TopBarFragment : Fragment() {
 
@@ -93,39 +91,53 @@ class TopBarFragment : Fragment() {
         }
 
         if (showEditIcon && !currentGastoId.isNullOrBlank()) {
-            iconEditGastoPrincipal.visibility = View.VISIBLE
-            iconEditGastoPrincipal.setOnClickListener {
-                layoutEditGastoOptions.visibility =
-                    if (layoutEditGastoOptions.visibility == View.VISIBLE) View.GONE else View.VISIBLE
-            }
+            iconEditGastoPrincipal.visibility = View.GONE
+            layoutEditGastoOptions.visibility = View.GONE
 
-            iconDoEditGasto.setOnClickListener {
-                layoutEditGastoOptions.visibility = View.GONE
-                if (currentGastoId.isNullOrBlank() || groupId.isBlank()) {
-                    Toast.makeText(requireContext(), "Error: IDs no válidos", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
-                }
+            val currentUserId = auth.currentUser?.uid
 
-                val intent = Intent(requireActivity(), EditarGastoActivity::class.java).apply {
-                    putExtra("GRUPO_ID", groupId)
-                    putExtra("GASTO_ID", currentGastoId)
-                }
-                Log.d("TopBarFragment", "Enviando - GroupID: $groupId, GastoID: $currentGastoId")
-                startActivity(intent)
-            }
+            dbRef.child("gastos").child(currentGastoId!!).get().addOnSuccessListener { snapshot ->
+                val creadorId = snapshot.child("creadorId").getValue(String::class.java)
 
-            iconDoDeleteGasto.setOnClickListener {
-                layoutEditGastoOptions.visibility = View.GONE
-                AlertDialog.Builder(requireContext())
-                    .setTitle("Eliminar gasto")
-                    .setMessage("¿Estás seguro de que deseas eliminar este gasto?")
-                    .setPositiveButton("Sí") { _, _ ->
-                        eliminarGasto()
+                if (creadorId == currentUserId) {
+                    iconEditGastoPrincipal.visibility = View.VISIBLE
+                    iconEditGastoPrincipal.setOnClickListener {
+                        layoutEditGastoOptions.visibility =
+                            if (layoutEditGastoOptions.visibility == View.VISIBLE) View.GONE else View.VISIBLE
                     }
-                    .setNegativeButton("Cancelar", null)
-                    .show()
-            }
 
+                    iconDoEditGasto.setOnClickListener {
+                        layoutEditGastoOptions.visibility = View.GONE
+                        if (currentGastoId.isNullOrBlank() || groupId.isBlank()) {
+                            Toast.makeText(requireContext(), "Error: IDs no válidos", Toast.LENGTH_SHORT).show()
+                            return@setOnClickListener
+                        }
+
+                        val intent = Intent(requireActivity(), EditarGastoActivity::class.java).apply {
+                            putExtra("GRUPO_ID", groupId)
+                            putExtra("GASTO_ID", currentGastoId)
+                        }
+                        Log.d("TopBarFragment", "Enviando - GroupID: $groupId, GastoID: $currentGastoId")
+                        startActivity(intent)
+                    }
+
+                    iconDoDeleteGasto.setOnClickListener {
+                        layoutEditGastoOptions.visibility = View.GONE
+                        AlertDialog.Builder(requireContext())
+                            .setTitle("Eliminar gasto")
+                            .setMessage("¿Estás seguro de que deseas eliminar este gasto?")
+                            .setPositiveButton("Sí") { _, _ ->
+                                eliminarGasto()
+                            }
+                            .setNegativeButton("Cancelar", null)
+                            .show()
+                    }
+                }
+            }.addOnFailureListener { e ->
+                Log.e("TopBarFragment", "Error al verificar creador del gasto", e)
+                iconEditGastoPrincipal.visibility = View.GONE
+                layoutEditGastoOptions.visibility = View.GONE
+            }
         } else {
             iconEditGastoPrincipal.visibility = View.GONE
             layoutEditGastoOptions.visibility = View.GONE

@@ -132,12 +132,14 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_custom"
-                    android:hint="May 29, 2025"
-                    android:inputType="text"
+                    android:hint="Seleccionar fecha"
+                    android:drawableEnd="@android:drawable/ic_menu_my_calendar"
                     android:padding="12sp"
                     android:textColor="@color/black"
                     android:textColorHint="#BDBDBD"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    android:focusable="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -161,12 +163,14 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_custom"
-                    android:hint="Junio 18, 2025"
-                    android:inputType="text"
+                    android:hint="Seleccionar fecha"
+                    android:drawableEnd="@android:drawable/ic_menu_my_calendar"
                     android:padding="12sp"
                     android:textColor="@color/black"
                     android:textColorHint="#BDBDBD"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    android:focusable="false" />
             </LinearLayout>
         </LinearLayout>
 
