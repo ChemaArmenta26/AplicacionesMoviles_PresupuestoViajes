@@ -199,6 +199,7 @@ navigation mobile_navigation
 navigation mobile_navigation2
 navigation mobile_navigation3
 string Salida
+string a_la_par
 string apellido
 string app_name
 string btnBuscar

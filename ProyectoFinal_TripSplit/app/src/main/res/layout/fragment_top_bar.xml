@@ -17,8 +17,8 @@
         <!-- Logo izquierda -->
         <ImageView
             android:id="@+id/icon_left"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@mipmap/logo_avion"
             android:layout_gravity="start"
             android:padding="8dp"

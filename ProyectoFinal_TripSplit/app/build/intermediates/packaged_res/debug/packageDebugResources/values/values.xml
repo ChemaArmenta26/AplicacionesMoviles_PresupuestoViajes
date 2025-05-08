@@ -24,6 +24,7 @@
     <item name="gasto" type="id"/>
     <item name="tv_lugar_gasto" type="id"/>
     <string name="Salida">Salida: </string>
+    <string name="a_la_par">A la par</string>
     <string name="apellido">Apellido</string>
     <string name="app_name">ProyectoFinal_TripSplit</string>
     <string name="btnBuscar">Buscar</string>
