@@ -1,8 +1,11 @@
 package armenta.jose.proyectofinal_tripsplit
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -12,13 +15,16 @@ import armenta.jose.proyectofinal_tripsplit.utilities.GastoAdapter
 import armenta.jose.proyectofinal_tripsplit.utilities.PagarPorPersona
 import armenta.jose.proyectofinal_tripsplit.utilities.PagarPorPersonaAdapter
 
+
 class pantalla_principal : AppCompatActivity() {
+
 
     private lateinit var db: FirebaseDatabase
     private lateinit var dbRefGrupos: DatabaseReference
     private lateinit var dbRefGastos: DatabaseReference
     private lateinit var dbRefUsuarios: DatabaseReference
     private lateinit var auth: FirebaseAuth
+
 
     private lateinit var listViewPersonas: ListView
     private lateinit var listViewGastos: ListView
@@ -28,14 +34,16 @@ class pantalla_principal : AppCompatActivity() {
     private lateinit var tvCodigoGrupo: TextView
     private lateinit var tvNombreViaje: TextView
 
-    private var gastosList: List<Gasto> = emptyList()
 
+    private var gastosList: List<Gasto> = emptyList()
     private lateinit var groupId: String
     private val TAG = "PantallaPrincipal"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla_principal)
+
 
         db = FirebaseDatabase.getInstance()
         dbRefGrupos = db.getReference("grupos")
@@ -43,13 +51,16 @@ class pantalla_principal : AppCompatActivity() {
         dbRefUsuarios = db.getReference("Usuarios")
         auth = FirebaseAuth.getInstance()
 
+
         groupId = intent.getStringExtra("groupId") ?: intent.getStringExtra("GRUPO_ID") ?: ""
+
 
         if (groupId.isBlank()) {
             Toast.makeText(this, "Error: No se pudo cargar el grupo", Toast.LENGTH_SHORT).show()
             finish()
             return
         }
+
 
         listViewPersonas = findViewById(R.id.lista_monto_pagar_persona)
         listViewGastos = findViewById(R.id.lista_gastos)
@@ -60,6 +71,7 @@ class pantalla_principal : AppCompatActivity() {
         tvNombreViaje = findViewById(R.id.tv_nombre_viaje)
         val btnFlechaAtras = findViewById<ImageButton>(R.id.btn_flecha_atras)
 
+
         loadGroupData()
         listenForExpenseChanges()
         listenForMembersChanges()
@@ -69,11 +81,13 @@ class pantalla_principal : AppCompatActivity() {
             finish()
         }
 
+
         btnAgregarGasto.setOnClickListener {
             val intentRegistrar = Intent(this, RegistrarGastos::class.java)
             intentRegistrar.putExtra("GRUPO_ID", groupId)
             startActivity(intentRegistrar)
         }
+
 
         btnReporteGastos.setOnClickListener {
             val intentReporte = Intent(this, reporte_gastos::class.java)
@@ -81,6 +95,7 @@ class pantalla_principal : AppCompatActivity() {
             startActivity(intentReporte)
         }
     }
+
 
     private fun loadGroupData() {
         dbRefGrupos.child(groupId).addListenerForSingleValueEvent(object : ValueEventListener {
@@ -91,11 +106,13 @@ class pantalla_principal : AppCompatActivity() {
                 tvCodigoGrupo.text = codigo
             }
 
+
             override fun onCancelled(error: DatabaseError) {
                 Log.e(TAG, "Error al cargar datos del grupo", error.toException())
             }
         })
     }
+
 
     private fun listenForExpenseChanges() {
         dbRefGastos.addValueEventListener(object : ValueEventListener {
@@ -105,16 +122,19 @@ class pantalla_principal : AppCompatActivity() {
                     gasto?.takeIf { g -> g.groupId == groupId }
                 }
 
+
                 updateExpensesUI(gastosList)
                 updateTotalSpent(gastosList)
                 updateUserBalances(gastosList)
             }
+
 
             override fun onCancelled(error: DatabaseError) {
                 Log.e(TAG, "Error al escuchar gastos", error.toException())
             }
         })
     }
+
 
     private fun listenForMembersChanges() {
         dbRefGrupos.child(groupId).child("miembrosIds")
@@ -123,16 +143,20 @@ class pantalla_principal : AppCompatActivity() {
                     updateUserBalances()
                 }
 
+
                 override fun onCancelled(error: DatabaseError) {
                     Log.e(TAG, "Error al escuchar cambios de miembros", error.toException())
                 }
             })
     }
 
+
     private fun updateExpensesUI(gastosList: List<Gasto>) {
         val adapter = GastoAdapter(this, gastosList)
         listViewGastos.adapter = adapter
         adapter.notifyDataSetChanged()
+        setListViewHeightBasedOnChildren(listViewGastos)
+
 
         listViewGastos.setOnItemClickListener { _, _, position, _ ->
             val gastoSeleccionado = gastosList[position]
@@ -143,10 +167,12 @@ class pantalla_principal : AppCompatActivity() {
         }
     }
 
+
     private fun updateTotalSpent(gastosList: List<Gasto>) {
         val total = gastosList.sumOf { it.montoTotal ?: 0.0 }
         totalGastadoTextView.text = getString(R.string.currency_format, total)
     }
+
 
     private fun updateUserBalances(gastosList: List<Gasto>? = null) {
         dbRefGrupos.child(groupId).child("miembrosIds")
@@ -155,9 +181,11 @@ class pantalla_principal : AppCompatActivity() {
                     val miembrosIds = snapshot.children.mapNotNull { it.getValue(String::class.java) }
                     if (miembrosIds.isEmpty()) return
 
+
                     val gastos = gastosList ?: emptyList()
                     val balances = calculateBalances(miembrosIds, gastos)
                     val personas = mutableListOf<PagarPorPersona>()
+
 
                     for (uid in miembrosIds) {
                         dbRefUsuarios.child(uid).addListenerForSingleValueEvent(object : ValueEventListener {
@@ -167,18 +195,23 @@ class pantalla_principal : AppCompatActivity() {
                                     ?: R.mipmap.image_default_user
                                 val balance = balances[uid] ?: 0.0
 
+
                                 val formatted = getString(R.string.currency_format, kotlin.math.abs(balance))
                                 val display = if (balance < 0) getString(R.string.debe_format, formatted)
                                 else getString(R.string.recibe_format, formatted)
 
+
                                 personas.add(PagarPorPersona(nombre, display, fotoPerfil))
+
 
                                 if (personas.size == miembrosIds.size) {
                                     val adapter = PagarPorPersonaAdapter(this@pantalla_principal, personas)
                                     listViewPersonas.adapter = adapter
                                     adapter.notifyDataSetChanged()
+                                    setListViewHeightBasedOnChildren(listViewPersonas)
                                 }
                             }
+
 
                             override fun onCancelled(error: DatabaseError) {
                                 Log.e(TAG, "Error al cargar usuario $uid", error.toException())
@@ -187,21 +220,25 @@ class pantalla_principal : AppCompatActivity() {
                     }
                 }
 
+
                 override fun onCancelled(error: DatabaseError) {
                     Log.e(TAG, "Error al obtener miembros", error.toException())
                 }
             })
     }
 
+
     private fun calculateBalances(memberIds: List<String>, expenses: List<Gasto>): Map<String, Double> {
         val balances = mutableMapOf<String, Double>().apply {
             memberIds.forEach { put(it, 0.0) }
         }
 
+
         for (expense in expenses) {
             val monto = expense.montoTotal ?: 0.0
             val pagador = expense.pagadorId ?: continue
             val participantes = expense.participantesIds ?: continue
+
 
             val share = monto / participantes.size
             for (p in participantes) {
@@ -210,6 +247,28 @@ class pantalla_principal : AppCompatActivity() {
             balances[pagador] = (balances[pagador] ?: 0.0) + monto
         }
 
+
         return balances
+    }
+
+    private fun setListViewHeightBasedOnChildren(listView: ListView) {
+        val listAdapter = listView.adapter ?: return
+
+
+        var totalHeight = 0
+        for (i in 0 until listAdapter.count) {
+            val listItem = listAdapter.getView(i, null, listView)
+            listItem.measure(
+                View.MeasureSpec.makeMeasureSpec(listView.width, View.MeasureSpec.UNSPECIFIED),
+                View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+            )
+            totalHeight += listItem.measuredHeight
+        }
+
+
+        val params = listView.layoutParams
+        params.height = totalHeight + (listView.dividerHeight * (listAdapter.count - 1))
+        listView.layoutParams = params
+        listView.requestLayout()
     }
 }
