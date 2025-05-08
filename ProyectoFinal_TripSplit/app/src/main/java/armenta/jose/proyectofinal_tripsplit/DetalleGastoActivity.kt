@@ -38,21 +38,35 @@ class DetalleGastoActivity : AppCompatActivity() {
         btnFlechaAtras.setOnClickListener { finish() }
 
         if (savedInstanceState == null) {
+            gastoId = intent.getStringExtra("GASTO_ID") ?: return
+            grupoId = intent.getStringExtra("GRUPO_ID") ?: return
+
+            val topBarFragment = TopBarFragment.newInstance(
+                groupId = grupoId,
+                gastoId = gastoId,
+                showEditIcon = true
+            )
+
             supportFragmentManager.beginTransaction()
-                .replace(R.id.topBarFragment, TopBarFragment())
+                .replace(R.id.topBarFragment, topBarFragment)
                 .commit()
         }
+
 
         recyclerView = findViewById(R.id.rv_integrantes)
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = IntegrantesAdapter()
         recyclerView.adapter = adapter
 
-        gastoId = intent.getStringExtra("GASTO_ID") ?: return
-        grupoId = intent.getStringExtra("GRUPO_ID") ?: return
-
         dbRef = FirebaseDatabase.getInstance().reference
 
+        cargarDatosDelGasto()
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
         cargarDatosDelGasto()
     }
 

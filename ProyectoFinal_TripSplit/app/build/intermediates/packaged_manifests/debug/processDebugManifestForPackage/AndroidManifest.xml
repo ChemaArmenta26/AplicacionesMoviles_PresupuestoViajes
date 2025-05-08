@@ -35,6 +35,9 @@
             android:name="armenta.jose.proyectofinal_tripsplit.EditarPerfil"
             android:exported="false" />
         <activity
+            android:name="armenta.jose.proyectofinal_tripsplit.EditarGastoActivity"
+            android:exported="false" />
+        <activity
             android:name="armenta.jose.proyectofinal_tripsplit.homev2"
             android:exported="false" />
         <activity

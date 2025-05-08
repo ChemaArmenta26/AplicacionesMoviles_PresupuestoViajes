@@ -27,6 +27,9 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
   public final ImageButton btnEditGroupName;
 
   @NonNull
+  public final ImageButton btnEliminar;
+
+  @NonNull
   public final AppCompatButton btnRegresar;
 
   @NonNull
@@ -45,12 +48,13 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
   public final TextView tvTitle;
 
   private ActivityEditarGrupoBinding(@NonNull LinearLayout rootView,
-      @NonNull ImageButton btnEditGroupName, @NonNull AppCompatButton btnRegresar,
-      @NonNull LinearLayout container, @NonNull ListView listViewIntegrantes,
-      @NonNull FragmentContainerView topBarFragment, @NonNull TextView tvIntegrantesLabel,
-      @NonNull TextView tvTitle) {
+      @NonNull ImageButton btnEditGroupName, @NonNull ImageButton btnEliminar,
+      @NonNull AppCompatButton btnRegresar, @NonNull LinearLayout container,
+      @NonNull ListView listViewIntegrantes, @NonNull FragmentContainerView topBarFragment,
+      @NonNull TextView tvIntegrantesLabel, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnEditGroupName = btnEditGroupName;
+    this.btnEliminar = btnEliminar;
     this.btnRegresar = btnRegresar;
     this.container = container;
     this.listViewIntegrantes = listViewIntegrantes;
@@ -92,6 +96,12 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_eliminar;
+      ImageButton btnEliminar = ViewBindings.findChildViewById(rootView, id);
+      if (btnEliminar == null) {
+        break missingId;
+      }
+
       id = R.id.btn_regresar;
       AppCompatButton btnRegresar = ViewBindings.findChildViewById(rootView, id);
       if (btnRegresar == null) {
@@ -124,8 +134,8 @@ public final class ActivityEditarGrupoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEditarGrupoBinding((LinearLayout) rootView, btnEditGroupName, btnRegresar,
-          container, listViewIntegrantes, topBarFragment, tvIntegrantesLabel, tvTitle);
+      return new ActivityEditarGrupoBinding((LinearLayout) rootView, btnEditGroupName, btnEliminar,
+          btnRegresar, container, listViewIntegrantes, topBarFragment, tvIntegrantesLabel, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

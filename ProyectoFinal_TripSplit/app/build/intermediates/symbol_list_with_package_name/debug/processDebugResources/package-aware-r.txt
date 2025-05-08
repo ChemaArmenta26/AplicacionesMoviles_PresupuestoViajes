@@ -85,6 +85,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array categorias_gasto
 attr SharedValue
 attr SharedValueId
 attr action
@@ -3357,6 +3358,7 @@ id btn_cancelar
 id btn_cerrar_sesion
 id btn_crear
 id btn_crearViaje
+id btn_eliminar
 id btn_flecha_atras
 id btn_guardar
 id btn_ingresar
@@ -3399,6 +3401,7 @@ id contentPanel
 id contiguous
 id continuousVelocity
 id coordinator
+id correo_usuario
 id cos
 id counterclockwise
 id cradle
@@ -3691,6 +3694,7 @@ id rounded
 id row_index_key
 id rtl
 id rv_integrantes
+id saludo_usuario
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3977,6 +3981,7 @@ layout activity_codigo_grupo
 layout activity_crear_cuenta
 layout activity_crear_grupo
 layout activity_detalle_gasto
+layout activity_editar_gasto
 layout activity_editar_grupo
 layout activity_editar_perfil
 layout activity_home
@@ -4086,6 +4091,8 @@ mipmap barra_decoracion_inferior
 mipmap boton_editar
 mipmap decoracion_fondo
 mipmap decoracion_ondas
+mipmap delete
+mipmap eliminar_grupo
 mipmap flecha_atras
 mipmap fondo_nubes
 mipmap ic_launcher

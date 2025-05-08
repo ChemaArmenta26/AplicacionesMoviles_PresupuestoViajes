@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="categorias_gasto">
+        <item>Comida</item>
+        <item>Transporte</item>
+        <item>Alojamiento</item>
+        <item>Actividades</item>
+        <item>Otros</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="blue">#0C64C1</color>
     <color name="btn_home_blue">#C8D9FF</color>

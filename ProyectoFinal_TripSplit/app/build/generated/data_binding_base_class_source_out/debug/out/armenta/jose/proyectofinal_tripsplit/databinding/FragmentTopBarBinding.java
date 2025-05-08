@@ -4,10 +4,10 @@ package armenta.jose.proyectofinal_tripsplit.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class FragmentTopBarBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final Toolbar actualToolbar;
@@ -52,7 +52,7 @@ public final class FragmentTopBarBinding implements ViewBinding {
   @NonNull
   public final ImageView tvAppTitle;
 
-  private FragmentTopBarBinding(@NonNull RelativeLayout rootView, @NonNull Toolbar actualToolbar,
+  private FragmentTopBarBinding(@NonNull FrameLayout rootView, @NonNull Toolbar actualToolbar,
       @NonNull ImageButton iconDoDeleteGasto, @NonNull ImageButton iconDoEditGasto,
       @NonNull ImageView iconEdit, @NonNull ImageView iconLeft, @NonNull ImageView iconSettings,
       @NonNull ImageView iconUser, @NonNull LinearLayout iconsContainerRight,
@@ -72,7 +72,7 @@ public final class FragmentTopBarBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -157,7 +157,7 @@ public final class FragmentTopBarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentTopBarBinding((RelativeLayout) rootView, actualToolbar, iconDoDeleteGasto,
+      return new FragmentTopBarBinding((FrameLayout) rootView, actualToolbar, iconDoDeleteGasto,
           iconDoEditGasto, iconEdit, iconLeft, iconSettings, iconUser, iconsContainerRight,
           layoutEditGastoOptions, tvAppTitle);
     }
