@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">981777734028</string>
-    <string name="google_api_key" translatable="false">AIzaSyDEIorR92JwruxoRLGajKmTfewrIgq0mYM</string>
-    <string name="google_app_id" translatable="false">1:981777734028:android:790825d0255a0ef9b81ea9</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDEIorR92JwruxoRLGajKmTfewrIgq0mYM</string>
-    <string name="google_storage_bucket" translatable="false">proyectofinal-tripsplit.firebasestorage.app</string>
-    <string name="project_id" translatable="false">proyectofinal-tripsplit</string>
-</resources>
