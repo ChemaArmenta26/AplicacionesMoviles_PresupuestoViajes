@@ -70,6 +70,7 @@
 
     <string name="foto_perfil_usuario">Foto de perfil del usuario</string>
     <string name="default_tipo_gasto">%1$s</string>
+    <string name="a_la_par">A la par</string>
 
 
 </resources>
