@@ -17,14 +17,13 @@ class EditarGrupoActivity : AppCompatActivity() {
 
     private lateinit var tvTitle: TextView
     private lateinit var btnEditName: ImageButton
+    private lateinit var btnEliminar: ImageButton
     private lateinit var listView: ListView
     private lateinit var btnRegresar: Button
 
-    // Firebase
     private lateinit var refGrupo: DatabaseReference
     private lateinit var refUsuarios: DatabaseReference
 
-    // Estado
     private var adminId = ""
     private var isAdmin = false
     private val miembrosIds = mutableListOf<String>()
@@ -38,36 +37,29 @@ class EditarGrupoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_editar_grupo)
 
-        // 1) Leer el groupId
         groupId = intent.getStringExtra("groupId")
             ?: throw IllegalArgumentException("Hace falta pasar groupId")
 
-        // 2) Referencias Firebase
-        refGrupo = FirebaseDatabase.getInstance()
-            .getReference("grupos").child(groupId)
-        refUsuarios = FirebaseDatabase.getInstance()
-            .getReference("Usuarios")
+        refGrupo = FirebaseDatabase.getInstance().getReference("grupos").child(groupId)
+        refUsuarios = FirebaseDatabase.getInstance().getReference("Usuarios")
 
-        // 3) Vistas
-        tvTitle     = findViewById(R.id.tv_title)
+        tvTitle = findViewById(R.id.tv_title)
         btnEditName = findViewById(R.id.btnEditGroupName)
-        listView    = findViewById(R.id.listViewIntegrantes)
+        btnEliminar = findViewById(R.id.btn_eliminar)
+        listView = findViewById(R.id.listViewIntegrantes)
         btnRegresar = findViewById(R.id.btn_regresar)
 
-        // 4) Adapter (inicialmente sin permisos de admin)
-        adapter = IntegranteGrupoAdapter(this, integrantes, /*isAdmin=*/false) { pos ->
+        adapter = IntegranteGrupoAdapter(this, integrantes, false) { pos ->
             eliminarMiembro(pos)
         }
         listView.adapter = adapter
 
-        // 5) Listeners
         btnRegresar.setOnClickListener { finish() }
         btnEditName.setOnClickListener { showEditNameDialog() }
+        btnEliminar.setOnClickListener { pedirConfirmacionEliminar() }
 
-        // 6) Carga datos
         cargaDatosGrupo()
 
-        // 7) TopBarFragment
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.topBarFragment, TopBarFragment())
@@ -80,18 +72,13 @@ class EditarGrupoActivity : AppCompatActivity() {
             override fun onDataChange(snap: DataSnapshot) {
                 if (!snap.exists()) return
 
-                // 1) Leer quién es admin
-                adminId = snap.child("adminId")
-                    .getValue(String::class.java).orEmpty()
-
-                // 2) Saber si el usuario actual es admin
+                adminId = snap.child("adminId").getValue(String::class.java).orEmpty()
                 val curUid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty()
                 isAdmin = (curUid == adminId)
 
-                // 3) Mostrar u ocultar botón editar nombre
                 btnEditName.visibility = if (isAdmin) View.VISIBLE else View.GONE
+                btnEliminar.visibility = if (isAdmin) View.VISIBLE else View.GONE
 
-                // 4) Reconstruir lista de miembrosIds: admin primero
                 miembrosIds.clear()
                 miembrosIds.add(adminId)
                 for (c in snap.child("miembrosIds").children) {
@@ -100,16 +87,10 @@ class EditarGrupoActivity : AppCompatActivity() {
                     }
                 }
 
-                // 5) Notificar al adapter el cambio de permiso
                 adapter.setIsAdmin(isAdmin)
-
-                // 6) Cargar nombres y refrescar vista
                 cargaDetallesMiembros()
 
-                // 7) Poner título
-                val nombre = snap.child("nombre")
-                    .getValue(String::class.java)
-                    .orEmpty()
+                val nombre = snap.child("nombre").getValue(String::class.java).orEmpty()
                 tvTitle.text = nombre
             }
 
@@ -134,10 +115,8 @@ class EditarGrupoActivity : AppCompatActivity() {
             refUsuarios.child(uid)
                 .addListenerForSingleValueEvent(object : ValueEventListener {
                     override fun onDataChange(userSnap: DataSnapshot) {
-                        val nom = userSnap.child("nombre")
-                            .getValue(String::class.java).orEmpty()
-                        val ap  = userSnap.child("apellido")
-                            .getValue(String::class.java).orEmpty()
+                        val nom = userSnap.child("nombre").getValue(String::class.java).orEmpty()
+                        val ap = userSnap.child("apellido").getValue(String::class.java).orEmpty()
                         integrantes.add(
                             Integrante(
                                 id = idx,
@@ -150,27 +129,18 @@ class EditarGrupoActivity : AppCompatActivity() {
                             adapter.notifyDataSetChanged()
                         }
                     }
-
-                    override fun onCancelled(error: DatabaseError) { /*no-op*/ }
+                    override fun onCancelled(error: DatabaseError) {}
                 })
         }
     }
 
     private fun eliminarMiembro(pos: Int) {
-        // Seguridad: solo el admin puede
         if (!isAdmin || pos == 0) return
-
-        // 1) UID a eliminar
         val uidAEliminar = miembrosIds[pos]
-
-        // 2) Filtramos la lista quitando ese UID
         val nuevaLista = miembrosIds.filter { it != uidAEliminar }
-
-        // 3) Guardamos en Firebase
         refGrupo.child("miembrosIds")
             .setValue(nuevaLista)
             .addOnSuccessListener {
-                // 4) Refrescamos la lista local y la UI
                 miembrosIds.clear()
                 miembrosIds.addAll(nuevaLista)
                 cargaDetallesMiembros()
@@ -181,9 +151,7 @@ class EditarGrupoActivity : AppCompatActivity() {
     }
 
     private fun showEditNameDialog() {
-        // Sólo admin puede
         if (!isAdmin) return
-
         val et = EditText(this).apply { setText(tvTitle.text) }
         AlertDialog.Builder(this)
             .setTitle("Editar nombre de grupo")
@@ -193,12 +161,61 @@ class EditarGrupoActivity : AppCompatActivity() {
                 if (nuevo.isNotEmpty()) {
                     refGrupo.child("nombre")
                         .setValue(nuevo)
-                        .addOnSuccessListener {
-                            tvTitle.text = nuevo
-                        }
+                        .addOnSuccessListener { tvTitle.text = nuevo }
                 }
             }
             .setNegativeButton("Cancelar", null)
             .show()
+    }
+
+    private fun pedirConfirmacionEliminar() {
+        if (!isAdmin) return
+        AlertDialog.Builder(this)
+            .setTitle("Eliminar grupo")
+            .setMessage("¿Seguro que quieres eliminar este grupo y TODOS sus gastos?")
+            .setPositiveButton("Eliminar") { _, _ -> eliminarGrupoCompleto() }
+            .setNegativeButton("Cancelar", null)
+            .show()
+    }
+
+    private fun eliminarGrupoCompleto() {
+        refGrupo.child("gastosIds")
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val updates = mutableMapOf<String, Any?>()
+                    updates["grupos/$groupId"] = null
+                    snapshot.children.forEach { gastoSnap ->
+                        val gastoId = gastoSnap.getValue(String::class.java)
+                        if (!gastoId.isNullOrBlank()) {
+                            updates["gastos/$gastoId"] = null
+                        }
+                    }
+                    FirebaseDatabase.getInstance().reference
+                        .updateChildren(updates)
+                        .addOnSuccessListener {
+                            Toast.makeText(
+                                this@EditarGrupoActivity,
+                                "Grupo eliminado",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            finish()
+                            val intent = intent
+                        }
+                        .addOnFailureListener { e ->
+                            Toast.makeText(
+                                this@EditarGrupoActivity,
+                                "Error al eliminar: ${e.message}",
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                }
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(
+                        this@EditarGrupoActivity,
+                        "Error: ${error.message}",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            })
     }
 }

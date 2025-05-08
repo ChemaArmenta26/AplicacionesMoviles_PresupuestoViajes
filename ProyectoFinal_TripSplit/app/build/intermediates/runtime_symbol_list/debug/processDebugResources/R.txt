@@ -3357,6 +3357,7 @@ int id btn_cancelar 0x7f090078
 int id btn_cerrar_sesion 0x7f090079
 int id btn_crear 0x7f09007a
 int id btn_crearViaje 0x7f09007b
+int id btn_eliminar 0x7f090270
 int id btn_flecha_atras 0x7f09007c
 int id btn_guardar 0x7f09007d
 int id btn_ingresar 0x7f09007e
@@ -4087,6 +4088,8 @@ int mipmap barra_decoracion_inferior 0x7f0f0001
 int mipmap boton_editar 0x7f0f0002
 int mipmap decoracion_fondo 0x7f0f0003
 int mipmap decoracion_ondas 0x7f0f0004
+int mipmap delete 0x7f0f001a
+int mipmap eliminar_grupo 0x7f0f001b
 int mipmap flecha_atras 0x7f0f0005
 int mipmap fondo_nubes 0x7f0f0006
 int mipmap ic_launcher 0x7f0f0007

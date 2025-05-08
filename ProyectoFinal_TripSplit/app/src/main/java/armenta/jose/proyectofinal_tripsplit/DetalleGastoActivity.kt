@@ -61,6 +61,13 @@ class DetalleGastoActivity : AppCompatActivity() {
         dbRef = FirebaseDatabase.getInstance().reference
 
         cargarDatosDelGasto()
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        cargarDatosDelGasto()
     }
 
     private fun cargarDatosDelGasto() {

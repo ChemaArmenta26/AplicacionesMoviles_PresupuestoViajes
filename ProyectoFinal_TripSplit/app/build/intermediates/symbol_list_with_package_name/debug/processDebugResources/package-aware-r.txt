@@ -3358,6 +3358,7 @@ id btn_cancelar
 id btn_cerrar_sesion
 id btn_crear
 id btn_crearViaje
+id btn_eliminar
 id btn_flecha_atras
 id btn_guardar
 id btn_ingresar
@@ -4088,6 +4089,8 @@ mipmap barra_decoracion_inferior
 mipmap boton_editar
 mipmap decoracion_fondo
 mipmap decoracion_ondas
+mipmap delete
+mipmap eliminar_grupo
 mipmap flecha_atras
 mipmap fondo_nubes
 mipmap ic_launcher
