@@ -3400,6 +3400,7 @@ int id contentPanel 0x7f0900a2
 int id contiguous 0x7f0900a3
 int id continuousVelocity 0x7f0900a4
 int id coordinator 0x7f0900a5
+int id correo_usuario 0x7f090271
 int id cos 0x7f0900a6
 int id counterclockwise 0x7f0900a7
 int id cradle 0x7f0900a8
@@ -3692,6 +3693,7 @@ int id rounded 0x7f0901c6
 int id row_index_key 0x7f0901c7
 int id rtl 0x7f0901c8
 int id rv_integrantes 0x7f0901c9
+int id saludo_usuario 0x7f090272
 int id save_non_transition_alpha 0x7f0901ca
 int id save_overlay_view 0x7f0901cb
 int id sawtooth 0x7f0901cc

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -29,23 +30,31 @@ public final class ActivityEditarPerfilBinding implements ViewBinding {
   public final ImageButton btnFlechaAtras;
 
   @NonNull
+  public final TextView correoUsuario;
+
+  @NonNull
   public final ImageView imgPerfil;
 
   @NonNull
   public final LinearLayout main;
 
   @NonNull
+  public final TextView saludoUsuario;
+
+  @NonNull
   public final FragmentContainerView topBarFragment;
 
   private ActivityEditarPerfilBinding(@NonNull LinearLayout rootView,
       @NonNull AppCompatButton btnCerrarSesion, @NonNull ImageButton btnFlechaAtras,
-      @NonNull ImageView imgPerfil, @NonNull LinearLayout main,
-      @NonNull FragmentContainerView topBarFragment) {
+      @NonNull TextView correoUsuario, @NonNull ImageView imgPerfil, @NonNull LinearLayout main,
+      @NonNull TextView saludoUsuario, @NonNull FragmentContainerView topBarFragment) {
     this.rootView = rootView;
     this.btnCerrarSesion = btnCerrarSesion;
     this.btnFlechaAtras = btnFlechaAtras;
+    this.correoUsuario = correoUsuario;
     this.imgPerfil = imgPerfil;
     this.main = main;
+    this.saludoUsuario = saludoUsuario;
     this.topBarFragment = topBarFragment;
   }
 
@@ -88,6 +97,12 @@ public final class ActivityEditarPerfilBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.correo_usuario;
+      TextView correoUsuario = ViewBindings.findChildViewById(rootView, id);
+      if (correoUsuario == null) {
+        break missingId;
+      }
+
       id = R.id.img_perfil;
       ImageView imgPerfil = ViewBindings.findChildViewById(rootView, id);
       if (imgPerfil == null) {
@@ -96,6 +111,12 @@ public final class ActivityEditarPerfilBinding implements ViewBinding {
 
       LinearLayout main = (LinearLayout) rootView;
 
+      id = R.id.saludo_usuario;
+      TextView saludoUsuario = ViewBindings.findChildViewById(rootView, id);
+      if (saludoUsuario == null) {
+        break missingId;
+      }
+
       id = R.id.topBarFragment;
       FragmentContainerView topBarFragment = ViewBindings.findChildViewById(rootView, id);
       if (topBarFragment == null) {
@@ -103,7 +124,7 @@ public final class ActivityEditarPerfilBinding implements ViewBinding {
       }
 
       return new ActivityEditarPerfilBinding((LinearLayout) rootView, btnCerrarSesion,
-          btnFlechaAtras, imgPerfil, main, topBarFragment);
+          btnFlechaAtras, correoUsuario, imgPerfil, main, saludoUsuario, topBarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

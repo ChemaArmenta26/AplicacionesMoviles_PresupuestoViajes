@@ -3401,6 +3401,7 @@ id contentPanel
 id contiguous
 id continuousVelocity
 id coordinator
+id correo_usuario
 id cos
 id counterclockwise
 id cradle
@@ -3693,6 +3694,7 @@ id rounded
 id row_index_key
 id rtl
 id rv_integrantes
+id saludo_usuario
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

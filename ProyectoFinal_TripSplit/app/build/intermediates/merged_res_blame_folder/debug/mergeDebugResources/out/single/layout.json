@@ -28,12 +28,12 @@
         "source": "C:\\Users\\haloa\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\haloa\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_configuracion_grupo.xml",
-        "source": "C:\\Users\\haloa\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_configuracion_grupo.xml"
+        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_editar_perfil.xml",
+        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_perfil.xml"
     },
     {
-        "merged": "armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:/layout/activity_editar_grupo.xml",
-        "source": "armenta.jose.proyectofinal_tripsplit.app-main-61:/layout/activity_editar_grupo.xml"
+        "merged": "C:\\Users\\haloa\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_configuracion_grupo.xml",
+        "source": "C:\\Users\\haloa\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-main-61:\\layout\\item_configuracion_grupo.xml"
     },
     {
         "merged": "C:\\Users\\haloa\\.gradle\\daemon\\8.10.2\\armenta.jose.proyectofinal_tripsplit.app-mergeDebugResources-58:\\layout\\item_total_gastado.xml",

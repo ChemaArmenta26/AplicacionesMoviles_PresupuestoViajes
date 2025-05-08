@@ -63,6 +63,7 @@ id btn_ver_reporte_gastos
 id cb_participante
 id concepto_gasto
 id container
+id correo_usuario
 id crearCuenta
 id et_apellido
 id et_buscar
@@ -109,6 +110,7 @@ id navigation_home
 id navigation_notifications
 id navigation_reporte_gastos
 id rv_integrantes
+id saludo_usuario
 id spinnerCategoria
 id spinnerQuienPago
 id textHome
