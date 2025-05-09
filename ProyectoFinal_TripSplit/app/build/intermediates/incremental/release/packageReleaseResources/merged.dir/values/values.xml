@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_gasto">
+        <item>Comida</item>
+        <item>Transporte</item>
+        <item>Alojamiento</item>
+        <item>Actividades</item>
+        <item>Otros</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="blue">#0C64C1</color>
+    <color name="btn_home_blue">#C8D9FF</color>
+    <color name="dark_blue">#162F6E</color>
+    <color name="grey_view">#C8C8C8</color>
+    <color name="letra_boton_menu">#666666</color>
+    <color name="light_blue">#A0CDFE</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="red">#FF2222</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="zapphire">#005E7A</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <item name="concepto_gasto" type="id"/>
+    <item name="gasto" type="id"/>
+    <item name="tv_lugar_gasto" type="id"/>
+    <string name="Salida">Salida: </string>
+    <string name="a_la_par">A la par</string>
+    <string name="apellido">Apellido</string>
+    <string name="app_name">ProyectoFinal_TripSplit</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="buscar">Buscar...</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="categoriaDelGasto">Categoría:</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="confirmarContraseña">Confirmar Contraseña</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="crear">Crear Cuenta</string>
+    <string name="crearCuenta">Crear Cuenta</string>
+    <string name="crearGrupo">Crear nuevo grupo</string>
+    <string name="crear_viaje_grupal">Crear viaje grupal</string>
+    <string name="cuantosSon">¿Cuantos son?</string>
+    <string name="currency_format">$%.2f</string>
+    <string name="debe_format">Debe: %s</string>
+    <string name="default_categoria_gasto">Sin categoría</string>
+    <string name="default_nombre_gasto">Sin nombre</string>
+    <string name="default_nombre_usuario">Usuario</string>
+    <string name="default_tipo_gasto">%1$s</string>
+    <string name="desde">Desde: </string>
+    <string name="deudaIndividual">Deuda Individual</string>
+    <string name="ejemploCategoria">Nombre Categoría</string>
+    <string name="ejemploMonto">$979.00 MXN</string>
+    <string name="error_cargar_gastos">Error al cargar los gastos</string>
+    <string name="error_cargar_miembros">Error al cargar los miembros</string>
+    <string name="error_info_grupo">Falta información del grupo</string>
+    <string name="foto_perfil_usuario">Foto de perfil del usuario</string>
+    <string name="gcm_defaultSenderId" translatable="false">981777734028</string>
+    <string name="google_api_key" translatable="false">AIzaSyDEIorR92JwruxoRLGajKmTfewrIgq0mYM</string>
+    <string name="google_app_id" translatable="false">1:981777734028:android:790825d0255a0ef9b81ea9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDEIorR92JwruxoRLGajKmTfewrIgq0mYM</string>
+    <string name="google_storage_bucket" translatable="false">proyectofinal-tripsplit.firebasestorage.app</string>
+    <string name="guardar">Guardar</string>
+    <string name="hacía">Hacía: </string>
+    <string name="hintCodigo">EREE-2FSR-MSX7</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="instruccionCodigo">Ingresa el código del viaje:</string>
+    <string name="integrantes">Integrantes</string>
+    <string name="llegada">Llegada</string>
+    <string name="minus">-</string>
+    <string name="montoTotal">Monto Total del Gasto:</string>
+    <string name="monto_total">Monto total</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombreGasto">Nombre del Gasto</string>
+    <string name="nombreGrupo">Nombre del Grupo</string>
+    <string name="nombre_del_gasto">Nombre del Gasto</string>
+    <string name="plus">+</string>
+    <string name="project_id" translatable="false">proyectofinal-tripsplit</string>
+    <string name="recibe_format">Recibe: %s</string>
+    <string name="registra_un_gasto">Registra un Gasto</string>
+    <string name="registrate">Regístrate</string>
+    <string name="reporte_gastos">Reporte Gastos</string>
+    <string name="reporte_gastos_mensuales">Reporte Gastos Mensuales</string>
+    <string name="saldo_disponible">Saldo Disponible:</string>
+    <string name="slogan">Gastos compartidos, viajes sin líos.</string>
+    <string name="textoPresentacion">Divide y organiza los gastos de tu viaje fácilmente.</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_registrar_gastos">RegistrarGastos</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="unete">Únete</string>
+    <string name="unirme_a_grupo_n_de_viaje">Unirme a grupo \n de viaje</string>
+    <string name="ver_reporte_de_gastos">Ver reporte de gastos</string>
+    <string name="yatienescuenta">¿Ya tengo una cuenta?</string>
+    <style name="Base.Theme.ProyectoFinal_TripSplit" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+
+        </style>
+    <style name="Theme.ProyectoFinal_TripSplit" parent="Base.Theme.ProyectoFinal_TripSplit"/>
+</resources>
